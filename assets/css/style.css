@@ -28,6 +28,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font);
 }
 
+.header__logo img {
+  width: 180px;
+  height: auto;
+}
+
 .scrollup {
   width: 55px;
   right: 20px;
@@ -6203,7 +6208,7 @@ dl, ol, ul {
 }
 
 .header__main-right {
-  margin-left: 120px;
+  margin-left: 50px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
