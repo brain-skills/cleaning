@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-family: var(--font);
 }
+.btn-outline-warning {
+    color: #e7ad00;
+    border-color: #e7ad00;
+}
 
 .header__logo img {
   width: 180px;
