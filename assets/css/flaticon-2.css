@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("../fonts/flaticon-2.ttf?65be207926c643c640fa0b35cf0f30ea") format("truetype"),
+url("../fonts/flaticon-2.woff?65be207926c643c640fa0b35cf0f30ea") format("woff"),
+url("../fonts/flaticon-2.woff2?65be207926c643c640fa0b35cf0f30ea") format("woff2"),
+url("../fonts/flaticon-2.eot?65be207926c643c640fa0b35cf0f30ea#iefix") format("embedded-opentype"),
+url("../fonts/flaticon-2.svg?65be207926c643c640fa0b35cf0f30ea#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-envelope:before {
+    content: "\f101";
+}
+.flaticon-envelope-1:before {
+    content: "\f102";
+}
+.flaticon-right-arrow:before {
+    content: "\f103";
+}
+.flaticon-right-arrow-1:before {
+    content: "\f104";
+}
+.flaticon-wipe:before {
+    content: "\f105";
+}
+.flaticon-house:before {
+    content: "\f106";
+}
+.flaticon-bubbles:before {
+    content: "\f107";
+}
+.flaticon-thumbs-up:before {
+    content: "\f108";
+}
+.flaticon-insurance:before {
+    content: "\f109";
+}
+.flaticon-privacy:before {
+    content: "\f10a";
+}
+.flaticon-house-1:before {
+    content: "\f10b";
+}
+.flaticon-help:before {
+    content: "\f10c";
+}
+.flaticon-data-cleaning:before {
+    content: "\f10d";
+}
+.flaticon-data-cleaning-1:before {
+    content: "\f10e";
+}
+.flaticon-cleaning-1:before {
+    content: "\f10f";
+}
+.flaticon-laundry:before {
+    content: "\f110";
+}
+.flaticon-window:before {
+    content: "\f111";
+}
+.flaticon-data-cleaning-2:before {
+    content: "\f112";
+}
+.flaticon-plus:before {
+    content: "\f113";
+}
+.flaticon-reminder:before {
+    content: "\f114";
+}
+.flaticon-lizard:before {
+    content: "\f115";
+}
+.flaticon-towel:before {
+    content: "\f116";
+}
+.flaticon-house-2:before {
+    content: "\f117";
+}
+.flaticon-fireplace:before {
+    content: "\f118";
+}
+.flaticon-home:before {
+    content: "\f119";
+}
+.flaticon-portfolio:before {
+    content: "\f11a";
+}
+.flaticon-cloth:before {
+    content: "\f11b";
+}

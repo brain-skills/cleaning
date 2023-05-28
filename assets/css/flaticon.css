@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("../fonts/flaticon.ttf?54617465a4b56bfe6058ff0d8a8eb35c") format("truetype"),
+url("../fonts/flaticon.woff?54617465a4b56bfe6058ff0d8a8eb35c") format("woff"),
+url("../fonts/flaticon.woff2?54617465a4b56bfe6058ff0d8a8eb35c") format("woff2"),
+url("../fonts/flaticon.eot?54617465a4b56bfe6058ff0d8a8eb35c#iefix") format("embedded-opentype"),
+url("../fonts/flaticon.svg?54617465a4b56bfe6058ff0d8a8eb35c#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-call:before {
+    content: "\f101";
+}
+.flaticon-email:before {
+    content: "\f102";
+}
+.flaticon-location:before {
+    content: "\f103";
+}
+.flaticon-webpage:before {
+    content: "\f104";
+}
+.flaticon-shield:before {
+    content: "\f105";
+}
+.flaticon-compliance:before {
+    content: "\f106";
+}
+.flaticon-compliant:before {
+    content: "\f107";
+}
+.flaticon-cloud:before {
+    content: "\f108";
+}
+.flaticon-id:before {
+    content: "\f109";
+}
+.flaticon-face-detection:before {
+    content: "\f10a";
+}
+.flaticon-worldwide:before {
+    content: "\f10b";
+}
+.flaticon-place:before {
+    content: "\f10c";
+}
+.flaticon-play-button:before {
+    content: "\f10d";
+}
+.flaticon-data-network:before {
+    content: "\f10e";
+}
+.flaticon-voip:before {
+    content: "\f10f";
+}
+.flaticon-database:before {
+    content: "\f110";
+}
+.flaticon-logistics:before {
+    content: "\f111";
+}
+.flaticon-shield-1:before {
+    content: "\f112";
+}
+.flaticon-global-shipping:before {
+    content: "\f113";
+}
+.flaticon-digital-marketing:before {
+    content: "\f114";
+}
+.flaticon-marketing:before {
+    content: "\f115";
+}
+.flaticon-right-arrow:before {
+    content: "\f116";
+}
+.flaticon-quotes:before {
+    content: "\f117";
+}
+.flaticon-double-right-arrows-angles:before {
+    content: "\f118";
+}
+.flaticon-office:before {
+    content: "\f119";
+}
+.flaticon-community:before {
+    content: "\f11a";
+}
+.flaticon-delivery-truck:before {
+    content: "\f11b";
+}
+.flaticon-pricing:before {
+    content: "\f11c";
+}
+.flaticon-plane:before {
+    content: "\f11d";
+}
+.flaticon-minus:before {
+    content: "\f11e";
+}
+.flaticon-target:before {
+    content: "\f11f";
+}
+.flaticon-free-shipping:before {
+    content: "\f120";
+}
+.flaticon-boat:before {
+    content: "\f121";
+}
+.flaticon-train:before {
+    content: "\f122";
+}
+.flaticon-deadline:before {
+    content: "\f123";
+}
+.flaticon-warehouse:before {
+    content: "\f124";
+}
