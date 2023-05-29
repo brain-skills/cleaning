@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font);
 }
 .btn-outline-warning {
-    color: #e7ad00;
+    color: #222;
     border-color: #e7ad00;
 }
 
@@ -6212,7 +6212,7 @@ dl, ol, ul {
 }
 
 .header__main-right {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
@@ -6350,7 +6350,7 @@ dl, ol, ul {
 }
 
 .main-menu__nav ul li:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
 @media (max-width: 1199px) {
@@ -6567,18 +6567,18 @@ dl, ol, ul {
   z-index: -1;
 }
 
-.hero__content-two > span {
-  padding: 0px 0px 0px 22px;
+.nav-tabs li a {
+  padding-left: 15px;
   background: transparent;
   position: relative;
   margin-bottom: 10px;
 }
 
-.hero__content-two > span::before {
+.nav-tabs li a:before {
   position: absolute;
   top: 50%;
-  left: 0px;
-  width: 16px;
+  left: 0;
+  width: 10px;
   height: 1.5px;
   background-color: var(--color-yellow);
   content: "";
@@ -6783,8 +6783,8 @@ dl, ol, ul {
 }
 
 .hero__shape-icons .icon--1 {
-  left: 70px;
-  bottom: 120px;
+  left: 33%;
+  bottom: 25%;
 }
 
 .hero__shape-icons .icon--2 {
@@ -13471,4 +13471,10 @@ dl, ol, ul {
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
   font-weight: 600 !important;
   color: #222 !important;
+}
+.main-menu .nav-tabs li a:before {
+  width: auto !important;
+  height: auto !important;
+  background: none !important;
+  background-color: none !important;
 }

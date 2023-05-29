@@ -82,15 +82,15 @@
 						</div>
 						<div class="main-menu navbar navbar-expand-lg">
 							<nav class="main-menu__nav collapse navbar-collapse">
-								<ul class="nav nav-tabs" id="myTab" role="tablist">
+								<ul class="nav nav-tabs" id="mainservice" role="tablist">
 									<li class="nav-item" role="presentation">
-									<a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" role="tab" aria-controls="home" aria-selected="true">Уборка</a>
+									<a class="nav-link active" id="clean-tab" data-bs-toggle="tab" data-bs-target="#clean" role="tab" aria-controls="clean" aria-selected="true">Уборка</a>
 									</li>
 									<li class="nav-item" role="presentation">
-									<a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" role="tab" aria-controls="profile" aria-selected="false">Химчистка мебели</a>
+									<a class="nav-link" id="furchem-tab" data-bs-toggle="tab" data-bs-target="#furchem" role="tab" aria-controls="furchem" aria-selected="false">Химчистка мебели</a>
 									</li>
 									<li class="nav-item" role="presentation">
-									<a class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" role="tab" aria-controls="contact" aria-selected="false">Мытье окон</a>
+									<a class="nav-link" id="windwash-tab" data-bs-toggle="tab" data-bs-target="#windwash" role="tab" aria-controls="windwash" aria-selected="false">Мытье окон</a>
 									</li>
 								</ul>
                             </nav>
@@ -227,9 +227,9 @@
 					<div class="row align-items-center">
 						<div class="col-lg-6">
 							<div class="tab-content" id="myTabContent">
-								<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+								<div class="tab-pane fade show active" id="clean" role="tabpanel" aria-labelledby="clean-tab">
 									<div class="hero__content hero__content-two">
-										<ul class="nav nav-tabs" id="myTab" role="tablist">
+										<ul class="nav nav-tabs pb-20" id="optionservice" role="tablist">
 											<li class="nav-item" role="presentation"><a class="nav-link active" id="supportable-tab" data-bs-toggle="tab" data-bs-target="#support" role="tab" aria-controls="support" aria-selected="true">Поддерживающая</a></li>
 											<li class="nav-item" role="presentation"><a class="nav-link" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" role="tab" aria-controls="general" aria-selected="false">Генеральная</a></li>
 											<li class="nav-item" role="presentation"><a class="nav-link" id="afterem-tab" data-bs-toggle="tab" data-bs-target="#afterem" role="tab" aria-controls="afterem" aria-selected="false">После ремонта</a></li>
@@ -251,7 +251,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+								<div class="tab-pane fade" id="furchem" role="tabpanel" aria-labelledby="furchem-tab">
 									<div class="hero__content hero__content-two">
 										<h2>Химчистка мебели<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
 										<p>Убрали больше 14 000 квартир !</p>
@@ -260,11 +260,13 @@
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+								<div class="tab-pane fade" id="windwash" role="tabpanel" aria-labelledby="windwash-tab">
 									<div class="hero__content hero__content-two">
-										<span><a href="#">Параметр 1</a></span>
-										<span><a href="#">Параметр 2</a></span>
-										<span><a href="#">Параметр 3</a></span>
+										<ul class="nav nav-tabs pb-20" id="windwashservice" role="tablist">
+											<li class="nav-item" role="presentation"><a class="nav-link active" id="patam-tab-1" data-bs-toggle="tab" data-bs-target="#patam1" role="tab" aria-controls="patam1" aria-selected="true">Параметр 1</a></li>
+											<li class="nav-item" role="presentation"><a class="nav-link" id="patam-tab-2" data-bs-toggle="tab" data-bs-target="#patam2" role="tab" aria-controls="patam2" aria-selected="false">Параметр 2</a></li>
+											<li class="nav-item" role="presentation"><a class="nav-link" id="patam-tab-3" data-bs-toggle="tab" data-bs-target="#patam3" role="tab" aria-controls="patam3" aria-selected="false">Параметр 3</a></li>
+										</ul>
 										<h2>Мытье окон<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
 										<p>Убрали больше 14 000 квартир !</p>
 										<div class="hero__btn">
@@ -351,11 +353,10 @@
 											<input type="text" class="form-control" placeholder="Телефон">
 										</div>
 										<div class="col-3">
-											<select class="form-select" id="">
-												<option selected>Услуга -</option>
-												<option value="1">One</option>
-												<option value="2">Two</option>
-												<option value="3">Three</option>
+											<select class="form-select" id="cleanservice">
+												<option value="Уборка" selected>Уборка</option>
+												<option value="Химчистка мебели">Химчистка мебели</option>
+												<option value="Мытье окон">Мытье окон</option>
 											</select>
 										</div>
 										<div class="col-2">
@@ -1276,6 +1277,23 @@
 		  </div>
 		</div>
 	</div>
+
+	<script>
+		let cleanService = document.querySelector('#cleanservice'); // selector
+		let cleanTab = document.querySelector('#clean-tab'); // уборка
+		cleanTab.addEventListener('click', function(e){
+			cleanService.value = cleanTab.textContent;
+		});
+		let furchemTab = document.querySelector('#furchem-tab'); // menu
+		furchemTab.addEventListener('click', function(e){
+			cleanService.value = furchemTab.textContent;
+		});
+		let windwashTab = document.querySelector('#windwash-tab'); // menu
+		windwashTab.addEventListener('click', function(e){
+			cleanService.value = windwashTab.textContent;
+		});
+		// nav-link active
+	</script>
 
 	<!-- For Js Library -->
 	<script src="assets/js/jquery.min.js"></script>
