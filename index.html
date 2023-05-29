@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="assets/css/fontawesome-all.css">
 	<link rel="stylesheet" href="assets/css/flaticon-2.css">
 	<link rel="stylesheet" href="assets/css/animate.css">
-	<link rel="stylesheet" href="assets/css/video.min.css">
+	<!-- <link rel="stylesheet" href="assets/css/video.min.css"> -->
 	<link rel="stylesheet" href="assets/css/slick.css">
 	<link rel="stylesheet" href="assets/css/slick-theme.css">
 	<link rel="stylesheet" href="assets/css/metisMenu.css">
@@ -106,7 +106,7 @@
 								</div>
 							</div>
 							<div class="header__btn ml-40">
-								<a class="btn btn-outline-primary br-0" href="#">Обратная связь</a>
+								<a class="btn btn-outline-primary br-0" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Обратная связь</a>
 							</div>
 						</div>
 					</div>
@@ -229,10 +229,22 @@
 							<div class="tab-content" id="myTabContent">
 								<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 									<div class="hero__content hero__content-two">
-										<span><a href="#">Поддерживающая</a></span>
-										<span><a href="#">Генеральная</a></span>
-										<span><a href="#">После ремонта</a></span>
-										<h2>Уборка квартиры<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
+										<ul class="nav nav-tabs" id="myTab" role="tablist">
+											<li class="nav-item" role="presentation"><a class="nav-link active" id="supportable-tab" data-bs-toggle="tab" data-bs-target="#support" role="tab" aria-controls="support" aria-selected="true">Поддерживающая</a></li>
+											<li class="nav-item" role="presentation"><a class="nav-link" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" role="tab" aria-controls="general" aria-selected="false">Генеральная</a></li>
+											<li class="nav-item" role="presentation"><a class="nav-link" id="afterem-tab" data-bs-toggle="tab" data-bs-target="#afterem" role="tab" aria-controls="afterem" aria-selected="false">После ремонта</a></li>
+										</ul>
+										<div class="tab-content" id="myTabContent">
+											<div class="tab-pane fade show active" id="support" role="tabpanel" aria-labelledby="supportable-tab">
+												<h2>Уборка квартиры<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
+											</div>
+											<div class="tab-pane fade" id="general" role="tabpanel" aria-labelledby="general-tab">
+												<h2>Генеральная уборка<br>от <span>8990 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
+											</div>
+											<div class="tab-pane fade" id="afterem" role="tabpanel" aria-labelledby="afterem-tab">
+												<h2>Уборка после ремонта<br>от <span>9990 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
+											</div>
+										</div>
 										<p>Убрали больше 14 000 квартир !</p>
 										<div class="hero__btn">
 											<a class="btn btn-outline-danger border-2" href="#">Узнать цены</a>
@@ -241,9 +253,6 @@
 								</div>
 								<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 									<div class="hero__content hero__content-two">
-										<span><a href="#">Поддерживающая</a></span>
-										<span><a href="#">Генеральная</a></span>
-										<span><a href="#">После ремонта</a></span>
 										<h2>Химчистка мебели<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
 										<p>Убрали больше 14 000 квартир !</p>
 										<div class="hero__btn">
@@ -253,9 +262,9 @@
 								</div>
 								<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 									<div class="hero__content hero__content-two">
-										<span><a href="#">Поддерживающая</a></span>
-										<span><a href="#">Генеральная</a></span>
-										<span><a href="#">После ремонта</a></span>
+										<span><a href="#">Параметр 1</a></span>
+										<span><a href="#">Параметр 2</a></span>
+										<span><a href="#">Параметр 3</a></span>
 										<h2>Мытье окон<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
 										<p>Убрали больше 14 000 квартир !</p>
 										<div class="hero__btn">
@@ -1248,6 +1257,24 @@
 				</div>
 			</div>
 		</footer>
+	</div>
+	
+	<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			  ...
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			  <button type="button" class="btn btn-primary">Understood</button>
+			</div>
+		  </div>
+		</div>
 	</div>
 
 	<!-- For Js Library -->

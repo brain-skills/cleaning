@@ -7543,12 +7543,11 @@ dl, ol, ul {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 6px 0px;
   border-top: 2px solid rgb(247, 247, 249);
   border-bottom: 2px solid rgb(221, 221, 221);
-  max-width: 515px;
   width: 100%;
   padding: 10px 20px;
   position: absolute;
   bottom: 0px;
-  left: -334px;
+  left: -20px;
 }
 
 @media (max-width: 1199px) {
@@ -13454,12 +13453,22 @@ dl, ol, ul {
 .feature .container {
   max-width: 1260px;
 }
-.main-menu .nav-tabs, .nav-tabs .nav-link, .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+.nav-tabs {
+  margin-left: -15px;
+}
+.nav-tabs, .nav-tabs .nav-link, .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
   border: none !important;
   cursor: pointer !important;
+  background: none !important;
+  background-color: none !important;
 }
 .main-menu .nav-link.active {
   border: none !important;
   cursor: pointer !important;
-  font-weight: 600;
+  background: none !important;
+  background-color: none !important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  font-weight: 600 !important;
+  color: #222 !important;
 }
