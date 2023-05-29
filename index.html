@@ -84,13 +84,13 @@
 							<nav class="main-menu__nav collapse navbar-collapse">
 								<ul class="nav nav-tabs" id="mainservice" role="tablist">
 									<li class="nav-item" role="presentation">
-									<a class="nav-link active" id="clean-tab" data-bs-toggle="tab" data-bs-target="#clean" role="tab" aria-controls="clean" aria-selected="true">Уборка</a>
+									<a class="nav-link active" id="clean-tab" data-bs-toggle="tab" data-bs-target="#cleandiv" role="tab" aria-controls="clean" aria-selected="true">Уборка</a>
 									</li>
 									<li class="nav-item" role="presentation">
-									<a class="nav-link" id="furchem-tab" data-bs-toggle="tab" data-bs-target="#furchem" role="tab" aria-controls="furchem" aria-selected="false">Химчистка мебели</a>
+									<a class="nav-link" id="furchem-tab" data-bs-toggle="tab" data-bs-target="#furchemdiv" role="tab" aria-controls="furchem" aria-selected="false">Химчистка мебели</a>
 									</li>
 									<li class="nav-item" role="presentation">
-									<a class="nav-link" id="windwash-tab" data-bs-toggle="tab" data-bs-target="#windwash" role="tab" aria-controls="windwash" aria-selected="false">Мытье окон</a>
+									<a class="nav-link" id="windwash-tab" data-bs-toggle="tab" data-bs-target="#windwashdiv" role="tab" aria-controls="windwash" aria-selected="false">Мытье окон</a>
 									</li>
 								</ul>
                             </nav>
@@ -227,7 +227,7 @@
 					<div class="row align-items-center">
 						<div class="col-lg-6">
 							<div class="tab-content" id="myTabContent">
-								<div class="tab-pane fade show active" id="clean" role="tabpanel" aria-labelledby="clean-tab">
+								<div class="tab-pane fade show active" id="cleandiv" role="tabpanel" aria-labelledby="clean-tab">
 									<div class="hero__content hero__content-two">
 										<ul class="nav nav-tabs pb-20" id="optionservice" role="tablist">
 											<li class="nav-item" role="presentation"><a class="nav-link active" id="supportable-tab" data-bs-toggle="tab" data-bs-target="#support" role="tab" aria-controls="support" aria-selected="true">Поддерживающая</a></li>
@@ -251,7 +251,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="furchem" role="tabpanel" aria-labelledby="furchem-tab">
+								<div class="tab-pane fade" id="furchemdiv" role="tabpanel" aria-labelledby="furchem-tab">
 									<div class="hero__content hero__content-two">
 										<h2>Химчистка мебели<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
 										<p>Убрали больше 14 000 квартир !</p>
@@ -260,7 +260,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="windwash" role="tabpanel" aria-labelledby="windwash-tab">
+								<div class="tab-pane fade" id="windwashdiv" role="tabpanel" aria-labelledby="windwash-tab">
 									<div class="hero__content hero__content-two">
 										<ul class="nav nav-tabs pb-20" id="windwashservice" role="tablist">
 											<li class="nav-item" role="presentation"><a class="nav-link active" id="patam-tab-1" data-bs-toggle="tab" data-bs-target="#patam1" role="tab" aria-controls="patam1" aria-selected="true">Параметр 1</a></li>
@@ -1281,22 +1281,34 @@
 	<script>
 		let cleanService = document.querySelector('#cleanservice');
 		let cleanTab = document.querySelector('#clean-tab');
+		let cleandiv = document.querySelector('#cleandiv');
 		let furchemTab = document.querySelector('#furchem-tab');
+		let furchemdiv = document.querySelector('#furchemdiv');
 		let windwashTab = document.querySelector('#windwash-tab');
+		let windwashdiv = document.querySelector('#windwashdiv');
 
 		cleanService.addEventListener('click', function(e){
 			if(cleanService.options.selectedIndex == 0){
 				cleanTab.classList.add('active');
 				furchemTab.classList.remove('active');
 				windwashTab.classList.remove('active');
+				cleandiv.classList.add('show', 'active');
+				furchemdiv.classList.remove('show', 'active');
+				windwashdiv.classList.remove('show', 'active');
 			} else if(cleanService.options.selectedIndex == 1){
 				cleanTab.classList.remove('active');
 				furchemTab.classList.add('active');
 				windwashTab.classList.remove('active');
+				cleandiv.classList.remove('show', 'active');
+				furchemdiv.classList.add('show', 'active');
+				windwashdiv.classList.remove('show', 'active');
 			} else if(cleanService.options.selectedIndex == 2){
 				cleanTab.classList.remove('active');
 				furchemTab.classList.remove('active');
 				windwashTab.classList.add('active');
+				cleandiv.classList.remove('show', 'active');
+				furchemdiv.classList.remove('show', 'active');
+				windwashdiv.classList.add('show', 'active');
 			}
 		});
 		cleanTab.addEventListener('click', function(e){
