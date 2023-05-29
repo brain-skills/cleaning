@@ -82,10 +82,16 @@
 						</div>
 						<div class="main-menu navbar navbar-expand-lg">
 							<nav class="main-menu__nav collapse navbar-collapse">
-                                <ul>
-									<li><a href="!#" class="fw-bold active">Уборка</a></li>
-									<li><a href="!#">Химчистка мебели</a></li>
-									<li><a href="!#">Мытье окон</a></li>
+								<ul class="nav nav-tabs" id="myTab" role="tablist">
+									<li class="nav-item" role="presentation">
+									<a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" role="tab" aria-controls="home" aria-selected="true">Уборка</a>
+									</li>
+									<li class="nav-item" role="presentation">
+									<a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" role="tab" aria-controls="profile" aria-selected="false">Химчистка мебели</a>
+									</li>
+									<li class="nav-item" role="presentation">
+									<a class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" role="tab" aria-controls="contact" aria-selected="false">Мытье окон</a>
+									</li>
 								</ul>
                             </nav>
                         </div>
@@ -220,15 +226,42 @@
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-lg-6">
-							<div class="hero__content hero__content-two">
-								<span class="wow fadeInUp" data-wow-delay="0s" data-wow-duration="1500ms">Поддерживающая</span>
-								<span class="wow fadeInUp" data-wow-delay="0s" data-wow-duration="1500ms">Генеральная</span>
-								<span class="wow fadeInUp" data-wow-delay="0s" data-wow-duration="1500ms">После ремонта</span>
-									<h2 class="wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1500ms">Уборка квартиры<br>
-										от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
-								<p class="wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1500ms">Убрали больше 14 000 квартир !</p>
-								<div class="hero__btn wow fadeInUp" data-wow-delay=".8s" data-wow-duration="1500ms">
-									<a class="btn btn-outline-danger border-2" href="contact.html">Узнать цены</a>
+							<div class="tab-content" id="myTabContent">
+								<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+									<div class="hero__content hero__content-two">
+										<span><a href="#">Поддерживающая</a></span>
+										<span><a href="#">Генеральная</a></span>
+										<span><a href="#">После ремонта</a></span>
+										<h2>Уборка квартиры<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
+										<p>Убрали больше 14 000 квартир !</p>
+										<div class="hero__btn">
+											<a class="btn btn-outline-danger border-2" href="#">Узнать цены</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+									<div class="hero__content hero__content-two">
+										<span><a href="#">Поддерживающая</a></span>
+										<span><a href="#">Генеральная</a></span>
+										<span><a href="#">После ремонта</a></span>
+										<h2>Химчистка мебели<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
+										<p>Убрали больше 14 000 квартир !</p>
+										<div class="hero__btn">
+											<a class="btn btn-outline-danger border-2" href="#">Узнать цены</a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+									<div class="hero__content hero__content-two">
+										<span><a href="#">Поддерживающая</a></span>
+										<span><a href="#">Генеральная</a></span>
+										<span><a href="#">После ремонта</a></span>
+										<h2>Мытье окон<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
+										<p>Убрали больше 14 000 квартир !</p>
+										<div class="hero__btn">
+											<a class="btn btn-outline-danger border-2" href="#">Узнать цены</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
