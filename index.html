@@ -345,7 +345,7 @@
 							<div class="cta__wrap cta__two ul_li">
 								<form action="#">
 									<div class="row">
-										<div class="col-12"><h4 class="pb-10">Заказать уборку:</h4></div>
+										<div class="col-12"><h4 class="pb-10">Оставьте заявку:</h4></div>
 										<div class="col-3">
 											<input type="text" class="form-control" placeholder="Имя">
 										</div>
@@ -360,7 +360,7 @@
 											</select>
 										</div>
 										<div class="col-2">
-											<button class="btn btn-outline-primary" type="submit">Заказать</button>
+											<button class="btn btn-outline-primary" type="submit">Вызвать</button>
 										</div>
 									</div>
 								</form>
@@ -1279,16 +1279,32 @@
 	</div>
 
 	<script>
-		let cleanService = document.querySelector('#cleanservice'); // selector
-		let cleanTab = document.querySelector('#clean-tab'); // уборка
+		let cleanService = document.querySelector('#cleanservice');
+		let cleanTab = document.querySelector('#clean-tab');
+		let furchemTab = document.querySelector('#furchem-tab');
+		let windwashTab = document.querySelector('#windwash-tab');
+
+		cleanService.addEventListener('click', function(e){
+			if(cleanService.options.selectedIndex == 0){
+				cleanTab.classList.add('active');
+				furchemTab.classList.remove('active');
+				windwashTab.classList.remove('active');
+			} else if(cleanService.options.selectedIndex == 1){
+				cleanTab.classList.remove('active');
+				furchemTab.classList.add('active');
+				windwashTab.classList.remove('active');
+			} else if(cleanService.options.selectedIndex == 2){
+				cleanTab.classList.remove('active');
+				furchemTab.classList.remove('active');
+				windwashTab.classList.add('active');
+			}
+		});
 		cleanTab.addEventListener('click', function(e){
 			cleanService.value = cleanTab.textContent;
 		});
-		let furchemTab = document.querySelector('#furchem-tab'); // menu
 		furchemTab.addEventListener('click', function(e){
 			cleanService.value = furchemTab.textContent;
 		});
-		let windwashTab = document.querySelector('#windwash-tab'); // menu
 		windwashTab.addEventListener('click', function(e){
 			cleanService.value = windwashTab.textContent;
 		});
