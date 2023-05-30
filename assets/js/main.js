@@ -47,6 +47,13 @@ $(document).ready(function() {
     let prefix = "!#";
     if (hash) {
         $('.nav-item a[href=\"'+hash.replace(prefix,"")+'\"]').tab('show', 'active');
+        if(document.location.hash == '#!#clean-service'){
+            cleanService.value = cleanTab.textContent;
+        } else if (document.location.hash == '#!#furniture-dry-cleaning-service') {
+            cleanService.value = furchemTab.textContent;
+        } else if (document.location.hash == '#!#windows-wash-service') {
+            cleanService.value = windwashTab.textContent;
+        }
     }
     $('.nav-item a').on('shown.bs.tab', function (e) {
         window.location.hash = e.target.hash.replace("#", "#" + prefix);
