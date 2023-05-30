@@ -1,6 +1,5 @@
 :root {
-  --font:
-  'Open Sans', sans-serif;
+  --font: 'Open Sans', sans-serif;
   --color-primary: #5984d6;
   --color-black: #000;
   --color-deep: #5984d6;
@@ -27,14 +26,26 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-family: var(--font);
 }
+
 .btn-outline-warning {
-    color: #222;
-    border-color: #e7ad00;
+  color: rgb(34, 34, 34);
+  border-color: rgb(231, 173, 0);
 }
 
 .header__logo img {
   width: 180px;
   height: auto;
+}
+
+.btn-outline-primary {
+  color: rgb(89, 132, 214) !important;
+  border-color: rgb(89, 132, 214) !important;
+}
+
+.btn-outline-primary:hover {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(89, 132, 214) !important;
+  border-color: rgb(89, 132, 214) !important;
 }
 
 .scrollup {
@@ -54,14 +65,14 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(255, 255, 255);
 }
 
-.hero__content{
+.hero__content {
   margin-top: -40px;
 }
 
 .headline h1, .headline h2, .headline h3, .headline h4, .headline h5, .headline h6 {
   margin: 0px;
   font-weight: normal;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .pr-text-in_item2, .pr-text-in_item3 {
@@ -96,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   font-weight: 500;
   color: rgb(2, 170, 249);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .clinox-section-title h2, .clinox-section-title h1, .clinox-section-title-2 h2, .clinox-section-title-2 h1 {
@@ -135,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
 .clinox-section-title-2 .sub-title {
   font-size: 16px;
   font-weight: 500;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .clinox-section-title-2 h2 {
@@ -171,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   border-radius: 6px;
   position: relative;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: rgb(255, 205, 5);
   box-shadow: rgba(1, 83, 159, 0.4) 0px 0px 20px 0px;
 }
@@ -296,7 +307,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   color: rgb(2, 170, 249);
   padding-left: 35px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   position: relative;
 }
 
@@ -2425,7 +2436,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   font-weight: 600;
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   padding: 10px 30px 10px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
@@ -3391,7 +3402,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0px;
   right: 0px;
   opacity: 0;
-  content: "\f105";
+  content: "";
   font-weight: 900;
   position: absolute;
   color: rgb(2, 170, 249);
@@ -3599,7 +3610,7 @@ h1, h2, h3, h4, h5, h6 {
 .clinox-service-feature-items .clinox-service-feature-text li::before {
   top: 0px;
   left: 0px;
-  content: "\f058";
+  content: "";
   font-weight: 900;
   color: rgb(2, 170, 249);
   position: absolute;
@@ -3882,7 +3893,7 @@ h1, h2, h3, h4, h5, h6 {
   top: -25px;
   font-weight: 700;
   position: absolute;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .clinox-why-choose-skill-wrap .skill-progress-bar .skill-set-percent .progress-bar {
@@ -4108,7 +4119,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .clinox-team-details-text-wrap .clinox-team-details-info li {
   font-weight: 600;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: rgb(16, 16, 16);
   text-transform: uppercase;
   margin-bottom: 25px;
@@ -4251,7 +4262,7 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
   width: auto;
   font-size: 15px;
-  content: "\f078";
+  content: "";
   font-weight: 900;
   position: absolute;
   background-image: none;
@@ -4259,7 +4270,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .clinox-faq-accordion .accordion-button:not(.collapsed)::after {
-  content: "\f068";
+  content: "";
 }
 
 .clinox-faq-accordion .accordion-collapse.show {
@@ -4374,7 +4385,7 @@ h1, h2, h3, h4, h5, h6 {
 .clinox-pricing-item .price-feature li::before {
   top: 0px;
   left: 0px;
-  content: "\f00c";
+  content: "";
   font-weight: 900;
   color: rgb(2, 170, 249);
   position: absolute;
@@ -4562,7 +4573,7 @@ h1, h2, h3, h4, h5, h6 {
 .clinox-contact-form .service-select::after {
   top: 20px;
   right: 15px;
-  content: "\f078";
+  content: "";
   font-weight: 900;
   position: absolute;
   font-family: "Font Awesome 5 Pro";
@@ -4976,7 +4987,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 15px;
   left: 45px;
   font-size: 35px;
-  content: "\f10e";
+  content: "";
   font-weight: 900;
   color: rgb(2, 170, 249);
   position: absolute;
@@ -5492,7 +5503,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0px;
   color: rgb(255, 255, 255);
   right: -20px;
-  content: "\f105";
+  content: "";
   font-weight: 900;
   position: absolute;
   transition: all 500ms ease 0s;
@@ -5708,7 +5719,7 @@ h1, h2, h3, h4, h5, h6 {
 .clinox-shop-details-review-content .shop-review-tab-btn li {
   color: rgb(22, 22, 22);
   margin-right: 15px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: rgb(244, 244, 244);
 }
 
@@ -5801,7 +5812,7 @@ h1, h2, h3, h4, h5, h6 {
 .clinox-shop-details-review-content .review-comment-area .buyer-review-comment-box .customer-rate-option .rate-value::before {
   left: 0px;
   top: -10px;
-  content: "\f005";
+  content: "";
   cursor: pointer;
   position: absolute;
   font-weight: 900;
@@ -5809,7 +5820,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .clinox-shop-details-review-content .review-comment-area .buyer-review-comment-box .customer-rate-option .customer-rate:checked ~ .rate-value::before {
-  content: "\f005";
+  content: "";
   color: rgb(2, 170, 249);
 }
 
@@ -5836,7 +5847,7 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(255, 255, 255);
   border: none;
   padding: 15px 50px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   background-color: rgb(2, 170, 249);
@@ -5871,13 +5882,13 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(15px);
 }
 
-.feature__content-wrap{
+.feature__content-wrap {
   position: relative;
 }
 
 .progress-wrap::after {
   position: absolute;
-  content: "\f176";
+  content: "";
   font-family: "Font Awesome 5 Pro";
   text-align: center;
   line-height: 35px;
@@ -6091,7 +6102,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mxw_1350 {
-  max-width: 1350px;
+  max-width: 1260px;
 }
 
 .body_wrap {
@@ -6376,7 +6387,7 @@ dl, ol, ul {
 .main-menu__nav ul li.menu-item-has-children > a::after {
   position: absolute;
   top: 50%;
-  content: "\f078";
+  content: "";
   font-size: 11px;
   font-family: "Font Awesome 5 Pro";
   display: inline-block;
@@ -6434,7 +6445,7 @@ dl, ol, ul {
   right: 16px;
   line-height: 1;
   font-size: 13px;
-  content: "\f105";
+  content: "";
   letter-spacing: 1px;
 }
 
@@ -6574,10 +6585,10 @@ dl, ol, ul {
   margin-bottom: 10px;
 }
 
-.nav-tabs li a:before {
+.nav-tabs li a::before {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 0px;
   width: 10px;
   height: 1.5px;
   background-color: var(--color-yellow);
@@ -6600,7 +6611,7 @@ dl, ol, ul {
   color: rgb(83, 83, 83);
   line-height: 28px;
   margin-bottom: 20px;
-  z-index: 999;
+  z-index: 2;
   position: relative;
 }
 
@@ -6705,7 +6716,7 @@ dl, ol, ul {
 }
 
 .hero__image > img {
-  border-radius: 150px 0px 0px 0px;
+  border-radius: 150px 0px 0px;
 }
 
 .hero__experince-box {
@@ -6803,7 +6814,7 @@ dl, ol, ul {
 }
 
 .cta__wrap {
-  padding: 15px 25px 25px 25px;
+  padding: 15px 25px 25px;
   background-color: var(--color-white);
   box-shadow: rgba(0, 0, 0, 0.04) 0px 10px 25px;
   z-index: 2;
@@ -7165,7 +7176,7 @@ dl, ol, ul {
   position: absolute;
   top: 0px;
   left: 0px;
-  content: "\f00c";
+  content: "";
   font-family: "Font Awesome 5 Pro";
   font-weight: 400;
   font-size: 13px;
@@ -7280,7 +7291,7 @@ dl, ol, ul {
   position: absolute;
   top: 2px;
   left: 0px;
-  content: "\f00c";
+  content: "";
   font-family: "Font Awesome 5 Pro";
   font-weight: 400;
   font-size: 13px;
@@ -7536,92 +7547,6 @@ dl, ol, ul {
 .about__text img {
   margin-right: 10px;
   transform: translateY(-2px);
-}
-
-.about__cta {
-  background-color: var(--color-white);
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 6px 0px;
-  border-top: 2px solid rgb(247, 247, 249);
-  border-bottom: 2px solid rgb(221, 221, 221);
-  width: 100%;
-  padding: 10px 20px;
-  position: absolute;
-  bottom: 0px;
-  left: -20px;
-}
-
-@media (max-width: 1199px) {
-  .about__cta {
-      left: 0px;
-  }
-}
-
-.about__cta > img {
-  margin-right: 15px;
-}
-
-.about__cta span {
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 700;
-  color: rgb(156, 156, 156);
-  text-transform: uppercase;
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.about__cta h3 {
-  font-size: 22px;
-  font-weight: 500;
-}
-
-.about__cta .action {
-  position: absolute;
-  top: 50%;
-  right: 0px;
-  transform: translateY(-50%);
-  width: 109px;
-  height: 64px;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  line-height: 1;
-}
-
-@media (max-width: 767px) {
-  .about__cta .action {
-      width: 50px;
-      height: 50px;
-  }
-}
-
-.about__cta .action i {
-  font-size: 30px;
-  line-height: 0;
-  position: relative;
-  overflow: hidden;
-  text-shadow: currentcolor -1.5em 0px 0px;
-  display: inline-block;
-}
-
-@media (max-width: 767px) {
-  .about__cta .action i {
-      font-size: 16px;
-  }
-}
-
-.about__cta .action i::before {
-  transition: transform 0.4s ease 0s, -webkit-transform 0.4s ease 0s;
-  display: inline-block;
-  line-height: 1;
-}
-
-.about__cta .action:hover i::before {
-  transform: translateX(150%);
 }
 
 .sec-title .subtitle {
@@ -8328,7 +8253,7 @@ dl, ol, ul {
 
 .testimonial__slide-wrap {
   position: relative;
-  padding: 0px 162px;
+  padding: 0px 20px;
 }
 
 @media (max-width: 991px) {
@@ -8344,8 +8269,8 @@ dl, ol, ul {
 }
 
 .testimonial__slide-wrap--2 {
-  padding-top: 62px;
-  padding-bottom: 125px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background: rgba(255, 255, 255, 0.06);
 }
 
@@ -8864,7 +8789,7 @@ dl, ol, ul {
 }
 
 .footer__widget p {
-  color: rgb(255 255 255);
+  color: rgb(255, 255, 255);
   font-size: 16px;
   line-height: 30px;
 }
@@ -8897,12 +8822,12 @@ dl, ol, ul {
 }
 
 .footer__links li a {
-  color: rgb(255 255 255);
+  color: rgb(255, 255, 255);
   font-size: 16px;
 }
 
 .footer__links li a:hover {
-  color: var(--color-black);
+  color: var(--color-primary);
 }
 
 .footer__col:nth-child(2) {
@@ -8926,7 +8851,7 @@ dl, ol, ul {
 }
 
 .footer__info li {
-  color: rgb(255 255 255);
+  color: rgb(255, 255, 255);
 }
 
 .footer__info li:not(:last-child) {
@@ -9026,7 +8951,7 @@ dl, ol, ul {
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  content: "\f16d";
+  content: "";
   font-family: "Font Awesome 5 Brands";
   font-weight: 400;
   color: var(--color-white);
@@ -9053,7 +8978,7 @@ dl, ol, ul {
 
 .footer__awards {
   font-size: 16px;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   position: relative;
   display: flex;
   -webkit-box-align: center;
@@ -9070,11 +8995,11 @@ dl, ol, ul {
 }
 
 .footer__bottom {
-  border-top: 1px solid rgb(255 255 255 / 20%);
+  border-top: 1px solid #4C85D3;
 }
 
 .footer__copyright {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 
 .footer__copyright a {
@@ -9087,7 +9012,7 @@ dl, ol, ul {
 
 .footer__nav li a {
   font-size: 15px;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
 }
 
 .footer__nav li a:hover {
@@ -9098,9 +9023,14 @@ dl, ol, ul {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  border-bottom: 1px solid rgb(30, 74, 87);
-  padding: 0px 125px;
   flex-wrap: wrap;
+  border-bottom: 1px solid #4C85D3;
+  width: 100%;
+  padding-right: var(--bs-gutter-x,.75rem);
+  padding-left: var(--bs-gutter-x,.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1260px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
@@ -9123,7 +9053,7 @@ dl, ol, ul {
 }
 
 .footer__social li {
-  width: 20%;
+  width: 25%;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -9144,11 +9074,11 @@ dl, ol, ul {
 }
 
 .footer__social li:not(:last-child) {
-  border-right: 1px solid rgb(30, 74, 87);
+  border-right: 1px solid #4C85D3;
 }
 
 .footer__social li a {
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 500;
 }
@@ -9306,7 +9236,7 @@ dl, ol, ul {
   position: absolute;
   top: 0px;
   right: 0px;
-  width: 49%;
+  width: 50%;
   height: 100%;
   background: url("../img/bg/bg.jpg") 0% 0% / cover no-repeat;
   content: "";
@@ -9315,7 +9245,7 @@ dl, ol, ul {
 
 .process__wrap {
   background-color: var(--color-primary);
-  padding: 0px 25px 20px 25px;
+  padding: 0px 25px 20px;
   border-radius: 4px;
   z-index: 3;
   position: relative;
@@ -9382,7 +9312,7 @@ dl, ol, ul {
 .process__icon .icon {
   font-size: 32px;
   position: absolute;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   top: 50%;
   left: 50%;
   transform: translate(-30%, -30%);
@@ -9553,7 +9483,7 @@ dl, ol, ul {
   right: 20px;
   line-height: 1;
   font-size: 14px;
-  content: "\f067";
+  content: "";
   position: absolute;
   font-family: "Font Awesome 5 Pro";
   font-weight: 300;
@@ -9561,7 +9491,7 @@ dl, ol, ul {
 }
 
 .accordion_box .block.active-block .acc-btn::before {
-  content: "\f068";
+  content: "";
   transform: rotate(180deg);
 }
 
@@ -10029,7 +9959,6 @@ dl, ol, ul {
 }
 
 @font-face {
-  font-family: 'Open Sans', sans-serif;
   src: url("../fonts/c455d94eee43dc4ceeb83c0c0fd0d4c8.woff2") format("woff2"), url("../fonts/c455d94eee43dc4ceeb83c0c0fd0d4c8.woff") format("woff"), url("../fonts/c455d94eee43dc4ceeb83c0c0fd0d4c8.ttf") format("truetype");
 }
 
@@ -10649,7 +10578,7 @@ dl, ol, ul {
   display: block;
   font-weight: 600;
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   padding: 10px 30px 10px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
@@ -11011,7 +10940,7 @@ dl, ol, ul {
   padding-left: 35px;
   position: relative;
   display: inline-block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .banner-text-3 .banner-slug::before {
@@ -11113,7 +11042,7 @@ dl, ol, ul {
 .estimate-form-wrap .est-input-area::before {
   top: 18px;
   right: 15px;
-  content: "\f078";
+  content: "";
   font-weight: 900;
   position: absolute;
   font-family: "Font Awesome 5 Pro";
@@ -11221,7 +11150,7 @@ dl, ol, ul {
   width: 25px;
   height: 25px;
   font-size: 14px;
-  content: "\f00c";
+  content: "";
   line-height: 25px;
   font-weight: 900;
   text-align: center;
@@ -11639,7 +11568,7 @@ dl, ol, ul {
   height: auto;
   width: auto;
   font-size: 15px;
-  content: "\f078";
+  content: "";
   font-weight: 900;
   position: absolute;
   background-image: none;
@@ -11647,7 +11576,7 @@ dl, ol, ul {
 }
 
 .clinox-faq-accordion-3 .accordion-button:not(.collapsed)::after {
-  content: "\f068";
+  content: "";
 }
 
 .clinox-faq-accordion-3 .accordion-collapse.show {
@@ -12020,7 +11949,7 @@ dl, ol, ul {
 .clinox-price-item-3 .inner-list li::before {
   top: 0px;
   left: 0px;
-  content: "\f00c";
+  content: "";
   font-weight: 900;
   color: rgb(2, 119, 251);
   position: absolute;
@@ -13450,31 +13379,60 @@ dl, ol, ul {
       font-size: 36px;
   }
 }
+
 .feature .container {
   max-width: 1260px;
 }
+
 .nav-tabs {
   margin-left: -15px;
 }
+
 .nav-tabs, .nav-tabs .nav-link, .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
   border: none !important;
   cursor: pointer !important;
   background: none !important;
-  background-color: none !important;
 }
+
 .main-menu .nav-link.active {
   border: none !important;
   cursor: pointer !important;
   background: none !important;
-  background-color: none !important;
 }
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   font-weight: 600 !important;
-  color: #222 !important;
+  color: rgb(34, 34, 34) !important;
 }
-.main-menu .nav-tabs li a:before {
+
+.main-menu .nav-tabs li a::before {
   width: auto !important;
   height: auto !important;
   background: none !important;
-  background-color: none !important;
+}
+
+#headerTab-2 div {
+  opacity: inherit !important;
+}
+
+/* after & before slider */
+.aics-wrapper {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+}
+
+.copy-wrapper {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+.copy-wrapper a:link, .copy-wrapper a:visited, .copy-wrapper a:hover, .copy-wrapper a:active {
+  color: black;
+  text-decoration: none;
 }

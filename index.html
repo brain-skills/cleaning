@@ -12,6 +12,7 @@
 	<link rel="apple-touch-icon-precomposed" type="image/x-icon" href="assets/img/favicons/64.png" sizes="64x64" />
 	<link rel="icon" type="image/png" href="assets/img/favicons/favicon.png" sizes="32x32">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/fontawesome-all.css">
@@ -25,6 +26,9 @@
 	<link rel="stylesheet" href="assets/css/twenty.css">
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/js/jquery-3.7.0.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 	<div class="body_wrap">
@@ -84,13 +88,13 @@
 							<nav class="main-menu__nav collapse navbar-collapse">
 								<ul class="nav nav-tabs" id="mainservice" role="tablist">
 									<li class="nav-item" role="presentation">
-									<a href="#clean-service" class="nav-link active" id="clean-tab" data-bs-toggle="tab" data-bs-target="#cleandiv" role="tab" aria-controls="clean" aria-selected="true">Уборка</a>
+									<a href="#clean-service" class="nav-link active" id="clean-tab" data-bs-target="#cleandiv1, #cleandiv2, #cleandiv3, #cleandiv4, #cleandiv5" data-bs-toggle="tab">Уборка</a>
 									</li>
 									<li class="nav-item" role="presentation">
-									<a href="#furniture-dry-cleaning-service" class="nav-link" id="furchem-tab" data-bs-toggle="tab" data-bs-target="#furchemdiv" role="tab" aria-controls="furchem" aria-selected="false">Химчистка мебели</a>
+									<a href="#furniture-dry-cleaning-service" class="nav-link" id="furchem-tab" data-bs-target="#furchem1, #furchem2, #furchem3, #furchem4, #furchem5" data-bs-toggle="tab">Химчистка мебели</a>
 									</li>
 									<li class="nav-item" role="presentation">
-									<a href="#windows-wash-service" class="nav-link" id="windwash-tab" data-bs-toggle="tab" data-bs-target="#windwashdiv" role="tab" aria-controls="windwash" aria-selected="false">Мытье окон</a>
+									<a href="#windows-wash-service" class="nav-link" id="windwash-tab" data-bs-target="#windwash1, #windwash2, #windwash3, #windwash4, #windwash5" data-bs-toggle="tab">Мытье окон</a>
 									</li>
 								</ul>
                             </nav>
@@ -226,15 +230,15 @@
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-lg-6">
-							<div class="tab-content" id="myTabContent">
-								<div class="tab-pane fade show active" id="cleandiv" role="tabpanel" aria-labelledby="clean-tab">
+							<div class="tab-content" id="headerTab">
+								<div class="tab-pane fade show active" id="cleandiv1" role="tabpanel" aria-labelledby="clean-tab">
 									<div class="hero__content hero__content-two">
 										<ul class="nav nav-tabs pb-20" id="optionservice" role="tablist">
 											<li class="nav-item" role="presentation"><a href="#clean-service-supportable" class="nav-link active" id="supportable-tab" data-bs-toggle="tab" data-bs-target="#support" role="tab" aria-controls="support" aria-selected="true">Поддерживающая</a></li>
 											<li class="nav-item" role="presentation"><a href="#clean-service-general" class="nav-link" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" role="tab" aria-controls="general" aria-selected="false">Генеральная</a></li>
 											<li class="nav-item" role="presentation"><a href="#clean-service-after-repairs" class="nav-link" id="afterem-tab" data-bs-toggle="tab" data-bs-target="#afterem" role="tab" aria-controls="afterem" aria-selected="false">После ремонта</a></li>
 										</ul>
-										<div class="tab-content" id="myTabContent">
+										<div class="tab-content" id="cleanService">
 											<div class="tab-pane fade show active" id="support" role="tabpanel" aria-labelledby="supportable-tab">
 												<h2>Уборка квартиры<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
 											</div>
@@ -251,7 +255,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="furchemdiv" role="tabpanel" aria-labelledby="furchem-tab">
+								<div class="tab-pane fade" id="furchem1" role="tabpanel" aria-labelledby="furchem-tab">
 									<div class="hero__content hero__content-two">
 										<h2>Химчистка мебели<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
 										<p>Убрали больше 14 000 квартир !</p>
@@ -260,13 +264,8 @@
 										</div>
 									</div>
 								</div>
-								<div class="tab-pane fade" id="windwashdiv" role="tabpanel" aria-labelledby="windwash-tab">
+								<div class="tab-pane fade" id="windwash1" role="tabpanel" aria-labelledby="windwash-tab">
 									<div class="hero__content hero__content-two">
-										<ul class="nav nav-tabs pb-20" id="windwashservice" role="tablist">
-											<li class="nav-item" role="presentation"><a class="nav-link active" id="patam-tab-1" data-bs-toggle="tab" data-bs-target="#patam1" role="tab" aria-controls="patam1" aria-selected="true">Параметр 1</a></li>
-											<li class="nav-item" role="presentation"><a class="nav-link" id="patam-tab-2" data-bs-toggle="tab" data-bs-target="#patam2" role="tab" aria-controls="patam2" aria-selected="false">Параметр 2</a></li>
-											<li class="nav-item" role="presentation"><a class="nav-link" id="patam-tab-3" data-bs-toggle="tab" data-bs-target="#patam3" role="tab" aria-controls="patam3" aria-selected="false">Параметр 3</a></li>
-										</ul>
 										<h2>Мытье окон<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
 										<p>Убрали больше 14 000 квартир !</p>
 										<div class="hero__btn">
@@ -307,6 +306,12 @@
 				</div>
 			</div>
 			<!-- hero end -->
+			
+			<!-- <div class="tab-content" id="headerTab">
+				<div class="tab-pane fade show active" id="cleandiv2">1</div>
+				<div class="tab-pane fade" id="furchem2">2</div>
+				<div class="tab-pane fade" id="windwash2">3</div>
+			</div> -->
 
 			<!-- feature start -->
 			<div class="feature pb-60">
@@ -337,7 +342,7 @@
 									</div>
 								</div>
 								<div class="feature__btn mt-40">
-									<a class="btn btn-outline-warning border-2" href="service.html">Акции и Партнерка</a>
+									<a class="btn btn-outline-warning border-2" href="#!">Акции и Партнерка</a>
 								</div>
 							</div>
 						</div>
@@ -347,7 +352,7 @@
 									<div class="row">
 										<div class="col-12"><h4 class="pb-10">Оставьте заявку:</h4></div>
 										<div class="col-3">
-											<input type="text" class="form-control" placeholder="Имя">
+											<input type="text" class="form-control" placeholder="Имя" autofocus>
 										</div>
 										<div class="col-3">
 											<input type="text" class="form-control" placeholder="Телефон">
@@ -386,26 +391,26 @@
 			<!-- feature end -->
 
 			<!-- brand start -->
-			<div class="brand brand__border pt-55 pb-55">
+			<div class="brand brand__border pt-20 pb-20">
 				<div class="container">
 					<div class="brand__slide">
 						<div class="brand__item">
-							<a href="#!"><img src="https://placehold.co/200x100/333/fff/?text=200x100" alt=""></a>
+							<a href="#!"><img src="https://placehold.co/220x80/333/fff/?text=220x80" alt=""></a>
 						</div>
 						<div class="brand__item">
-							<a href="#!"><img src="https://placehold.co/200x100/333/fff/?text=200x100" alt=""></a>
+							<a href="#!"><img src="https://placehold.co/220x80/333/fff/?text=220x80" alt=""></a>
 						</div>
 						<div class="brand__item">
-							<a href="#!"><img src="https://placehold.co/200x100/333/fff/?text=200x100" alt=""></a>
+							<a href="#!"><img src="https://placehold.co/220x80/333/fff/?text=220x80" alt=""></a>
 						</div>
 						<div class="brand__item">
-							<a href="#!"><img src="https://placehold.co/200x100/333/fff/?text=200x100" alt=""></a>
+							<a href="#!"><img src="https://placehold.co/220x80/333/fff/?text=220x80" alt=""></a>
 						</div>
 						<div class="brand__item">
-							<a href="#!"><img src="https://placehold.co/200x100/333/fff/?text=200x100" alt=""></a>
+							<a href="#!"><img src="https://placehold.co/220x80/333/fff/?text=220x80" alt=""></a>
 						</div>
 						<div class="brand__item">
-							<a href="#!"><img src="https://placehold.co/200x100/333/fff/?text=200x100" alt=""></a>
+							<a href="#!"><img src="https://placehold.co/220x80/333/fff/?text=220x80" alt=""></a>
 						</div>
 					</div>
 				</div>
@@ -413,525 +418,35 @@
 			<!-- brand end -->
 			
 			<!-- about start -->
-			<div class="about">
-				<div class="container">
-					<div class="row align-items-center mt-none-30">
-						<div class="col-lg-6 mt-30">
-							<div class="about__img mr-65 pos-rel">
-								<img class="wow fadeInLeft" data-wow-delay="0s" data-wow-duration="1500ms" src="https://placehold.co/800x800/333/fff/?text=800x800" alt="">
-								<div class="about__cta ul_li wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1500ms">
-									<img src="assets/img/icon/call.svg" alt="">
-									<span>Мы всегда <br> на связи !</span>
-									<h3><a href="tel:+1-202-555-0160">+7 (812) 210-41-26</a></h3>
-									<a class="action" href="#!"><i class="flaticon-right-arrow"></i></a>
+			<div class="clemfox__bg">
+				<div class="service pt-100 pb-100">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-6">
+								<div class="about__img mr-65 pos-rel">
+									<img class="wow fadeInLeft" data-wow-delay="0s" data-wow-duration="1000ms" src="https://placehold.co/800x500/333/fff/?text=800x500" alt="">
 								</div>
 							</div>
-						</div>
-						<div class="col-lg-6 mt-30">
-							<div class="about__content">
-								<div class="sec-title sec-title__two mb-35">
-									<span class="subtitle wow fadeInUp" data-wow-delay="0s" data-wow-duration="1500ms">Cleaning Company</span>
-									<h2 class="title mb-25 wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1500ms">
-										Why will you choose our <br> services for your ?
-									</h2>
-									<p class="wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1500ms">Can consent to the use of such technologies byclosing this notice <br> senectus amet sodales habitant dapibus</p>
+							<div class="col-lg-6">
+								<div class="about__content pl-20">
+									<div class="sec-title sec-title__two mb-10">
+										<span class="subtitle wow fadeInUp" data-wow-delay="0s" data-wow-duration="1500ms">Bacalov Cleaning</span>
+										<h2 class="title mb-20 wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1000ms">
+											Why will you choose our <br> services for your ?
+										</h2>
+									</div>
+									<ul class="about__list list-unstyled mb-30 wow fadeInUp" data-wow-delay=".2s" data-wow-duration="1000ms">
+										<li>Mix and match colors, sizes, and designs</li>
+										<li>Top quality prints using the latest technology</li>
+										<li>Top quality prints using the latest technology</li>
+									</ul><div class="about__text wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1000ms"><img src="assets/img/icon/fire.png" alt="">We provide fast <span>on-cleaning</span> services.</div>
 								</div>
-								<ul class="about__list list-unstyled mb-40 wow fadeInUp" data-wow-delay=".8s" data-wow-duration="1500ms">
-									<li>Mix and match colors, sizes, and designs</li>
-									<li>Top quality prints using the latest technology</li>
-								</ul>
-								<div class="counter__wrap ul_li_between mb-40 wow fadeInUp" data-wow-delay=".9s" data-wow-duration="1500ms">
-									<div class="counter__item">
-										<h3><span class="counter">109</span>k+</h3>
-										<p>Worlwide Customers</p>
-										<img src="assets/img/icon/world.png" alt="">
-									</div>
-									<div class="counter__item">
-										<h3><span class="counter">58</span>%</h3>
-										<p>Worlwide Customers</p>
-										<img src="assets/img/icon/world.png" alt="">
-									</div>
-									<div class="counter__item">
-										<h3><span class="counter">85</span>k+</h3>
-										<p>Worlwide Customers</p>
-										<img src="assets/img/icon/world.png" alt="">
-									</div>
-								</div>
-								<div class="about__text wow fadeInUp" data-wow-delay="1s" data-wow-duration="1500ms"><img src="assets/img/icon/fire.png" alt="">We provide fast <span>on-cleaning</span> services.</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- about end -->
-
-			<!-- tab service start -->
-			<div class="tab-service pt-60 pb-80" data-background="assets/img/bg/tab-service-bg.jpg">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-6">
-							<div class="sec-title sec-title__two text-center mb-50">
-								<span class="subtitle wow fadeInUp" data-wow-delay="0s" data-wow-duration="1500ms">Cleaning Company</span>
-								<h2 class="title wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1500ms">
-									Our Reguler Services <br> For Our Customer
-								</h2>
-							</div>
-						</div>
-					</div>
-					<div class="tab-service__wrap pos-rel">
-						<ul class="tab-service__nav nav nav-tabs mb-100" id="myTab" role="tablist">
-							<li class="nav-item" role="presentation">
-							<button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">01</button>
-							</li>
-							<li class="nav-item" role="presentation">
-							<button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">02</button>
-							</li>
-							<li class="nav-item" role="presentation">
-							<button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">03</button>
-							</li>
-						</ul>
-						<div class="tab-content" id="myTabContent">
-							<div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
-								<div class="row mt-none-30">
-									<div class="col-lg-6 col-md-6 mt-30">
-										<div class="tab-service__item active d-flex">
-											<div class="tab-service__icon">
-												<i class="flaticon-house-1"></i>
-											</div>
-											<div class="tab-service__content">
-												<h3>House & Toilet Cleaning</h3>
-												<p>Barnix Finance team is a diversenetwork of sonsultants and  industry porfessionlas with Increase productivity with a simple to-do app. app for managing your</p>
-												<a href="service-single.html">Read More<i class="far fa-arrow-right"></i></a>
-											</div>
-											<div class="tab-service__shape">
-												<img src="assets/img/shape/ts_shape.png" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 mt-30">
-										<div class="tab-service__item d-flex">
-											<div class="tab-service__icon">
-												<i class="flaticon-data-cleaning"></i>
-											</div>
-											<div class="tab-service__content">
-												<h3>Office & Outdoor Cleaning</h3>
-												<p>Barnix Finance team is a diversenetwork of sonsultants and  industry porfessionlas with Increase productivity with a simple to-do app. app for managing your</p>
-												<a href="service-single.html">Read More<i class="far fa-arrow-right"></i></a>
-											</div>
-											<div class="tab-service__shape">
-												<img src="assets/img/shape/ts_shape.png" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 mt-30">
-										<div class="tab-service__item d-flex">
-											<div class="tab-service__icon">
-												<i class="flaticon-window"></i>
-											</div>
-											<div class="tab-service__content">
-												<h3>Floor & Windows Cleaning</h3>
-												<p>Barnix Finance team is a diversenetwork of sonsultants and  industry porfessionlas with Increase productivity with a simple to-do app. app for managing your</p>
-												<a href="service-single.html">Read More<i class="far fa-arrow-right"></i></a>
-											</div>
-											<div class="tab-service__shape">
-												<img src="assets/img/shape/ts_shape.png" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 mt-30">
-										<div class="tab-service__item d-flex">
-											<div class="tab-service__icon">
-												<i class="flaticon-cleaning-1"></i>
-											</div>
-											<div class="tab-service__content">
-												<h3>Bedroom & Kitchen Cleaning</h3>
-												<p>Barnix Finance team is a diversenetwork of sonsultants and  industry porfessionlas with Increase productivity with a simple to-do app. app for managing your</p>
-												<a href="service-single.html">Read More<i class="far fa-arrow-right"></i></a>
-											</div>
-											<div class="tab-service__shape">
-												<img src="assets/img/shape/ts_shape.png" alt="">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-								<div class="row mt-none-30">
-									<div class="col-lg-6 col-md-6 mt-30">
-										<div class="tab-service__item active d-flex">
-											<div class="tab-service__icon">
-												<i class="flaticon-house-1"></i>
-											</div>
-											<div class="tab-service__content">
-												<h3>House & Toilet Cleaning</h3>
-												<p>Barnix Finance team is a diversenetwork of sonsultants and  industry porfessionlas with Increase productivity with a simple to-do app. app for managing your</p>
-												<a href="service-single.html">Read More<i class="far fa-arrow-right"></i></a>
-											</div>
-											<div class="tab-service__shape">
-												<img src="assets/img/shape/ts_shape.png" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 mt-30">
-										<div class="tab-service__item d-flex">
-											<div class="tab-service__icon">
-												<i class="flaticon-data-cleaning"></i>
-											</div>
-											<div class="tab-service__content">
-												<h3>Office & Outdoor Cleaning</h3>
-												<p>Barnix Finance team is a diversenetwork of sonsultants and  industry porfessionlas with Increase productivity with a simple to-do app. app for managing your</p>
-												<a href="service-single.html">Read More<i class="far fa-arrow-right"></i></a>
-											</div>
-											<div class="tab-service__shape">
-												<img src="assets/img/shape/ts_shape.png" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 mt-30">
-										<div class="tab-service__item d-flex">
-											<div class="tab-service__icon">
-												<i class="flaticon-window"></i>
-											</div>
-											<div class="tab-service__content">
-												<h3>Floor & Windows Cleaning</h3>
-												<p>Barnix Finance team is a diversenetwork of sonsultants and  industry porfessionlas with Increase productivity with a simple to-do app. app for managing your</p>
-												<a href="service-single.html">Read More<i class="far fa-arrow-right"></i></a>
-											</div>
-											<div class="tab-service__shape">
-												<img src="assets/img/shape/ts_shape.png" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 mt-30">
-										<div class="tab-service__item d-flex">
-											<div class="tab-service__icon">
-												<i class="flaticon-cleaning-1"></i>
-											</div>
-											<div class="tab-service__content">
-												<h3>Bedroom & Kitchen Cleaning</h3>
-												<p>Barnix Finance team is a diversenetwork of sonsultants and  industry porfessionlas with Increase productivity with a simple to-do app. app for managing your</p>
-												<a href="service-single.html">Read More<i class="far fa-arrow-right"></i></a>
-											</div>
-											<div class="tab-service__shape">
-												<img src="assets/img/shape/ts_shape.png" alt="">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-								<div class="row mt-none-30">
-									<div class="col-lg-6 col-md-6 mt-30">
-										<div class="tab-service__item active d-flex">
-											<div class="tab-service__icon">
-												<i class="flaticon-house-1"></i>
-											</div>
-											<div class="tab-service__content">
-												<h3>House & Toilet Cleaning</h3>
-												<p>Barnix Finance team is a diversenetwork of sonsultants and  industry porfessionlas with Increase productivity with a simple to-do app. app for managing your</p>
-												<a href="service-single.html">Read More<i class="far fa-arrow-right"></i></a>
-											</div>
-											<div class="tab-service__shape">
-												<img src="assets/img/shape/ts_shape.png" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 mt-30">
-										<div class="tab-service__item d-flex">
-											<div class="tab-service__icon">
-												<i class="flaticon-data-cleaning"></i>
-											</div>
-											<div class="tab-service__content">
-												<h3>Office & Outdoor Cleaning</h3>
-												<p>Barnix Finance team is a diversenetwork of sonsultants and  industry porfessionlas with Increase productivity with a simple to-do app. app for managing your</p>
-												<a href="service-single.html">Read More<i class="far fa-arrow-right"></i></a>
-											</div>
-											<div class="tab-service__shape">
-												<img src="assets/img/shape/ts_shape.png" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 mt-30">
-										<div class="tab-service__item d-flex">
-											<div class="tab-service__icon">
-												<i class="flaticon-window"></i>
-											</div>
-											<div class="tab-service__content">
-												<h3>Floor & Windows Cleaning</h3>
-												<p>Barnix Finance team is a diversenetwork of sonsultants and  industry porfessionlas with Increase productivity with a simple to-do app. app for managing your</p>
-												<a href="service-single.html">Read More<i class="far fa-arrow-right"></i></a>
-											</div>
-											<div class="tab-service__shape">
-												<img src="assets/img/shape/ts_shape.png" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-6 mt-30">
-										<div class="tab-service__item d-flex">
-											<div class="tab-service__icon">
-												<i class="flaticon-cleaning-1"></i>
-											</div>
-											<div class="tab-service__content">
-												<h3>Bedroom & Kitchen Cleaning</h3>
-												<p>Barnix Finance team is a diversenetwork of sonsultants and  industry porfessionlas with Increase productivity with a simple to-do app. app for managing your</p>
-												<a href="service-single.html">Read More<i class="far fa-arrow-right"></i></a>
-											</div>
-											<div class="tab-service__shape">
-												<img src="assets/img/shape/ts_shape.png" alt="">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- tab service end -->
-
-			<!-- project start -->
-			<div class="project">
-				<div class="project__slider">
-					<div class="project__item">
-						<div class="project__img">
-							<img src="https://placehold.co/800x500/333/fff/?text=800x500" alt="">
-						</div>
-						<div class="project__info">
-							<h3><a href="project-single.html">Comemrcial Cleaning</a></h3>
-							<span>New York, USA</span>
-							<a class="project__action" href="project-single.html"><i class="flaticon-right-arrow"></i></a>
-						</div>
-						<span class="project__number">02</span>
-					</div>
-					<div class="project__item">
-						<div class="project__img">
-							<img src="https://placehold.co/800x500/333/fff/?text=800x500" alt="">
-						</div>
-						<div class="project__info">
-							<h3><a href="project-single.html">Comemrcial Cleaning</a></h3>
-							<span>New York, USA</span>
-							<a class="project__action" href="project-single.html"><i class="flaticon-right-arrow"></i></a>
-						</div>
-						<span class="project__number">02</span>
-					</div>
-					<div class="project__item">
-						<div class="project__img">
-							<img src="https://placehold.co/800x500/333/fff/?text=800x500" alt="">
-						</div>
-						<div class="project__info">
-							<h3><a href="project-single.html">Comemrcial Cleaning</a></h3>
-							<span>New York, USA</span>
-							<a class="project__action" href="project-single.html"><i class="flaticon-right-arrow"></i></a>
-						</div>
-						<span class="project__number">02</span>
-					</div>
-					<div class="project__item">
-						<div class="project__img">
-							<img src="https://placehold.co/800x500/333/fff/?text=800x500" alt="">
-						</div>
-						<div class="project__info">
-							<h3><a href="project-single.html">Comemrcial Cleaning</a></h3>
-							<span>New York, USA</span>
-							<a class="project__action" href="project-single.html"><i class="flaticon-right-arrow"></i></a>
-						</div>
-						<span class="project__number">02</span>
-					</div>
-				</div>
-			</div>
-			<!-- proejct end -->
-
-			<div class="clemfox__bg">
-				<!-- services start -->
-				<div class="service pt-80">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="sec-title sec-title__two mb-30">
-									<span class="subtitle wow fadeInUp" data-wow-delay="0s" data-wow-duration="1500ms">Cleaning Company</span>
-									<h2 class="title wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1500ms">
-										Our Speical Services Features
-									</h2>
-								</div>
-							</div>
-						</div>
-						<div class="service__slide">
-							<div class="service__item">
-								<div class="service__icon">
-									<i class="flaticon-lizard"></i>
-								</div>
-								<h3 class="service__title"><a href="service-single.html"> Pest Control Services</a></h3>
-								<p>With a worldwide and progress
-									ed coordination arrangements
-									airship cargo sending items</p>
-								<ul class="service__list list-unstyled">
-									<li>Termite & Lizard Controls</li>
-									<li>Ant’s Cockroach Controls</li>
-									<li>Termite Controls</li>
-								</ul>
-								<a class="service__link" href="#!"><i class="flaticon-plus"></i></a>
-							</div>
-							<div class="service__item">
-								<div class="service__icon">
-									<i class="flaticon-towel"></i>
-								</div>
-								<h3 class="service__title"><a href="service-single.html"> Pest Control Services</a></h3>
-								<p>With a worldwide and progress
-									ed coordination arrangements
-									airship cargo sending items</p>
-								<ul class="service__list list-unstyled">
-									<li>Termite & Lizard Controls</li>
-									<li>Ant’s Cockroach Controls</li>
-									<li>Termite Controls</li>
-								</ul>
-								<a class="service__link" href="#!"><i class="flaticon-plus"></i></a>
-							</div>
-							<div class="service__item">
-								<div class="service__icon">
-									<i class="flaticon-house-2"></i>
-								</div>
-								<h3 class="service__title"><a href="service-single.html"> Pest Control Services</a></h3>
-								<p>With a worldwide and progress
-									ed coordination arrangements
-									airship cargo sending items</p>
-								<ul class="service__list list-unstyled">
-									<li>Termite & Lizard Controls</li>
-									<li>Ant’s Cockroach Controls</li>
-									<li>Termite Controls</li>
-								</ul>
-								<a class="service__link" href="#!"><i class="flaticon-plus"></i></a>
-							</div>
-							<div class="service__item">
-								<div class="service__icon">
-									<i class="flaticon-data-cleaning"></i>
-								</div>
-								<h3 class="service__title"><a href="service-single.html"> Pest Control Services</a></h3>
-								<p>With a worldwide and progress
-									ed coordination arrangements
-									airship cargo sending items</p>
-								<ul class="service__list list-unstyled">
-									<li>Termite & Lizard Controls</li>
-									<li>Ant’s Cockroach Controls</li>
-									<li>Termite Controls</li>
-								</ul>
-								<a class="service__link" href="#!"><i class="flaticon-plus"></i></a>
-							</div>
-							<div class="service__item">
-								<div class="service__icon">
-									<i class="flaticon-towel"></i>
-								</div>
-								<h3 class="service__title"><a href="service-single.html"> Pest Control Services</a></h3>
-								<p>With a worldwide and progress
-									ed coordination arrangements
-									airship cargo sending items</p>
-								<ul class="service__list list-unstyled">
-									<li>Termite & Lizard Controls</li>
-									<li>Ant’s Cockroach Controls</li>
-									<li>Termite Controls</li>
-								</ul>
-								<a class="service__link" href="#!"><i class="flaticon-plus"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- services end -->
-
-				<!-- marquee start -->
-				<div class="wm-marquee pt-50">
-					<div class="text-marquee-track">
-						<div class="text-marquee-content">Уборка Bakalov Cleaning Чистка Bakalov Cleaning Мытье Bakalov Cleaning</div>
-					</div>
-				</div>
-				<!-- marquee end -->
-
-				<!-- process start -->
-				<div class="process">
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-lg-6">
-								<div class="sec-title sec-title__two text-center mb-45">
-									<h2 class="title wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1500ms">
-										Как это работает ?!
-									</h2>
-								</div>
-							</div>
-						</div>
-						<div class="process__wrap ul_li_between wow fadeInUp" data-wow-delay=".5s" data-wow-duration="1500ms">
-							<div class="process__item ul_li">
-								<div class="process__icon">
-									<div class="icon">
-										<i class="flaticon-reminder"></i>
-									</div>
-									<span class="number">01</span>
-								</div>
-								<h5>Забираем грязные вещи<br>в удобное для Вас время</h5>
-							</div>
-							<div class="process__item ul_li">
-								<div class="process__icon">
-									<div class="icon">
-										<i class="flaticon-house-2"></i>
-									</div>
-									<span class="number">02</span>
-								</div>
-								<h5>Чистим гипоаллергенными средствами<br>на профессиональном оборудовании</h5>
-							</div>
-							<div class="process__item ul_li">
-								<div class="process__icon">
-									<div class="icon">
-										<i class="flaticon-data-cleaning-1"></i>
-									</div>
-									<span class="number">03</span>
-								</div>
-								<h5>Привозим чистые и отглаженные<br>вещи через 48 часов</h5>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- process end -->
-
-				<!-- about start -->
-				<div class="about about__bg-two pt-45 pb-45">
-					<div class="container">
-						<div class="row align-items-center">
-							<div class="col-lg-6">
-								<div class="sec-title sec-title__two mb-30">
-									<h2 class="title wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1500ms">
-										Why will you choose our <br> services for your ?
-									</h2>
-								</div>
-								<div class="tab-info__wrap">
-									<div class="tab-info__item tab-info__item-two d-flex wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1500ms">
-										<div class="icon">
-											<i class="flaticon-house"></i>
-											<img src="assets/img/shape/a_shape.svg" alt="">
-										</div>
-										<div class="content">
-											<h3>Customer Focused Reviews</h3>
-											<p>On the other hand we denounce with righteous indignation dislike men who are so beguiled and demoralized by</p>
-										</div>
-									</div>
-									<div class="tab-info__item tab-info__item-two d-flex wow fadeInUp" data-wow-delay=".5s" data-wow-duration="1500ms">
-										<div class="icon">
-											<i class="flaticon-cloth"></i>
-											<img src="assets/img/shape/a_shape.svg" alt="">
-										</div>
-										<div class="content">
-											<h3>Customer Focused Reviews</h3>
-											<p>On the other hand we denounce with righteous indignation <br> dislike men who are so beguiled and demoralized by</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="about__image">
-									<img class="img1 wow fadeInRight" data-wow-delay=".3s" data-wow-duration="1500ms" src="https://placehold.co/360x460/222/fff/?text=360x460" alt="">
-									<img class="img2 wow fadeInRight" data-wow-delay="0s" data-wow-duration="1500ms" src="https://placehold.co/400x500/222/fff/?text=400x500" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- about end -->
-			</div>
 
 			<!-- counter start -->
 			<div class="couter counter__bg">
@@ -942,11 +457,6 @@
 								<div class="counter__video pos-rel ul_li">
 									<a href="https://www.youtube.com/watch?v=cRXm1p-CNyk" class="popup-video popup-video__md"><i class="fas fa-play"></i></a>
 									<h3>Airo это удобно !</h3>
-								</div>
-								<div class="counter__item">
-									<div class="counter__number">
-
-									</div>
 								</div>
 							</div>
 							<div class="col-lg-7">
@@ -975,58 +485,18 @@
 			</div>
 			<!-- counter end -->
 
-			<!-- testimonial start -->
-			<div class="testimonial testimonial__bg pb-90" data-background="assets/img/bg/testimonial_bg_img.jpg">
-				<div class="container">
-					<div class="testimonial__wrap pos-rel pt-90">
-						<div class="testimonial__slide-wrap testimonial__slide-wrap--2">
-							<div class="testimonial__slide-two" data-slides-space="30" data-effect="slide" data-slides-min-width="290" data-pagination="custom" data-direction="horizontal" data-mouse-wheel="0" data-autoplay="0" data-loop="1" data-free-mode="0" data-slides-centered="0" data-slides-overflow="0">
-								<div class="testimonial__item testimonial__item-two">
-									<div class="testimonial__avatar">
-										<img src="assets/img/testimonial/avatar.jpg" alt="">
-									</div>
-									<div class="testimonial__content">The most advanced <span>revenue</span> than this. I will refer everyone I know than
-										I like Level more and more each day because it makes my life a lot my life
-										more easier. It really saves me time and effort. Level is exactly</div>
-									<div class="testimonial__info">
-										<h3>Cameron Williamson</h3>
-										<span>Ceo & Founder</span>
-									</div>
-								</div>
-								<div class="testimonial__item testimonial__item-two">
-									<div class="testimonial__avatar">
-										<img src="assets/img/testimonial/avatar.jpg" alt="">
-									</div>
-									<div class="testimonial__content">The most advanced <span>revenue</span> than this. I will refer everyone I know than
-										I like Level more and more each day because it makes my life a lot my life
-										more easier. It really saves me time and effort. Level is exactly</div>
-										<div class="testimonial__info">
-											<h3>Cameron Williamson</h3>
-											<span>Ceo & Founder</span>
-										</div>
-								</div>
-								<div class="testimonial__item testimonial__item-two">
-									<div class="testimonial__avatar">
-										<img src="assets/img/testimonial/avatar.jpg" alt="">
-									</div>
-									<div class="testimonial__content">The most advanced <span>revenue</span> than this. I will refer everyone I know than
-										I like Level more and more each day because it makes my life a lot my life
-										more easier. It really saves me time and effort. Level is exactly</div>
-										<div class="testimonial__info">
-											<h3>Cameron Williamson</h3>
-											<span>Ceo & Founder</span>
-										</div>
-								</div>
-							</div>
-						</div>
-						<div class="testimonial__icon">
-							<img src="assets/img/icon/t_shape.png" alt="">
-							<img src="assets/img/icon/t_quote.png" alt="">
+			<!-- project start -->
+			<div class="project">
+				<div class="aics-wrapper">
+					<div id="aics-autostart">
+						<div class="images">
+							<div class="image-rgt" data-src="assets/img/bg1.jpg" data-width="1920" data-height="500"></div>
+							<div class="image-lft" data-src="assets/img/bg2.jpg" data-width="1920" data-height="500"></div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- testimonial end -->
+			<!-- proejct end -->
 
 			<!-- faq start -->
 			<div class="faq pt-50 pb-60">
@@ -1034,7 +504,7 @@
 					<div class="row align-items-center">
 						<div class="col-lg-5 mt-30">
 							<div class="faa__img pl-50 pos-rel mr-40">
-								<img class="wow fadeInLeft" data-wow-delay="0s" data-wow-duration="1500ms" src="https://placehold.co/680x800/222/fff/?text=680x800" alt="">
+								<img class="wow fadeInLeft" data-wow-delay="0s" data-wow-duration="500ms" src="https://placehold.co/680x800/222/fff/?text=680x800" alt="">
 								<div class="faq__shape">
 									<img src="assets/img/shape/faq_shape.png" alt="">
 									<img class="wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="1500ms"  src="assets/img/shape/f_shape2.png" alt="">
@@ -1045,10 +515,10 @@
 						<div class="col-lg-7 mt-30">
 							<div class="faq__wrap">
 								<div class="sec-title sec-title__two mb-30">
-									<span class="subtitle wow fadeInUp" data-wow-delay="0s" data-wow-duration="1500ms">Cleaning Company</span>
-									<h2 class="title wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1500ms">Why will you choose our <br> services for your ?</h2>
+									<span class="subtitle wow fadeInUp" data-wow-delay="0s" data-wow-duration="1000ms">Bacalov Cleaning</span>
+									<h2 class="title wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1000ms">Why will you choose our <br> services for your ?</h2>
 								</div>
-								<ul class="accordion_box clearfix wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1500ms">
+								<ul class="accordion_box clearfix wow fadeInUp" data-wow-delay=".2s" data-wow-duration="1000ms">
 									<li class="accordion block active-block">
 										<div class="acc-btn">
 											Does wexy support both Elementor and WP Bakery Page Builder?
@@ -1088,94 +558,10 @@
 			<!-- faq end -->
 
 			<!-- blog start -->
-			<div class="blog pt-90" data-background="assets/img/bg/news_bg.jpg">
-				<div class="container maxw_1320">
-					<div class="row">
-						<div class="col-lg-6">
-							<div class="sec-title sec-title__two mb-45">
-								<span class="subtitle">News & Blog</span>
-								<h2 class="title">Read know about our <br> blog leatest news</h2>
-							</div>
-						</div>
-					</div>
-					<div class="blog__slide">
-						<div class="blog__item blog__item--2">
-							<figure class="blog__thumb pos-rel">
-								<a href="#!">
-									<img src="https://placehold.co/600x400/222/fff/?text=600x400" alt="">
-								</a>
-								<a class="blog__cat" href="blog.html">Business</a>
-							</figure>
-							<div class="blog__content">
-								<ul class="blog__meta ul_li mb-20">
-									<li class="date"><i class="far fa-calendar-alt"></i>02 Apr 2021</li>
-									<li><i class="far fa-comments"></i>Comments (03)</li>
-								</ul>
-								<h2 class="blog__title border_effect"><a href="blog-single.html">Facebook design is dedicat to what's new in design </a></h2>
-								<div class="blog__btn mt-25">
-									<a href="blog-single.html">Read More<i class="flaticon-right-arrow"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="blog__item blog__item--2">
-							<figure class="blog__thumb pos-rel">
-								<a href="#!">
-									<img src="https://placehold.co/600x400/222/fff/?text=600x400" alt="">
-								</a>
-								<a class="blog__cat" href="blog.html">Business</a>
-							</figure>
-							<div class="blog__content">
-								<ul class="blog__meta ul_li mb-20">
-									<li class="date"><i class="far fa-calendar-alt"></i>02 Apr 2021</li>
-									<li><i class="far fa-comments"></i>Comments (03)</li>
-								</ul>
-								<h2 class="blog__title border_effect"><a href="blog-single.html">Facebook design is dedicat to what's new in design </a></h2>
-								<div class="blog__btn mt-25">
-									<a href="blog-single.html">Read More<i class="flaticon-right-arrow"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="blog__item blog__item--2">
-							<figure class="blog__thumb pos-rel">
-								<a href="#!">
-									<img src="https://placehold.co/600x400/222/fff/?text=600x400" alt="">
-								</a>
-								<a class="blog__cat" href="blog.html">Business</a>
-							</figure>
-							<div class="blog__content">
-								<ul class="blog__meta ul_li mb-20">
-									<li class="date"><i class="far fa-calendar-alt"></i>02 Apr 2021</li>
-									<li><i class="far fa-comments"></i>Comments (03)</li>
-								</ul>
-								<h2 class="blog__title border_effect"><a href="blog-single.html">Facebook design is dedicat to what's new in design </a></h2>
-								<div class="blog__btn mt-25">
-									<a href="blog-single.html">Read More<i class="flaticon-right-arrow"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="blog__item blog__item--2">
-							<figure class="blog__thumb pos-rel">
-								<a href="#!">
-									<img src="https://placehold.co/600x400/222/fff/?text=600x400" alt="">
-								</a>
-								<a class="blog__cat" href="blog.html">Business</a>
-							</figure>
-							<div class="blog__content">
-								<ul class="blog__meta ul_li mb-20">
-									<li class="date"><i class="far fa-calendar-alt"></i>02 Apr 2021</li>
-									<li><i class="far fa-comments"></i>Comments (03)</li>
-								</ul>
-								<h2 class="blog__title border_effect"><a href="blog-single.html">Facebook design is dedicat to what's new in design </a></h2>
-								<div class="blog__btn mt-25">
-									<a href="blog-single.html">Read More<i class="flaticon-right-arrow"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="wm-marquee pt-15">
+			<div class="blog pt-40" data-background="assets/img/bg/news_bg.jpg">
+				<div class="wm-marquee">
 					<div class="text-marquee-track">
-						<div class="text-marquee-content">Уборка Bakalov Cleaning Чистка Bakalov Cleaning Мытье Bakalov Cleaning</div>
+						<div class="text-marquee-content">Bakalov Cleaning Bakalov Cleaning</div>
 					</div>
 				</div>
 			</div>
@@ -1187,19 +573,18 @@
 			<ul class="footer__social">
 				<li><a href="#!"><i class="fab fa-facebook-f"></i>Facebook</a></li>
 				<li><a href="#!"><i class="fab fa-twitter"></i>Twitter</a></li>
-				<li><a href="#!"><i class="fab fa-instagram"></i>Instagram</a></li>
 				<li><a href="#!"><i class="fab fa-youtube"></i>Youtube</a></li>
-				<li><a href="#!"><i class="fab fa-pinterest"></i>Pinterest</a></li>
+				<li><a href="#!"><i class="fab fa-vk"></i>Вконтакте</a></li>
 			</ul>
 			<div class="container mxw_1350">
 				<div class="row pt-0 pb-30">
 					<div class="col-lg-3 col-md-6 footer__col mt-30">
 						<div class="footer__widget">
-							<h3>About Us</h3>
-							<p>The world’s first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs). Buy</p>
+							<h3>О нас</h3>
+							<p>ИНН 7703821839, ОГРН 5147746347634</p>
 							<ul class="footer__info list-unstyled mt-35">
-								<li><i class="far fa-map-marker-alt"></i>254 Lillian Blvd, Holbrook</li>
-								<li><i class="far fa-phone-alt"></i>1-800-654-3210</li>
+								<li><i class="far fa-map-marker-alt"></i> 111033, город Москва, ул. Золоторожский вал, д. 32, стр. 2</li>
+								<li><i class="far fa-phone-alt"></i>+7 (812) 317-76-93</li>
 							</ul>
 						</div>
 					</div>
@@ -1207,12 +592,10 @@
 						<div class="footer__widget">
 							<h3>Marketplace</h3>
 							<ul class="footer__links list-unstyled">
-								<li><a href="about.html">About Us</a></li>
-								<li><a href="blog.html">Recent News</a></li>
-								<li><a href="contact.html">Contact Us</a></li>
-								<li><a href="service-single.html">Interior Design</a></li>
-								<li><a href="project.html">Recent Project</a></li>
-								<li><a href="service.html">Services</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Recent News</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Interior Design</a></li>
 							</ul>
 						</div>
 					</div>
@@ -1220,22 +603,16 @@
 						<div class="footer__widget">
 							<h3>My Account</h3>
 							<ul class="footer__links list-unstyled">
-								<li><a href="about.html">About Us</a></li>
-								<li><a href="blog.html">Recent News</a></li>
-								<li><a href="contact.html">Contact Us</a></li>
-								<li><a href="service-single.html">Interior Design</a></li>
-								<li><a href="project.html">Recent Project</a></li>
-								<li><a href="service.html">Services</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Recent News</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Interior Design</a></li>
 							</ul>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6 footer__col mt-30">
 						<div class="footer__widget">
 							<h3>Our Information</h3>
-							<div class="footer__awards">
-								Total Awards
-								<span>X8</span>
-							</div>
 							<div class="footer__instagram d-flex">
 								<a class="thumb" href="#!"><img src="https://placehold.co/140x140/222/fff/?text=140x140" alt=""></a>
 								<a class="thumb" href="#!"><img src="https://placehold.co/140x140/222/fff/?text=140x140" alt=""></a>
@@ -1279,8 +656,7 @@
 	</div>
 
 	<!-- For Js Library -->
-	<script src="assets/js/jquery-3.7.0.min.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery-anyimagecomparisonslider-plugin.js"></script>
 	<script src="assets/js/popper.min.js"></script>
 	<script src="assets/js/jquery.magnific-popup.min.js"></script>
 	<script src="assets/js/appear.js"></script>
@@ -1288,8 +664,8 @@
 	<!-- <script src="assets/js/jquery.counterup.min.js"></script>
 	<script src="assets/js/waypoints.min.js"></script>
 	<script src="assets/js/twenty.js"></script>
-	<script src="assets/js/gmap3.min.js"></script>
-	<script src="assets/js/script.js"></script> -->
+	<script src="assets/js/gmap3.min.js"></script> -->
+	<script src="assets/js/script.js"></script>
 	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
 	<script src="assets/js/jquery.filterizr.js"></script>
 	<script src="assets/js/backToTop.js"></script>

@@ -1,10 +1,10 @@
 let cleanService = document.querySelector('#cleanservice');
 let cleanTab = document.querySelector('#clean-tab');
-let cleandiv = document.querySelector('#cleandiv');
+let cleandiv1 = document.querySelector('#cleandiv1');
 let furchemTab = document.querySelector('#furchem-tab');
-let furchemdiv = document.querySelector('#furchemdiv');
+let furchem1 = document.querySelector('#furchem1');
 let windwashTab = document.querySelector('#windwash-tab');
-let windwashdiv = document.querySelector('#windwashdiv');
+let windwash1 = document.querySelector('#windwash1');
 let hash = document.location.hash;
 let prefix = "!#";
 
@@ -13,9 +13,9 @@ cleanService.addEventListener('click', function(){
         cleanTab.classList.add('active');
         furchemTab.classList.remove('active');
         windwashTab.classList.remove('active');
-        cleandiv.classList.add('show', 'active');
-        furchemdiv.classList.remove('show', 'active');
-        windwashdiv.classList.remove('show', 'active');
+        cleandiv1.classList.add('show', 'active');
+        furchem1.classList.remove('show', 'active');
+        windwash1.classList.remove('show', 'active');
         document.location.hash = '#!#clean-service';
         cleanService[0].setAttribute('selected','selected');
         cleanService[1].removeAttribute('selected','selected');
@@ -24,9 +24,9 @@ cleanService.addEventListener('click', function(){
         cleanTab.classList.remove('active');
         furchemTab.classList.add('active');
         windwashTab.classList.remove('active');
-        cleandiv.classList.remove('show', 'active');
-        furchemdiv.classList.add('show', 'active');
-        windwashdiv.classList.remove('show', 'active');
+        cleandiv1.classList.remove('show', 'active');
+        furchem1.classList.add('show', 'active');
+        windwash1.classList.remove('show', 'active');
         document.location.hash = '#!#furniture-dry-cleaning-service';
         cleanService[0].removeAttribute('selected','selected');
         cleanService[1].setAttribute('selected','selected');
@@ -35,32 +35,35 @@ cleanService.addEventListener('click', function(){
         cleanTab.classList.remove('active');
         furchemTab.classList.remove('active');
         windwashTab.classList.add('active');
-        cleandiv.classList.remove('show', 'active');
-        furchemdiv.classList.remove('show', 'active');
-        windwashdiv.classList.add('show', 'active');
+        cleandiv1.classList.remove('show', 'active');
+        furchem1.classList.remove('show', 'active');
+        windwash1.classList.add('show', 'active');
         document.location.hash = '#!#windows-wash-service';
         cleanService[0].removeAttribute('selected','selected');
         cleanService[1].removeAttribute('selected','selected');
         cleanService[2].setAttribute('selected','selected');
     }
 });
-cleanTab.addEventListener('click', function(){
+cleanTab.addEventListener('click', function(event){
     cleanService.options.selectedIndex = 0;
     cleanService[0].setAttribute('selected','selected');
     cleanService[1].removeAttribute('selected','selected');
     cleanService[2].removeAttribute('selected','selected');
+    event.preventDefault();
 });
-furchemTab.addEventListener('click', function(){
+furchemTab.addEventListener('click', function(event){
     cleanService.options.selectedIndex = 1;
     cleanService[0].removeAttribute('selected','selected');
     cleanService[1].setAttribute('selected','selected');
     cleanService[2].removeAttribute('selected','selected');
+    event.preventDefault();
 });
-windwashTab.addEventListener('click', function(){
+windwashTab.addEventListener('click', function(event){
     cleanService.options.selectedIndex = 2;
     cleanService[0].removeAttribute('selected','selected');
     cleanService[1].removeAttribute('selected','selected');
     cleanService[2].setAttribute('selected','selected');
+    event.preventDefault();
 });
 
 // =========================================================================================
@@ -102,3 +105,14 @@ cleanService.addEventListener('change', function(e){
         }
     }
 });
+
+// =========================================================================================
+$('#mainservice a[data-bs-toggle="tab"]').on('show.bs.tab', function(e) {
+    let target = $(e.target).data('bs-target')
+    $(target)
+      .addClass('active show')
+      .siblings('.tab-pane.active')
+      .removeClass('active show')
+});
+
+// =========================================================================================

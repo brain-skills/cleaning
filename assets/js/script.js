@@ -25,7 +25,6 @@ Last change:    00/00/00
 				this.MobileMenu();
 				this.scrollTop();
 				this.SkillProgress();
-				this.CounterUp();
 				this.searchPopUp();
 				this.TextAnimation();
 				this.CarouselSliderJS();
@@ -607,12 +606,6 @@ Last change:    00/00/00
 						}
 					},
 					]
-				});
-			},
-			CounterUp: function(){
-				$('.counter').counterUp({
-					delay: 10,
-					time: 1000
 				});
 			},
 			SkillProgress: function (){
