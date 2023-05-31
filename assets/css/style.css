@@ -9016,7 +9016,7 @@ dl, ol, ul {
 }
 
 .footer__nav li a:hover {
-  color: var(--color-black);
+  color: var(--color-primary);
 }
 
 .footer__social {
@@ -13435,4 +13435,7 @@ dl, ol, ul {
 .copy-wrapper a:link, .copy-wrapper a:visited, .copy-wrapper a:hover, .copy-wrapper a:active {
   color: black;
   text-decoration: none;
+}
+.footer__social li a:hover {
+  color: var(--color-primary);
 }
