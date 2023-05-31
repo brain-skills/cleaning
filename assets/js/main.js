@@ -18,7 +18,7 @@ let general1 = document.querySelector('#general');
 let afteremTab = document.querySelector('#afterem-tab');
 let afterem1 = document.querySelector('#afterem');
 let hash = document.location.hash;
-let prefix = "!#";
+let prefix = "";
 
 cleanService.addEventListener('change', function(){
     if(cleanService.options.selectedIndex == 0){
@@ -40,7 +40,7 @@ cleanService.addEventListener('change', function(){
         support1.classList.add('show', 'active');
         general1.classList.remove('show', 'active');
         afterem1.classList.remove('show', 'active');
-        document.location.hash = '#!#clean-s';
+        document.location.hash = '#clean-s';
         cleanService[0].setAttribute('selected','selected');
         cleanService[1].removeAttribute('selected','selected');
         cleanService[2].removeAttribute('selected','selected');
@@ -58,7 +58,7 @@ cleanService.addEventListener('change', function(){
         w1.classList.remove('show', 'active');
         w2.classList.remove('show', 'active');
         w3.classList.remove('show', 'active');
-        document.location.hash = '#!#dry-s'; // присваиваем ссылку
+        document.location.hash = '#dry-s'; // присваиваем ссылку
         cleanService[0].removeAttribute('selected','selected');
         cleanService[1].setAttribute('selected','selected');
         cleanService[2].removeAttribute('selected','selected');
@@ -75,7 +75,7 @@ cleanService.addEventListener('change', function(){
         w1.classList.add('show', 'active');
         w2.classList.add('show', 'active');
         w3.classList.add('show', 'active');
-        document.location.hash = '#!#wash-s'; // присваиваем ссылку
+        document.location.hash = '#wash-s'; // присваиваем ссылку
         cleanService[0].removeAttribute('selected','selected');
         cleanService[1].removeAttribute('selected','selected');
         cleanService[2].setAttribute('selected','selected');
@@ -93,6 +93,7 @@ cleanTab.addEventListener('click', function(event){
     cleanService[1].removeAttribute('selected','selected');
     cleanService[2].removeAttribute('selected','selected');
     event.preventDefault();
+    event.stopPropagation();
 });
 furchemTab.addEventListener('click', function(event){
     cleanService.options.selectedIndex = 1;
@@ -100,6 +101,7 @@ furchemTab.addEventListener('click', function(event){
     cleanService[1].setAttribute('selected','selected');
     cleanService[2].removeAttribute('selected','selected');
     event.preventDefault();
+    event.stopPropagation();
 });
 windwTab.addEventListener('click', function(event){
     cleanService.options.selectedIndex = 2;
@@ -107,23 +109,24 @@ windwTab.addEventListener('click', function(event){
     cleanService[1].removeAttribute('selected','selected');
     cleanService[2].setAttribute('selected','selected');
     event.preventDefault();
+    event.stopPropagation();
 });
 
 // сохраняем значения с помощью якорных ссылок у табов
 $(document).ready(function() {
     if (hash) {
         $('.nav-item a[href=\"'+hash.replace(prefix,"")+'\"]').tab('show', 'active');
-        if(document.location.hash == '#!#clean-s'){
+        if(document.location.hash == '#clean-s'){
             cleanService.options.selectedIndex = 0;
             cleanService[0].setAttribute('selected','selected');
             cleanService[1].removeAttribute('selected','selected');
             cleanService[2].removeAttribute('selected','selected');
-        } else if (document.location.hash == '#!#dry-s') {
+        } else if (document.location.hash == '#dry-s') {
             cleanService.options.selectedIndex = 1;
             cleanService[0].removeAttribute('selected','selected');
             cleanService[1].setAttribute('selected','selected');
             cleanService[2].removeAttribute('selected','selected');
-        } else if (document.location.hash == '#!#wash-s') {
+        } else if (document.location.hash == '#wash-s') {
             cleanService.options.selectedIndex = 2;
             cleanService[0].removeAttribute('selected','selected');
             cleanService[1].removeAttribute('selected','selected');
