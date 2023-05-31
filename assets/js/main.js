@@ -5,21 +5,36 @@ let furchemTab = document.querySelector('#furchem-tab');
 let furchem1 = document.querySelector('#furchem1');
 let windwashTab = document.querySelector('#windwash-tab');
 let windwash1 = document.querySelector('#windwash1');
+let supportTab = document.querySelector('#supportable-tab');
+let support1 = document.querySelector('#support');
+let generalTab = document.querySelector('#general-tab');
+let general1 = document.querySelector('#general');
+let afteremTab = document.querySelector('#afterem-tab');
+let afterem1 = document.querySelector('#afterem');
 let hash = document.location.hash;
 let prefix = "!#";
 
-cleanService.addEventListener('click', function(){
+cleanService.addEventListener('change', function(){
     if(cleanService.options.selectedIndex == 0){
         cleanTab.classList.add('active');
         furchemTab.classList.remove('active');
         windwashTab.classList.remove('active');
+        supportTab.classList.add('active');
+        generalTab.classList.remove('active');
+        afteremTab.classList.remove('active');
+
         cleandiv1.classList.add('show', 'active');
         furchem1.classList.remove('show', 'active');
         windwash1.classList.remove('show', 'active');
+        support1.classList.add('show', 'active');
+        general1.classList.remove('show', 'active');
+        afterem1.classList.remove('show', 'active');
+
         document.location.hash = '#!#clean-service';
         cleanService[0].setAttribute('selected','selected');
         cleanService[1].removeAttribute('selected','selected');
         cleanService[2].removeAttribute('selected','selected');
+
     } else if(cleanService.options.selectedIndex == 1){
         cleanTab.classList.remove('active');
         furchemTab.classList.add('active');
@@ -46,6 +61,14 @@ cleanService.addEventListener('click', function(){
 });
 cleanTab.addEventListener('click', function(event){
     cleanService.options.selectedIndex = 0;
+
+    supportTab.classList.add('active');
+    generalTab.classList.remove('active');
+    afteremTab.classList.remove('active');
+    support1.classList.add('show', 'active');
+    general1.classList.remove('show', 'active');
+    afterem1.classList.remove('show', 'active');
+
     cleanService[0].setAttribute('selected','selected');
     cleanService[1].removeAttribute('selected','selected');
     cleanService[2].removeAttribute('selected','selected');
@@ -66,7 +89,7 @@ windwashTab.addEventListener('click', function(event){
     event.preventDefault();
 });
 
-// =========================================================================================
+// ====== anchor link set
 $(document).ready(function() {
     if (hash) {
         $('.nav-item a[href=\"'+hash.replace(prefix,"")+'\"]').tab('show', 'active');
