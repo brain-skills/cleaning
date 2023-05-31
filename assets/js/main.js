@@ -93,7 +93,6 @@ cleanTab.addEventListener('click', function(event){
     cleanService[1].removeAttribute('selected','selected');
     cleanService[2].removeAttribute('selected','selected');
     event.preventDefault();
-    event.stopPropagation();
 });
 furchemTab.addEventListener('click', function(event){
     cleanService.options.selectedIndex = 1;
@@ -101,7 +100,6 @@ furchemTab.addEventListener('click', function(event){
     cleanService[1].setAttribute('selected','selected');
     cleanService[2].removeAttribute('selected','selected');
     event.preventDefault();
-    event.stopPropagation();
 });
 windwTab.addEventListener('click', function(event){
     cleanService.options.selectedIndex = 2;
@@ -109,7 +107,6 @@ windwTab.addEventListener('click', function(event){
     cleanService[1].removeAttribute('selected','selected');
     cleanService[2].setAttribute('selected','selected');
     event.preventDefault();
-    event.stopPropagation();
 });
 
 // сохраняем значения с помощью якорных ссылок у табов
@@ -156,7 +153,9 @@ cleanService.addEventListener('change', function(e){
 $('#mainservice a[data-bs-toggle="tab"]').on('show.bs.tab', function(e) {
     let target = $(e.target).data('bs-target')
     $(target)
-      .addClass('active show')
-      .siblings('.tab-pane.active')
-      .removeClass('active show')
+    .addClass('active show')
+    .siblings('.tab-pane.active')
+    .removeClass('active show');
+    // return false; - позиция остаётся, но соседние функции перестают корректно работать
+    // e.preventDefault(); - позиция остаётся, но соседние функции перестают корректно работать
 });
