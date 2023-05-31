@@ -159,3 +159,12 @@ $('#mainservice a[data-bs-toggle="tab"]').on('show.bs.tab', function(e) {
     // return false; - позиция остаётся, но соседние функции перестают корректно работать
     // e.preventDefault(); - позиция остаётся, но соседние функции перестают корректно работать
 });
+
+let positionY = window.pageYOffset;
+let positionX = window.pageXOffset;
+console.log('x=' + positionX + ', y=' + positionY);
+let scrollY = window.scrollY;
+let scrollX = window.scrollX;
+console.log('x=' + scrollX + ', y=' + scrollY);
+
+// localStorage.clear();
