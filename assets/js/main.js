@@ -156,8 +156,4 @@ $('#mainservice a[data-bs-toggle="tab"]').on('show.bs.tab', function(e) {
     .addClass('active show')
     .siblings('.tab-pane.active')
     .removeClass('active show');
-    // return false; - позиция остаётся, но соседние функции перестают корректно работать
-    // e.preventDefault(); - позиция остаётся, но соседние функции перестают корректно работать
 });
-
-// localStorage.clear();
