@@ -3164,6 +3164,9 @@ ul {
       justify-content: center;
   }
 }
+.nav-item{
+  display: inline;
+}
 .tab-info__nav .nav-item .nav-link {
   font-size: 15px;
   text-transform: uppercase;
@@ -4613,6 +4616,7 @@ ul {
   border: none !important;
   cursor: pointer !important;
   background: 0 0 !important;
+  display: inline-block;
 }
 .main-menu .nav-link.active {
   border: none !important;
