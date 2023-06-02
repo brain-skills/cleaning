@@ -156,12 +156,12 @@ h6 {
   position: absolute;
   background-repeat: no-repeat;
   transition: all 0.5s ease 0.4s;
-  background-image: url(../img/img-5/shape/btn-sh1.png);
+  background-image: url(../img/shape/btn-sh1.png);
 }
 .clinox-btn-3 a::after {
   right: 34px;
   bottom: -7px;
-  background-image: url(../img/img-5/shape/btn-sh2.png);
+  background-image: url(../img/shape/btn-sh2.png);
 }
 .clinox-btn-3 a span {
   width: 100%;
