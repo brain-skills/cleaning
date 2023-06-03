@@ -1,5 +1,11 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway/Raleway-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
 :root {
-  --font: "Open Sans", sans-serif;
+  --font: 'Raleway', sans-serif;
   --color-primary: #5984d6;
   --color-black: #000;
   --color-deep: #5984d6;
@@ -69,7 +75,7 @@ h6 {
   overflow: hidden;
   border-radius: 6px;
   position: relative;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-color: #ffcd05;
   box-shadow: rgba(1, 83, 159, 0.4) 0 0 20px 0;
 }
