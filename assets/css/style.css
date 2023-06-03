@@ -2374,7 +2374,7 @@ ul {
   right: 10%;
 }
 .cta__wrap {
-  padding: 15px 25px 25px;
+  padding: 10px 25px 15px;
   background-color: var(--color-white);
   box-shadow: rgba(0, 0, 0, 0.04) 0 10px 25px;
   z-index: 2;
