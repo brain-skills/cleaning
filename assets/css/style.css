@@ -2311,8 +2311,8 @@ ul {
   -webkit-box-direction: normal;
   flex-direction: column;
   position: absolute;
-  bottom: -20px;
-  left: 35px;
+  bottom: 0px;
+  left: 44px;
   border-radius: 0px 50px;
 }
 .hero__experince-box h2 {
@@ -2330,8 +2330,9 @@ ul {
 .hero__line-shape {
   position: absolute;
   top: 244px;
-  right: -40px;
+  right: -20px;
   z-index: -1;
+  width: 440px;
 }
 @media (max-width: 991px) {
   .hero__line-shape {
