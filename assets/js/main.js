@@ -157,3 +157,19 @@ $('#mainservice a[data-bs-toggle="tab"]').on('show.bs.tab', function(e) {
     .siblings('.tab-pane.active')
     .removeClass('active show');
 });
+
+// let mainservice = document.querySelector('#mainservice');
+// one.addEventListener('click', function(e){
+//     history.pushState(null, null, `#${c-1}`);
+//     mainservice.classList.add('active show');
+//     mainservice.siblings('.tab-pane.active')
+//     e.preventDefault();
+// });
+// two.addEventListener('click', function(e){
+//     history.pushState(null, null, `#${c-2}`);
+//     content.classList.remove('active show');
+//     e.preventDefault();
+// });
+// if(document.location.hash == '#c-1'){
+//     content.classList.add('show', 'active');
+// }

@@ -198,6 +198,10 @@ h6 {
 .clinox-btn-3 a:hover::after {
   right: 20px;
 }
+.w-90 {
+  max-width: 90% !important;
+  margin: 0 auto;
+}
 .mt-none-5 {
   margin-top: -5px;
 }
@@ -2011,7 +2015,7 @@ ul {
   margin-right: 8px;
 }
 .header__social a {
-  color: #000;
+  color: var(--color-primary);
   font-size: 15px;
 }
 .header__social a:not(:last-child) {
@@ -2325,8 +2329,8 @@ ul {
 }
 .hero__line-shape {
   position: absolute;
-  top: 100px;
-  right: -110px;
+  top: 200px;
+  right: -40px;
   z-index: -1;
 }
 @media (max-width: 991px) {
