@@ -149,6 +149,21 @@ cleanService.addEventListener('change', function(e){
     }
 });
 
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "contents";
+    evt.currentTarget.className += " active";
+  }
+document.getElementById("defaultOpen").click();
+
 // передаём тело табов через свойство data-bs-toggle
 $('#mainservice a[data-bs-toggle="tab"]').on('show.bs.tab', function(e) {
     let target = $(e.target).data('bs-target')

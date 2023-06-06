@@ -191,7 +191,142 @@
 										</div>
 										<p>Убрали больше 14 000 квартир !</p>
 										<div class="hero__btn">
-											<a class="btn btn-outline-danger border-2" href="#">Узнать цены</a>
+											<a class="btn btn-outline-danger border-2" href="#" data-bs-toggle="modal" data-bs-target="#c-price">Узнать цены</a>
+										</div>
+									</div>
+									<div class="modal fade" id="c-price" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered w-50">
+										  <div class="modal-content">
+											<div class="modal-header">
+											  <h5 class="modal-title" id="exampleModalLabel">Цены по Уборке</h5>
+											  <button type="button" class="btn-close" id="awdawd" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+												<div class="row">
+													<div class="col-12">
+														<nav>
+															<div class="nav nav-tabs" id="nav-tab" role="tablist">
+															  <a class="nav-item nav-link fs-4 tablinks pt-0" onclick="openCity(event, 'allrooms')" id="defaultOpen">Все комнаты</a>
+															  <a class="nav-item nav-link fs-4 tablinks pt-0" onclick="openCity(event, 'kitchen')">Кухня</a>
+															  <a class="nav-item nav-link fs-4 tablinks pt-0" onclick="openCity(event, 'bathroom')">Ванная и туалет</a>
+															</div>
+														</nav>
+														<table class="table table-bordered m-0">
+															<tbody id="allrooms" class="tabcontent">
+																<tr>
+																	<td>Включено</td>
+																	<td>Можно добавить</td>
+																</tr>
+																<tr>
+																	<td>Протираем пыль со всех доступных поверхностей</td>
+																	<td>Мытье люстры <i class="price-block float-right">+ 500 ₽.</i></td>
+																</tr>
+																<tr>
+																	<td>Очищаем зеркала и стеклянные поверхности</td>
+																	<td>Уборка балкона <i class="price-block float-right">+ 600 ₽. за балкон</i></td>
+																</tr>
+																<tr>
+																	<td>Меняем постельное белье, заправляем кровать</td>
+																	<td>Мытье балконного остекления <i class="price-block float-right">+ 1490 ₽. за балкон</i></td>
+																</tr>
+																<tr>
+																	<td>Аккуратно складываем вещи</td>
+																	<td>Мойка окна <i class="price-block float-right">+ 590 ₽. за окно</i></td>
+																</tr>
+																<tr>
+																	<td>Протираем от пыли торшеры и настенные бра</td>
+																	<td>Дезинфекция поверхностей <i class="price-block float-right">+ 400 ₽.</i></td>
+																</tr>
+																<tr>
+																	<td>Пылесосим и моем пол, плинтусы</td>
+																	<td>Уборка гардеробной <i class="price-block float-right">+ 700 ₽.</i></td>
+																</tr>
+																<tr>
+																	<td>Развешиваем верхнюю одежду</td>
+																	<td>Глажка <i class="price-block float-right">+ 590 ₽.</i></td>
+																</tr>
+																<tr>
+																	<td>Расставляем обувь</td>
+																	<td>Название услуги <i class="price-block float-right">+ 0 ₽.</i></td>
+																</tr>
+															</tbody>
+															<tbody id="kitchen" class="tabcontent">
+																<tr>
+																	<td>Включено</td>
+																	<td>Можно добавить</td>
+																</tr>
+																<tr>
+																	<td>Моем посуду (до 15 минут)</td>
+																	<td>Чистка холодильника <i class="price-block float-right">+ 600 ₽.</i></td>
+																</tr>
+																<tr>
+																	<td>Моем раковину</td>
+																	<td>Мытье микроволновки <i class="price-block float-right">+ 350 ₽.</i></td>
+																</tr>
+																<tr>
+																	<td>Моем снаружи плиту, холодильник и вытяжку</td>
+																	<td>Мытье духовки <i class="price-block float-right">+ 600 ₽.</i></td>
+																</tr>
+																<tr>
+																	<td>Протираем пыль со всех доступных поверхностей</td>
+																	<td>Уборка кухонных шкафов <i class="price-block float-right">+ 900 ₽.</i></td>
+																</tr>
+																<tr>
+																	<td>Моем столешницу</td>
+																	<td>Глажка <i class="price-block float-right">+ 590 ₽.</i></td>
+																</tr>
+																<tr>
+																	<td>Протираем фасады шкафов</td>
+																	<td>Мойка окна <i class="price-block float-right">+ 590 ₽.</i></td>
+																</tr>
+																<tr>
+																	<td>Пылесосим и моем пол, плинтусы</td>
+																	<td><!-- Название услуги <i class="price-block float-right">+ 0 ₽.</i> --></td>
+																</tr>
+																<tr>
+																	<td>Собираем и выносим мусор, меняем мешки</td>
+																	<td><!-- Название услуги <i class="price-block float-right">+ 0 ₽.</i> --></td>
+																</tr>
+																<tr>
+																	<td>Моем и дезинфицируем мусорное ведро</td>
+																	<td><!-- Название услуги <i class="price-block float-right">+ 0 ₽.</i> --></td>
+																</tr>
+															</tbody>
+															<tbody id="bathroom" class="tabcontent">
+																<tr>
+																	<td>Включено</td>
+																	<td>Можно добавить</td>
+																</tr>
+																<tr>
+																	<td>Моем ванну, душевую кабину и раковину</td>
+																	<td>Мытье лотка питомца <i class="price-block float-right">+ 350 ₽.</i></td>
+																</tr>
+																<tr>
+																	<td>Чистим унитаз, биде</td>
+																	<td><!-- Название услуги <i class="price-block float-right">+ 0 ₽.</i> --></td>
+																</tr>
+																<tr>
+																	<td>Очищаем зеркала и стеклянные поверхности</td>
+																	<td><!-- Название услуги <i class="price-block float-right">+ 0 ₽.</i> --></td>
+																</tr>
+																<tr>
+																	<td>Протираем пыль со всех доступных поверхностей</td>
+																	<td><!-- Название услуги <i class="price-block float-right">+ 0 ₽.</i> --></td>
+																</tr>
+																<tr>
+																	<td>Пылесосим и моем пол, плинтусы</td>
+																	<td><!-- Название услуги <i class="price-block float-right">+ 0 ₽.</i> --></td>
+																</tr>
+																<tr>
+																	<td>Собираем мусор, меняем мешки</td>
+																	<td><!-- Название услуги <i class="price-block float-right">+ 0 ₽.</i> --></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										  </div>
 										</div>
 									</div>
 								</div>
@@ -200,7 +335,7 @@
 										<h2>Химчистка мебели<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
 										<p>Убрали больше 14 000 квартир !</p>
 										<div class="hero__btn">
-											<a class="btn btn-outline-danger border-2" href="#">Узнать цены</a>
+											<a class="btn btn-outline-danger border-2" href="#" id="f-price">Узнать цены</a>
 										</div>
 									</div>
 								</div>
@@ -209,7 +344,7 @@
 										<h2>Мытье окон<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
 										<p>Убрали больше 14 000 квартир !</p>
 										<div class="hero__btn">
-											<a class="btn btn-outline-danger border-2" href="#">Узнать цены</a>
+											<a class="btn btn-outline-danger border-2" href="#" id="w-price">Узнать цены</a>
 										</div>
 									</div>
 								</div>

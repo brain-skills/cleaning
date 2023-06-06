@@ -198,10 +198,52 @@ h6 {
 .clinox-btn-3 a:hover::after {
   right: 20px;
 }
-.w-90 {
-  max-width: 90% !important;
-  margin: 0 auto;
+.w-100, .w-90, .w-80, .w-70, .w-60, .w-50, .w-40, .w-30, .w-20, .w-10 {
+  margin: 0 auto !important;
 }
+.w-100 {max-width: 100% !important;}
+.w-90 {max-width: 90% !important;}
+.w-80 {max-width: 80% !important;}
+.w-70 {max-width: 70% !important;}
+.w-60 {max-width: 60% !important;}
+.w-50 {max-width: 50% !important;}
+.w-40 {max-width: 40% !important;}
+.w-30 {max-width: 30% !important;}
+.w-20 {max-width: 20% !important;}
+.w-10 {max-width: 10% !important;}
+
+.modal-body thead td {
+  font-size: 18px;
+  font-weight: 600;
+}
+.modal-body tbody tr:first-child {
+  font-weight: 600;
+}
+.modal-body tbody td {
+  font-size: 14px;
+}
+.price-block {
+  background: #eee;
+  color: #222;
+  padding: 0 5px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
 .mt-none-5 {
   margin-top: -5px;
 }
