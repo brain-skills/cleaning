@@ -2415,6 +2415,10 @@ ul {
 .hero__shape-icons .icon {
   position: absolute;
 }
+.hero__shape-icons .icon--0 {
+  right: 28%;
+  top: 15%;
+}
 .hero__shape-icons .icon--1 {
   left: 33%;
   bottom: 25%;
@@ -2988,6 +2992,10 @@ ul {
 }
 .about__icons .icon {
   position: absolute;
+}
+.about__icons .icon--0 {
+  top: 70px;
+  right: 44%;
 }
 .about__icons .icon--1 {
   top: 70px;
