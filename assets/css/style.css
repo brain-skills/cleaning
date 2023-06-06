@@ -4674,3 +4674,37 @@ ul {
   scrollbar-color: #ccc #fff;
   scrollbar-width: thin;
 }
+.notify{
+  position: fixed;
+  z-index: 999;
+  bottom: 10px;
+  left: 10px;
+}
+.notify:not(.show){
+  display: none;
+}
+.notify .show{
+  display: block;
+}
+.notify .alert{
+  background-color: rgb(0 0 0 / 90%);
+  color: white;
+  font-size: 13px !important;
+  width: 410px;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #000;
+  border-radius: 10px 10px 0px 0px;
+  margin: 0;
+}
+.link-warning {
+  color: #e49f00 !important;
+}
+.link-warning:hover {
+  color: #5984d6 !important;
+}
+.notify .alert #notifysubmit{
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

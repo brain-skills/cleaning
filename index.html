@@ -617,7 +617,7 @@
 				</div>
 				<div class="footer__bottom ul_li_between pt-15 pb-30">
 					<div class="footer__copyright mt-15">
-						© Copyright ©2023 <a href="#!">Bakalov Cleaning</a>. Все права защищены!
+						© Copyright ©2023 <a href="#!">Bakalov Cleaning</a> / <a href="" id="clearLs">clear localStorage</a>
 					</div>
 					<ul class="footer__nav ul_li mt-15">
 						<li><a href="#" data-bs-toggle="modal" data-bs-target="#termsBack">Пользовательское Соглашение</a></li>
@@ -679,7 +679,7 @@
 		  <div class="modal-content">
 			<div class="modal-header">
 			  <h5 class="modal-title" id="exampleModalLabel">Политика конфиденциальности</h5>
-			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  <button type="button" class="btn-close" id="awdawd" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
 			    <div class="mb-3 row">
@@ -691,6 +691,34 @@
 		  </div>
 		</div>
 	</div>
+	<div class="notify " id="alertnotify">
+		<div class="alert alert-dark" role="alert">
+			<div class="row">
+				<div class="col pr-0">Пользуясь нашим сайтом, вы соглашаетесь с тем, что мы используем <a href="https://ru.wikipedia.org/wiki/Cookie" class="link-warning" target="_blank">cookies</a> ! 🔒</div>
+				<div class="col-3"><a href="#" class="btn btn-outline-primary" id="notifysubmit">Понятно</a></div>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/file-saver.js"></script>
+	<script>
+		let clearLs = document.querySelector('#clearLs');
+		let alertnotify = document.querySelector('#alertnotify');
+		let notifysubmit = document.querySelector('#notifysubmit');
+		clearLs.addEventListener('click', (e)=>{
+			localStorage.clear();
+			e.preventDefault();
+		});
+		setTimeout(() =>{
+			if (localStorage.getItem('cookies') == null) {
+				alertnotify.classList.add('show');
+			}
+		},2000);
+		notifysubmit.addEventListener('click', (e) =>{
+			alertnotify.classList.remove('show');
+			localStorage.setItem('cookies', 'true');
+			e.preventDefault();
+		});
+	</script>
 
 	<!-- For Js Library -->
 	<script src="assets/js/jquery-3.7.0.min.js"></script>
