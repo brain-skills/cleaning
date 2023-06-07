@@ -17,10 +17,9 @@ let generalTab = document.querySelector('#general-tab');
 let general1 = document.querySelector('#general');
 let afteremTab = document.querySelector('#afterem-tab');
 let afterem1 = document.querySelector('#afterem');
-let hash = document.location.hash;
 let prefix = "";
 
-cleanService.addEventListener('change', function(){
+cleanService.addEventListener('change', function(e){
     if(cleanService.options.selectedIndex == 0){
         cleanTab.classList.add('active');
         furchemTab.classList.remove('active');
@@ -40,7 +39,7 @@ cleanService.addEventListener('change', function(){
         support1.classList.add('show', 'active');
         general1.classList.remove('show', 'active');
         afterem1.classList.remove('show', 'active');
-        document.location.hash = '#clean-s';
+        history.pushState(null, null, `#clean-s`);
         cleanService[0].setAttribute('selected','selected');
         cleanService[1].removeAttribute('selected','selected');
         cleanService[2].removeAttribute('selected','selected');
@@ -58,7 +57,7 @@ cleanService.addEventListener('change', function(){
         w1.classList.remove('show', 'active');
         w2.classList.remove('show', 'active');
         w3.classList.remove('show', 'active');
-        document.location.hash = '#dry-s'; // присваиваем ссылку
+        history.pushState(null, null, `#dry-s`);
         cleanService[0].removeAttribute('selected','selected');
         cleanService[1].setAttribute('selected','selected');
         cleanService[2].removeAttribute('selected','selected');
@@ -75,11 +74,12 @@ cleanService.addEventListener('change', function(){
         w1.classList.add('show', 'active');
         w2.classList.add('show', 'active');
         w3.classList.add('show', 'active');
-        document.location.hash = '#wash-s'; // присваиваем ссылку
+        history.pushState(null, null, `#wash-s`);
         cleanService[0].removeAttribute('selected','selected');
         cleanService[1].removeAttribute('selected','selected');
         cleanService[2].setAttribute('selected','selected');
     }
+    e.preventDefault();
 });
 cleanTab.addEventListener('click', function(event){
     cleanService.options.selectedIndex = 0;
@@ -110,30 +110,64 @@ windwTab.addEventListener('click', function(event){
 });
 
 // сохраняем значения с помощью якорных ссылок у табов
-$(document).ready(function() {
-    if (hash) {
-        $('.nav-item a[href=\"'+hash.replace(prefix,"")+'\"]').tab('show', 'active');
-        if(document.location.hash == '#clean-s'){
-            cleanService.options.selectedIndex = 0;
-            cleanService[0].setAttribute('selected','selected');
-            cleanService[1].removeAttribute('selected','selected');
-            cleanService[2].removeAttribute('selected','selected');
-        } else if (document.location.hash == '#dry-s') {
-            cleanService.options.selectedIndex = 1;
-            cleanService[0].removeAttribute('selected','selected');
-            cleanService[1].setAttribute('selected','selected');
-            cleanService[2].removeAttribute('selected','selected');
-        } else if (document.location.hash == '#wash-s') {
-            cleanService.options.selectedIndex = 2;
-            cleanService[0].removeAttribute('selected','selected');
-            cleanService[1].removeAttribute('selected','selected');
-            cleanService[2].setAttribute('selected','selected');
-        }
+document.addEventListener('click', (e)=>{
+    if(document.location.hash == '#clean-s'){
+        cleanTab.classList.add('active');
+        furchemTab.classList.remove('active');
+        windwTab.classList.remove('active');
+        history.pushState(null, null, `#clean-s`);
+        cleanService.options.selectedIndex = 0;
+        cleanService[0].setAttribute('selected','selected');
+        cleanService[1].removeAttribute('selected','selected');
+        cleanService[2].removeAttribute('selected','selected');
+        c1.classList.add('show', 'active');
+        c2.classList.add('show', 'active');
+        c3.classList.add('show', 'active');
+        f1.classList.remove('show', 'active');
+        f2.classList.remove('show', 'active');
+        f3.classList.remove('show', 'active');
+        w1.classList.remove('show', 'active');
+        w2.classList.remove('show', 'active');
+        w3.classList.remove('show', 'active');
+    } else if (document.location.hash == '#dry-s') {
+        cleanTab.classList.remove('active');
+        furchemTab.classList.add('active');
+        windwTab.classList.remove('active');
+        history.pushState(null, null, `#dry-s`);
+        cleanService.options.selectedIndex = 1;
+        cleanService[0].removeAttribute('selected','selected');
+        cleanService[1].setAttribute('selected','selected');
+        cleanService[2].removeAttribute('selected','selected');
+        c1.classList.remove('show', 'active');
+        c2.classList.remove('show', 'active');
+        c3.classList.remove('show', 'active');
+        f1.classList.add('show', 'active');
+        f2.classList.add('show', 'active');
+        f3.classList.add('show', 'active');
+        w1.classList.remove('show', 'active');
+        w2.classList.remove('show', 'active');
+        w3.classList.remove('show', 'active');
+    } else if (document.location.hash == '#wash-s') {
+        cleanTab.classList.remove('active');
+        furchemTab.classList.remove('active');
+        windwTab.classList.add('active');
+        history.pushState(null, null, `#wash-s`);
+        cleanService.options.selectedIndex = 2;
+        cleanService[0].removeAttribute('selected','selected');
+        cleanService[1].removeAttribute('selected','selected');
+        cleanService[2].setAttribute('selected','selected');
+        c1.classList.remove('show', 'active');
+        c2.classList.remove('show', 'active');
+        c3.classList.remove('show', 'active');
+        f1.classList.remove('show', 'active');
+        f2.classList.remove('show', 'active');
+        f3.classList.remove('show', 'active');
+        w1.classList.add('show', 'active');
+        w2.classList.add('show', 'active');
+        w3.classList.add('show', 'active');
     }
-    $('.nav-item a').on('shown.bs.tab', function (e) {
-        window.location.hash = e.target.hash.replace("#", "#" + prefix);
-    });
-});
+    e.preventDefault();
+})
 
 // задаём аргумент selected
 if(cleanService.options.selectedIndex == 0){
@@ -147,8 +181,10 @@ cleanService.addEventListener('change', function(e){
             cleanService[i].removeAttribute('selected','selected');
         }
     }
+    e.preventDefault();
 });
 
+// tabs для прайс листа в модальном окне
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -164,27 +200,43 @@ function openCity(evt, cityName) {
   }
 document.getElementById("defaultOpen").click();
 
-// передаём тело табов через свойство data-bs-toggle
-$('#mainservice a[data-bs-toggle="tab"]').on('show.bs.tab', function(e) {
-    let target = $(e.target).data('bs-target')
-    $(target)
-    .addClass('active show')
-    .siblings('.tab-pane.active')
-    .removeClass('active show');
+// несколько тел для табов
+cleanTab.addEventListener('click', (e)=>{
+    c1.classList.add('show', 'active');
+    c2.classList.add('show', 'active');
+    c3.classList.add('show', 'active');
+    f1.classList.remove('show', 'active');
+    f2.classList.remove('show', 'active');
+    f3.classList.remove('show', 'active');
+    w1.classList.remove('show', 'active');
+    w2.classList.remove('show', 'active');
+    w3.classList.remove('show', 'active');
+    history.pushState(null, null, `#clean-s`);
+    e.preventDefault();
 });
-
-// let mainservice = document.querySelector('#mainservice');
-// one.addEventListener('click', function(e){
-//     history.pushState(null, null, `#${c-1}`);
-//     mainservice.classList.add('active show');
-//     mainservice.siblings('.tab-pane.active')
-//     e.preventDefault();
-// });
-// two.addEventListener('click', function(e){
-//     history.pushState(null, null, `#${c-2}`);
-//     content.classList.remove('active show');
-//     e.preventDefault();
-// });
-// if(document.location.hash == '#c-1'){
-//     content.classList.add('show', 'active');
-// }
+furchemTab.addEventListener('click', (e)=>{
+    c1.classList.remove('show', 'active');
+    c2.classList.remove('show', 'active');
+    c3.classList.remove('show', 'active');
+    f1.classList.add('show', 'active');
+    f2.classList.add('show', 'active');
+    f3.classList.add('show', 'active');
+    w1.classList.remove('show', 'active');
+    w2.classList.remove('show', 'active');
+    w3.classList.remove('show', 'active');
+    history.pushState(null, null, `#dry-s`);
+    e.preventDefault();
+});
+windwTab.addEventListener('click', (e)=>{
+    c1.classList.remove('show', 'active');
+    c2.classList.remove('show', 'active');
+    c3.classList.remove('show', 'active');
+    f1.classList.remove('show', 'active');
+    f2.classList.remove('show', 'active');
+    f3.classList.remove('show', 'active');
+    w1.classList.add('show', 'active');
+    w2.classList.add('show', 'active');
+    w3.classList.add('show', 'active');
+    history.pushState(null, null, `#wash-s`);
+    e.preventDefault();
+});
