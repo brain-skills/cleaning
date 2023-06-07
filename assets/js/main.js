@@ -166,7 +166,6 @@ document.addEventListener('click', (e)=>{
         w2.classList.add('show', 'active');
         w3.classList.add('show', 'active');
     }
-    e.preventDefault();
 })
 
 // задаём аргумент selected
