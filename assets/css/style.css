@@ -2394,8 +2394,8 @@ ul {
 }
 .hero__text-box {
   position: absolute;
-  top: 38%;
-  left: 52%;
+  top: 40%;
+  left: 48%;
   transform: translate(-50%, -50%);
 }
 @media (max-width: 767px) {
@@ -2416,15 +2416,15 @@ ul {
   position: absolute;
 }
 .hero__shape-icons .icon--0 {
-  right: 28%;
+  right: 36%;
   top: 15%;
 }
 .hero__shape-icons .icon--1 {
-  left: 33%;
-  bottom: 25%;
+  left: 32%;
+  bottom: 22%;
 }
 .hero__shape-icons .icon--2 {
-  top: 320px;
+  bottom: 120px;
   left: 46%;
 }
 .hero__shape-icons .icon--3 {
