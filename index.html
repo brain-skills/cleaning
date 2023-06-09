@@ -340,17 +340,8 @@
 											<div class="modal-body">
 												<div class="row">
 													<div class="col-12">
-														<nav>
-															<div class="nav nav-tabs" id="nav-tab2" role="tablist2">
-															  <a class="nav-item nav-link fs-4 tablinks pt-0" onclick="openPlace(event, 'random')" id="defaultOpen2">Уборка</a>
-															  <a class="nav-item nav-link fs-4 tablinks pt-0">Окна</a>
-															  <a class="nav-item nav-link fs-4 tablinks pt-0">Допы</a>
-															  <a class="nav-item nav-link fs-4 tablinks pt-0">Хим-ка</a>
-															  <a class="nav-item nav-link fs-4 tablinks pt-0">Лист-1</a>
-															</div>
-														</nav>
 														<table class="table table-bordered m-0">
-															<tbody id="random" class="tabcontent2">
+															<tbody>
 																<tr>
 																	<td>Квадратура</td>
 																	<td>Поддерживающая уборка разовая</td>
@@ -475,7 +466,26 @@
 										<h2>Химчистка мебели<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
 										<p>Почистили более 3000 т. мебели !</p>
 										<div class="hero__btn">
-											<a class="btn btn-outline-danger border-2" href="#" id="f-price">Узнать цены</a>
+											<a class="btn btn-outline-danger border-2" href="#" data-bs-toggle="modal" data-bs-target="#fPrice">Узнать цены</a>
+										</div>
+										<div class="modal fade" id="fPrice" tabindex="2" aria-labelledby="examplePrice" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered price-width">
+											  <div class="modal-content">
+												<div class="modal-header">
+												  <h5 class="modal-title" id="examplePrice">Цены на химчистку мебели</h5>
+												  <button type="button" class="btn-close" id="awdawd" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<div class="row">
+														<div class="col-12">
+															<table class="table table-bordered m-0">
+																таблица с ценами на химчистку
+															</table>
+														</div>
+													</div>
+												</div>
+											  </div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -484,7 +494,26 @@
 										<h2>Мытье окон<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
 										<p>Помыли более 30000 т. окон !</p>
 										<div class="hero__btn">
-											<a class="btn btn-outline-danger border-2" href="#" id="w-price">Узнать цены</a>
+											<a class="btn btn-outline-primary border-2" href="#" data-bs-toggle="modal" data-bs-target="#wPrice">Узнать цены</a>
+										</div>
+										<div class="modal fade" id="wPrice" tabindex="2" aria-labelledby="examplePrice" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered price-width">
+											  <div class="modal-content">
+												<div class="modal-header">
+												  <h5 class="modal-title" id="examplePrice">Цены на мытье окон</h5>
+												  <button type="button" class="btn-close" id="awdawd" data-bs-dismiss="modal" aria-label="Close"></button>
+												</div>
+												<div class="modal-body">
+													<div class="row">
+														<div class="col-12">
+															<table class="table table-bordered m-0">
+																таблица с ценами на мытье окон
+															</table>
+														</div>
+													</div>
+												</div>
+											  </div>
+											</div>
 										</div>
 									</div>
 								</div>

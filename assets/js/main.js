@@ -238,19 +238,4 @@ function openCase(evt, cityName) {
     document.getElementById(cityName).style.display = "contents";
     evt.currentTarget.className += " active";
 }
-// tabs в модальном окне
-function openPlace(eva, placeName) {
-    var i, tabcontent2, tablinks;
-    tabcontent2 = document.getElementsByClassName("tabcontent2");
-    for (i = 0; i < tabcontent2.length; i++) {
-      tabcontent2[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks2");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(placeName).style.display = "contents";
-    eva.currentTarget.className += " active";
-}
 document.getElementById("defaultOpen").click();
-document.getElementById("defaultOpen2").click();
