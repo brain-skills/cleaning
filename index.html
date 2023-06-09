@@ -191,14 +191,15 @@
 										</div>
 										<p>Убрали больше 14 000 квартир !</p>
 										<div class="hero__btn">
-											<a class="btn btn-outline-danger border-2" href="#" data-bs-toggle="modal" data-bs-target="#c-price">Узнать цены</a>
+											<a class="btn btn-outline-primary border-1 mr-10" href="#" data-bs-toggle="modal" data-bs-target="#сCase">Что включено?</a>
+											<a class="btn btn-outline-success border-3" href="#" data-bs-toggle="modal" data-bs-target="#сPrice">Узнать цены</a>
 										</div>
 									</div>
-									<div class="modal fade" id="c-price" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal fade" id="сCase" tabindex="0" aria-labelledby="exampleModalLabel" aria-hidden="true">
 										<div class="modal-dialog modal-dialog-centered price-width">
 										  <div class="modal-content">
 											<div class="modal-header">
-											  <h5 class="modal-title" id="exampleModalLabel">Цены по Уборке</h5>
+											  <h5 class="modal-title" id="exampleModalLabel">Что включено и что можно добавить ?!</h5>
 											  <button type="button" class="btn-close" id="awdawd" data-bs-dismiss="modal" aria-label="Close"></button>
 											</div>
 											<div class="modal-body">
@@ -206,9 +207,9 @@
 													<div class="col-12">
 														<nav>
 															<div class="nav nav-tabs" id="nav-tab" role="tablist">
-															  <a class="nav-item nav-link fs-4 tablinks pt-0" onclick="openCity(event, 'allrooms')" id="defaultOpen">Все комнаты</a>
-															  <a class="nav-item nav-link fs-4 tablinks pt-0" onclick="openCity(event, 'kitchen')">Кухня</a>
-															  <a class="nav-item nav-link fs-4 tablinks pt-0" onclick="openCity(event, 'bathroom')">Ванная и туалет</a>
+															  <a class="nav-item nav-link fs-4 tablinks pt-0" onclick="openCase(event, 'allrooms')" id="defaultOpen">Все комнаты</a>
+															  <a class="nav-item nav-link fs-4 tablinks pt-0" onclick="openCase(event, 'kitchen')">Кухня</a>
+															  <a class="nav-item nav-link fs-4 tablinks pt-0" onclick="openCase(event, 'bathroom')">Ванная и туалет</a>
 															</div>
 														</nav>
 														<table class="table table-bordered m-0">
@@ -329,11 +330,150 @@
 										  </div>
 										</div>
 									</div>
+									<div class="modal fade" id="сPrice" tabindex="2" aria-labelledby="examplePrice" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered price-width">
+										  <div class="modal-content">
+											<div class="modal-header">
+											  <h5 class="modal-title" id="examplePrice">Цены на уборку</h5>
+											  <button type="button" class="btn-close" id="awdawd" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+												<div class="row">
+													<div class="col-12">
+														<nav>
+															<div class="nav nav-tabs" id="nav-tab2" role="tablist2">
+															  <a class="nav-item nav-link fs-4 tablinks pt-0" onclick="openPlace(event, 'random')" id="defaultOpen2">Уборка</a>
+															  <a class="nav-item nav-link fs-4 tablinks pt-0">Окна</a>
+															  <a class="nav-item nav-link fs-4 tablinks pt-0">Допы</a>
+															  <a class="nav-item nav-link fs-4 tablinks pt-0">Хим-ка</a>
+															  <a class="nav-item nav-link fs-4 tablinks pt-0">Лист-1</a>
+															</div>
+														</nav>
+														<table class="table table-bordered m-0">
+															<tbody id="random" class="tabcontent2">
+																<tr>
+																	<td>Квадратура</td>
+																	<td>Поддерживающая уборка разовая</td>
+																	<td>2 раза\мес</td>
+																	<td>3 раза\мес</td>
+																	<td>4 раза\мес</td>
+																	<td>Генеральная ГУ</td>
+																	<td>После ремонта (УПР)</td>
+																	<td>если нет мебели - минус 10%</td>
+																</tr>
+																<tr>
+																	<td>< 40</td>
+																	<td>2000</td>
+																	<td>1800</td>
+																	<td>1700</td>
+																	<td>1600</td>
+																	<td>5100</td>
+																	<td>8400</td>
+																	<td>7560</td>
+																</tr>
+																<tr>
+																	<td>40 - 49</td>
+																	<td>2200</td>
+																	<td>1980</td>
+																	<td>1870</td>
+																	<td>1760</td>
+																	<td>5500</td>
+																	<td>9000</td>
+																	<td>8100</td>
+																</tr>
+																<tr>
+																	<td>50 - 59</td>
+																	<td>2650</td>
+																	<td>2385</td>
+																	<td>2252,5</td>
+																	<td>2120</td>
+																	<td>6100</td>
+																	<td>9500</td>
+																	<td>8550</td>
+																</tr>
+																<tr>
+																	<td>60 - 69</td>
+																	<td>2900</td>
+																	<td>2610</td>
+																	<td>2465</td>
+																	<td>2320</td>
+																	<td>6700</td>
+																	<td>10100</td>
+																	<td>9090</td>
+																</tr>
+																<tr>
+																	<td>70 - 79</td>
+																	<td>3200</td>
+																	<td>2880</td>
+																	<td>2720</td>
+																	<td>2560</td>
+																	<td>7300</td>
+																	<td>10700</td>
+																	<td>9630</td>
+																</tr>
+																<tr>
+																	<td>80 - 89</td>
+																	<td>3400</td>
+																	<td>3060</td>
+																	<td>2890</td>
+																	<td>2720</td>
+																	<td>7900</td>
+																	<td>11200</td>
+																	<td>10080</td>
+																</tr>
+																<tr>
+																	<td>90 -99</td>
+																	<td>3600</td>
+																	<td>3240</td>
+																	<td>3060</td>
+																	<td>2880</td>
+																	<td>8500</td>
+																	<td>11500</td>
+																	<td>10350</td>
+																</tr>
+																<tr>
+																	<td>100-149</td>
+																	<td>36р\кв.м</td>
+																	<td>32,4р\кв.м </td>
+																	<td>30,6 р\кв.м </td>
+																	<td>28,8р\кв.м </td>
+																	<td>108 р./кв.м.</td>
+																	<td>156 р.\кв.м</td>
+																	<td>141 р.\кв.м</td>
+																</tr>
+																<tr>
+																	<td>150-249</td>
+																	<td>36р\кв.м</td>
+																	<td>32,4р\кв.м </td>
+																	<td>30,6 р\кв.м </td>
+																	<td>28,8р\кв.м </td>
+																	<td>108 р./кв.м.</td>
+																	<td>144 р.\кв.м</td>
+																	<td>130 р.\кв.м</td>
+																</tr>
+																<tr>
+																	<td>250-450</td>
+																	<td>36р\кв.м</td>
+																	<td>32,4р\кв.м </td>
+																	<td>30,6 р\кв.м </td>
+																	<td>28,8р\кв.м </td>
+																	<td>108 р./кв.м.</td>
+																	<td>132 р.\кв.м</td>
+																	<td>119 р.\кв.м</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										  </div>
+										</div>
+									</div>
 								</div>
 								<div class="tab-pane" id="f-1" role="tabpanel" aria-labelledby="furchem-tab">
 									<div class="hero__content hero__content-two">
 										<h2>Химчистка мебели<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
-										<p>Убрали больше 14 000 квартир !</p>
+										<p>Почистили более 3000 т. мебели !</p>
 										<div class="hero__btn">
 											<a class="btn btn-outline-danger border-2" href="#" id="f-price">Узнать цены</a>
 										</div>
@@ -342,7 +482,7 @@
 								<div class="tab-pane" id="w-1" role="tabpanel" aria-labelledby="windw-tab">
 									<div class="hero__content hero__content-two">
 										<h2>Мытье окон<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
-										<p>Убрали больше 14 000 квартир !</p>
+										<p>Помыли более 30000 т. окон !</p>
 										<div class="hero__btn">
 											<a class="btn btn-outline-danger border-2" href="#" id="w-price">Узнать цены</a>
 										</div>

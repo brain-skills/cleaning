@@ -232,12 +232,13 @@ h6 {
 
 @media (max-width: 767px) {.price-width{max-width: 98% !important;}}
 @media (min-width: 767px) {.price-width{max-width: 98% !important;}}
-@media (min-width: 991px) {.price-width{max-width: 95% !important;}}
-@media (min-width: 1024px) {.price-width{max-width: 87% !important;}}
-@media (min-width: 1200px) {.price-width{max-width: 78% !important;}}
-@media (min-width: 1300px) {.price-width{max-width: 70% !important;}}
-@media (min-width: 1400px) {.price-width{max-width: 60% !important;}}
-@media (min-width: 1500px) {.price-width{max-width: 50% !important;}}
+@media (min-width: 991px) {.price-width{max-width: 98% !important;}}
+@media (min-width: 1024px) {.price-width{max-width: 98% !important;}}
+@media (min-width: 1200px) {.price-width{max-width: 93% !important;}}
+@media (min-width: 1300px) {.price-width{max-width: 88% !important;}}
+@media (min-width: 1400px) {.price-width{max-width: 80% !important;}}
+@media (min-width: 1500px) {.price-width{max-width: 70% !important;}}
+@media (min-width: 1600px) {.price-width{max-width: 60% !important;}}
 
 .tab {
   overflow: hidden;

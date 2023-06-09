@@ -183,22 +183,6 @@ cleanService.addEventListener('change', function(e){
     e.preventDefault();
 });
 
-// tabs для прайс листа в модальном окне
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "contents";
-    evt.currentTarget.className += " active";
-  }
-document.getElementById("defaultOpen").click();
-
 // несколько тел для табов
 cleanTab.addEventListener('click', (e)=>{
     c1.classList.add('show', 'active');
@@ -239,3 +223,34 @@ windwTab.addEventListener('click', (e)=>{
     history.pushState(null, null, `#wash-s`);
     e.preventDefault();
 });
+
+// tabs в модальном окне
+function openCase(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "contents";
+    evt.currentTarget.className += " active";
+}
+// tabs в модальном окне
+function openPlace(eva, placeName) {
+    var i, tabcontent2, tablinks;
+    tabcontent2 = document.getElementsByClassName("tabcontent2");
+    for (i = 0; i < tabcontent2.length; i++) {
+      tabcontent2[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks2");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(placeName).style.display = "contents";
+    eva.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpen2").click();
