@@ -13,7 +13,7 @@ $(document).ready(function () {
                 alertNotify.classList.add('show');
                 setTimeout(() =>{
                     alertNotify.classList.remove('show');
-                },6000);
+                },7000);
             }
         });
         return false;
@@ -33,7 +33,7 @@ $(document).ready(function () {
                 alertNotify.classList.add('show');
                 setTimeout(() =>{
                     alertNotify.classList.remove('show');
-                },6000);
+                },7000);
             }
         });
         return false;
