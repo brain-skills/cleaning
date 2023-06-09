@@ -562,24 +562,24 @@
 						</div>
 						<div class="col-lg-8">
 							<div class="cta__wrap cta__two ul_li">
-								<form action="#">
+								<form id="orderForm">
 									<div class="row">
 										<div class="col-12"><h4 class="pb-10">Оставьте заявку:</h4></div>
 										<div class="col-3">
-											<input type="text" class="form-control" placeholder="Имя" autofocus>
+											<input type="text" class="form-control" name="yourname" id="yourname" placeholder="Имя" autofocus>
 										</div>
 										<div class="col-3">
-											<input type="text" class="form-control" placeholder="Телефон">
+											<input type="text" class="form-control" name="yourphone" id="yourphone" placeholder="Телефон">
 										</div>
 										<div class="col-3">
-											<select class="form-select" id="cleanservice">
+											<select class="form-select" name="cleanservice" id="cleanservice">
 												<option value="Уборка">Уборка</option>
 												<option value="Химчистка мебели">Химчистка мебели</option>
 												<option value="Мытье окон">Мытье окон</option>
 											</select>
 										</div>
 										<div class="col-2">
-											<button class="btn btn-outline-primary" type="submit">Вызвать</button>
+											<button class="btn btn-outline-primary" type="submit" id="submit">Вызвать</button>
 										</div>
 									</div>
 								</form>
@@ -913,23 +913,25 @@
 			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
-			    <div class="mb-3 row">
-					<div class="col-12">
-						<label>Имя</label>
-						<input type="text" class="form-control" id="nameValue" placeholder="Анастасия">
+				<form id="feedbackForm">
+					<div class="mb-3 row">
+						<div class="col-12">
+							<label>Имя</label>
+							<input type="text" class="form-control" name="yourname" id="yourname" placeholder="Ваше имя">
+						</div>
 					</div>
-				</div>
-				<div class="mb-3 row">
-					<div class="col-12">
-						<label>Телефон</label>
-						<input type="text" class="form-control" id="phoneNumb" placeholder="+7 (000)000-00-00">
+					<div class="mb-3 row">
+						<div class="col-12">
+							<label>Телефон</label>
+							<input type="text" class="form-control" name="yourphone" id="yourphone" placeholder="+7 (000)000-00-00">
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-12 d-grid gap-2">
-						<button class="btn btn-primary" type="button">Оставить заявку</button>
+					<div class="row">
+						<div class="col-12 d-grid gap-2">
+							<button class="btn btn-primary" type="submit" id="submit">Оставить заявку</button>
+						</div>
 					</div>
-				</div>
+				</form>
 			</div>
 		  </div>
 		</div>
@@ -968,7 +970,7 @@
 		  </div>
 		</div>
 	</div>
-	<div class="notify " id="alertnotify">
+	<div class="cookiesnotify " id="cookiesNotify">
 		<div class="alert alert-dark" role="alert">
 			<div class="row">
 				<div class="col pr-0">Пользуясь нашим сайтом, вы соглашаетесь с тем, что мы используем <a href="https://ru.wikipedia.org/wiki/Cookie" class="link-warning" target="_blank">cookies</a> ! 🔒</div>
@@ -976,27 +978,13 @@
 			</div>
 		</div>
 	</div>
-	
-	<script>
-		let clearLs = document.querySelector('#clearLs');
-		let alertnotify = document.querySelector('#alertnotify');
-		let notifysubmit = document.querySelector('#notifysubmit');
-		clearLs.addEventListener('click', (e)=>{
-			localStorage.clear();
-			e.preventDefault();
-		});
-		setTimeout(() =>{
-			if (localStorage.getItem('cookies') == null) {
-				alertnotify.classList.add('show');
-			}
-		},2000);
-		notifysubmit.addEventListener('click', (e) =>{
-			alertnotify.classList.remove('show');
-			localStorage.setItem('cookies', 'true');
-			e.preventDefault();
-		});
-		// document.querySelector('#insta-widget').style.zoom = '100%';
-	</script>
+
+	<div class="alertnotify " id="alertNotify">
+		<div class="alert alert-primary" role="alert">
+			<p>Ваша заявка отправлена!</p>
+			<p class="pb-0 mb-0">Мы свяжемся с вами в ближайшее время!</p>
+		</div>
+	</div>
 
 	<!-- For Js Library -->
 	<script src="assets/js/jquery-3.7.0.min.js"></script>
@@ -1016,5 +1004,7 @@
 	<script src="assets/js/wow.min.js"></script>
 	<script src="assets/js/scripts-2.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/cookies-notify.js"></script>
+	<script src="assets/mail/mail.js"></script>
 </body>
 </html>		

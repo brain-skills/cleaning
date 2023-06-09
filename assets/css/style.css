@@ -4736,19 +4736,32 @@ ul {
   scrollbar-color: #ccc #fff;
   scrollbar-width: thin;
 }
-.notify{
+.alertnotify{
+  position: fixed;
+  z-index: 99999;
+  bottom: 10px;
+  right: 10px;
+}
+.alertnotify:not(.show){
+  display: none;
+}
+.alertnotify .show{
+  display: block;
+  z-index: 99999;
+}
+.cookiesnotify{
   position: fixed;
   z-index: 999;
   bottom: 10px;
   left: 10px;
 }
-.notify:not(.show){
+.cookiesnotify:not(.show){
   display: none;
 }
-.notify .show{
+.cookiesnotify .show{
   display: block;
 }
-.notify .alert{
+.cookiesnotify .alert{
   background-color: rgb(0 0 0 / 90%);
   color: white;
   font-size: 13px !important;
@@ -4764,7 +4777,7 @@ ul {
 .link-warning:hover {
   color: #5984d6 !important;
 }
-.notify .alert #notifysubmit{
+.cookiesnotify .alert #notifysubmit{
   color: #fff !important;
   display: flex;
   align-items: center;
