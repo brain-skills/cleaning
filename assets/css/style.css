@@ -4783,3 +4783,28 @@ ul {
   align-items: center;
   justify-content: center;
 }
+.tab-content>.active {
+  position: relative;
+  z-index: 1;
+}
+
+.rotatecircle {
+  animation-name: circle;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes circle {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+.icon {
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
