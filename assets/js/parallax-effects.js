@@ -22,3 +22,13 @@ function svgAnim(arg){new Vivus(arg, {
   })
 })};
 // Конец SVG анимации //
+
+
+
+// SVG анимация при наведении на Телефон в шапке //
+const phoneSvg = document.querySelector('#phoneSvg');
+const phoneEvents = document.querySelector('#phoneEvents');
+phoneEvents.addEventListener('mouseenter', ()=>{
+  svgAnim(phoneSvg);
+})
+// Конец SVG анимации при наведении на Телефон в шапке //
