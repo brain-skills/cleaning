@@ -11,45 +11,14 @@ function parallax(event) {
 };
 // Конец анимации фигур //
 
-// Определяем в каком объекте заключена ссылка на SVG и сразу приобразуем этот объект в готовый SVG
-// Источник: https://github.com/iconfu/svg-inject
-// document.addEventListener('DOMContentLoaded', function() {
-//   SVGInject(document.querySelectorAll(".svg-icon img")); // указываем тег img, так как ссылка на SVG там. А значит делаем из img готовый SVG
-// });
-
-// Вот она сволочь и нужна!! она напрочь отказывается работать!
-// Хотя тут она у меня работает: https://brain-skills.github.io/parallax-effects/
-// Источник: https://github.com/maxwellito/vivus
-
-document.addEventListener('DOMContentLoaded', function() {
-  SVGInject(document.querySelectorAll(".svg-icon img")).then(_ => {
-      const vivadom = document.querySelector('svg.injectable');
-      const vivus = new Vivus(vivadom, {
-          type: 'delayed',
-          duration: 35,
-          file: vivadom,
-          animTimingFunction: Vivus.EASE_IN
-      }, function(obj) {
-          vivadom.addEventListener('mouseenter', () => {
-              obj.reset().play();
-          })
-      });
-  });
-})
-
-
-
-// Экспериментальный метод - тут он работает у меня нормально: https://jsfiddle.net/Georka/8mu5jxz7/2/
-// А тут отказывается работать! пишет ошибку!!!
-// const vivadom = document.querySelector('svg.injectable');
-// const vivus = new Vivus(vivadom, {
-//     type: 'delayed',
-//     duration: 35,
-//     file: vivadom,
-//     animTimingFunction: Vivus.EASE_IN
-// }, function(obj) {
-//   	vivadom.addEventListener('mouseenter', ()=> {
-//         obj.reset().play();
-//     })
-// }
-// );
+// SVG анимация //
+function svgAnim(arg){new Vivus(arg, {
+  type: 'sync',
+  duration: 30,
+  animTimingFunction: Vivus.EASE_IN
+}, function(obj) {
+  arg.addEventListener('mouseenter', ()=> {
+      obj.reset().play();
+  })
+})};
+// Конец SVG анимации //

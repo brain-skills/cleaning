@@ -40,8 +40,9 @@ h6 {
   border-color: #e7ad00;
 }
 .header__logo img {
-  width: 180px;
-  height: auto;
+  width: auto;
+  height: 42px;
+  margin-top: 2px;
 }
 .btn-outline-primary {
   color: #5984d6 !important;
@@ -2094,7 +2095,8 @@ ul {
   z-index: 99;
 }
 .header__cta .icon {
-  width: 28px;
+  width: auto;
+  height: auto;
   margin-right: 17px;
 }
 .header__cta .content {
@@ -2421,20 +2423,26 @@ ul {
   top: 15%;
 }
 .hero__shape-icons .icon--1 {
-  left: 32%;
+  left: 34%;
   bottom: 22%;
 }
 .hero__shape-icons .icon--2 {
   bottom: 120px;
   left: 46%;
 }
-.hero__shape-icons .icon--3 {
-  right: 110px;
-  bottom: 37%;
+@media (max-width: 1599px) {
+  .hero__shape-icons .icon--3 {display: none;}
+  .hero__shape-icons .icon--4 {display: none;}
 }
-.hero__shape-icons .icon--4 {
-  bottom: 100px;
-  right: 10%;
+@media (min-width: 1600px) {
+  .hero__shape-icons .icon--3 {
+    right: 8%;
+    bottom: 65%;
+  }
+  .hero__shape-icons .icon--4 {
+    right: 6%;
+    bottom: 20%;
+  }
 }
 .cta__wrap {
   padding: 10px 25px 15px;
@@ -3824,16 +3832,16 @@ ul {
 }
 .faq__shape img:nth-child(1) {
   top: 50%;
-  left: -40px;
+  left: -80px;
   transform: translateY(-50%);
 }
 .faq__shape img:nth-child(2) {
-  top: -50px;
-  left: 30px;
+  top: -30px;
+  left: -30px;
 }
 .faq__shape img:nth-child(3) {
   top: -27px;
-  right: -51px;
+  right: -80px;
 }
 .faq__wrap {
   padding-left: 80px;
