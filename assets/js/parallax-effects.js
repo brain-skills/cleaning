@@ -23,7 +23,13 @@ function svgAnim(arg){new Vivus(arg, {
 })};
 // Конец SVG анимации //
 
-
+// SVG анимация при наведении на текст логотипа в шапке //
+const logoIcon = document.querySelector('#logoIcon');
+const logoText = document.querySelector('#logoText');
+logoText.addEventListener('mouseenter', ()=>{
+  svgAnim(logoIcon);
+})
+// Конец SVG анимации при наведении на текст логотипа в шапке //
 
 // SVG анимация при наведении на Телефон в шапке //
 const phoneSvg = document.querySelector('#phoneSvg');
