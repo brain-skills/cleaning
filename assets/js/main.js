@@ -239,3 +239,11 @@ function openCase(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
+
+window.addEventListener('load', () => {
+    let scroll = localStorage.getItem("state_scroll");
+    scroll && window.scrollTo(0, scroll);
+    window.addEventListener('scroll', () => {
+        localStorage.setItem("state_scroll", window.pageYOffset)
+    })
+})

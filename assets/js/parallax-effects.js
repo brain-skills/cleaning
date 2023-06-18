@@ -1,3 +1,4 @@
+// Анимация фигур //
 document.addEventListener("mousemove", parallax);
 function parallax(event) {
   this.querySelectorAll(".mouse").forEach((shift) => {
@@ -8,53 +9,47 @@ function parallax(event) {
     shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
   });
 };
+// Конец анимации фигур //
 
-SVGInject(document.querySelectorAll(".svg-icon img"));
-const vivadom = document.querySelector('svg.injectable');
-const vivus = new Vivus(vivadom, {
-    type: 'delayed',
-    duration: 35,
-    file: vivadom,
-    animTimingFunction: Vivus.EASE_IN
-}, function(obj) {
-  	vivadom.addEventListener('mouseenter', ()=> {
-        obj.reset().play();
-    })
-}
-);
-
+// Определяем в каком объекте заключена ссылка на SVG и сразу приобразуем этот объект в готовый SVG
+// Источник: https://github.com/iconfu/svg-inject
 // document.addEventListener('DOMContentLoaded', function() {
-//   SVGInject(document.querySelectorAll(".svg-icon img"));
+//   SVGInject(document.querySelectorAll(".svg-icon img")); // указываем тег img, так как ссылка на SVG там. А значит делаем из img готовый SVG
 // });
 
-// var $svgIconBox = $('.icon');
-// $svgIconBox.each(function() {
-//     var $this = $(this),
-//         $svgIcon = $this.find('.svg-icon'),
-//         $id = $svgIcon.attr('id'),
-//         $icon = $svgIcon.data('svg-icon');
-//     var $vivus = new Vivus($id, { duration: 60, file: $icon });
-//     $this.on('mouseenter', function () {
-//         $vivus.reset().play();
-//     });
-// });
+// Вот она сволочь и нужна!! она напрочь отказывается работать!
+// Хотя тут она у меня работает: https://brain-skills.github.io/parallax-effects/
+// Источник: https://github.com/maxwellito/vivus
 
-// SVGInject(document.querySelectorAll("img.injectable"));
+document.addEventListener('DOMContentLoaded', function() {
+  SVGInject(document.querySelectorAll(".svg-icon img")).then(_ => {
+      const vivadom = document.querySelector('svg.injectable');
+      const vivus = new Vivus(vivadom, {
+          type: 'delayed',
+          duration: 35,
+          file: vivadom,
+          animTimingFunction: Vivus.EASE_IN
+      }, function(obj) {
+          vivadom.addEventListener('mouseenter', () => {
+              obj.reset().play();
+          })
+      });
+  });
+})
 
-// var myCallback = function () {};
-// var mySVGs = document.querySelector(".injectable");
-// for (var i = mySVGs.length - 1; i >= 0; i--) {
-//   new Vivus(mySVGs[i], {duration: 100, }, myCallback);
+
+
+// Экспериментальный метод - тут он работает у меня нормально: https://jsfiddle.net/Georka/8mu5jxz7/2/
+// А тут отказывается работать! пишет ошибку!!!
+// const vivadom = document.querySelector('svg.injectable');
+// const vivus = new Vivus(vivadom, {
+//     type: 'delayed',
+//     duration: 35,
+//     file: vivadom,
+//     animTimingFunction: Vivus.EASE_IN
+// }, function(obj) {
+//   	vivadom.addEventListener('mouseenter', ()=> {
+//         obj.reset().play();
+//     })
 // }
-
-// var $svgIconBox = $('.icon');
-// $svgIconBox.each(function() {
-//     var $this = $(this),
-//         $svgIcon = $this.find('.svg-icon'),
-//         $id = $svgIcon.attr('id'),
-//         $icon = $svgIcon.data('svg-icon');
-//     var $vivus = new Vivus($id, { duration: 100, file: $icon });
-//     $this.on('mouseenter', function () {
-//         $vivus.reset().play();
-//     });
-// });
+// );
