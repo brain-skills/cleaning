@@ -313,10 +313,7 @@ color: #3a505f;
 top: 0;
 cursor: pointer;
 }
-.sidebar-info {
-padding-top: 20px;
-padding-bottom: 50px;
-}
+.sidebar-info {padding-bottom: 50px;}
 @media (max-width: 991px) {
   .side-mobile-menu {
     display: block;
