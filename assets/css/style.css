@@ -2065,19 +2065,19 @@ ul {
   content: "";
 }
 .header__info > li i {
-  color: var(--color-yellow);
+  color: var(--color-primary);
   font-size: 14px;
   margin-right: 8px;
 }
 .header__social a {
-  color: var(--color-primary);
+  color: var(--color-dark);
   font-size: 15px;
 }
 .header__social a:not(:last-child) {
   margin-right: 20px;
 }
 .header__social a:hover {
-  color: var(--color-yellow);
+  color: var(--color-primary);
 }
 .header__main-wrap {
   position: relative;
@@ -2443,11 +2443,6 @@ ul {
     right: 6%;
     bottom: 20%;
   }
-}
-.icon--5 {
-  position: absolute;
-  bottom: 24%;
-  right: 6%;
 }
 .cta__wrap {
   padding: 10px 25px 15px;
