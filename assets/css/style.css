@@ -4811,7 +4811,7 @@ ul {
   }
 }
 .icon {
-  z-index: 999;
+  z-index: 4;
   display: flex;
   justify-content: center;
   align-items: center;
