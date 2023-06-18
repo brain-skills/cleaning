@@ -2444,6 +2444,11 @@ ul {
     bottom: 20%;
   }
 }
+.icon--5 {
+  position: absolute;
+  bottom: 24%;
+  right: 6%;
+}
 .cta__wrap {
   padding: 10px 25px 15px;
   background-color: var(--color-white);
