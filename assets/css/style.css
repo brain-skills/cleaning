@@ -2469,7 +2469,12 @@ ul {
 }
 .cta__two {
   position: relative;
-  width: 150%;
+  width: 110%;
+}
+@media (min-width: 1400px) {
+  .cta__two {
+    width: 150%;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
   .cta__two {
@@ -4824,4 +4829,13 @@ ul {
   /* display: flex;
   justify-content: center;
   align-items: center; */
+}
+#promoCode {
+  font-size: 14px;
+  color: #4C85D3;
+  cursor: pointer;
+}
+#salePercent {
+  font-size: 14px;
+  color: #f00;
 }

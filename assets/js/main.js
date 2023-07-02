@@ -494,3 +494,23 @@ window.addEventListener('load', () => {
         localStorage.setItem("state_scroll", window.pageYOffset)
     })
 })
+
+// Промокод
+let promoCode = document.querySelector('#promoCode');
+let salePercent = document.querySelector('#salePercent');
+promoCode.onclick = function(){
+    let promo = prompt('Введите Промокод');
+    if(parseInt(promo, 36) == '47523533'){
+        salePercent.innerText = ' | Ваша скидка: 5%';
+    } else if (parseInt(promo, 36) == '1710847044'){
+        salePercent.innerText = ' | Ваша скидка: 10%';
+    } else if (parseInt(promo, 36) == '1710847049'){
+        salePercent.innerText = ' | Ваша скидка: 15%';
+    } else {
+        salePercent.innerText = ' | Не верно указан промокод';
+    }
+    // var name10 = 'maridagio';
+    // var name30 = parseInt(name10, 36);
+    // console.log(name30);
+    // console.log(name30.toString(36));
+}
