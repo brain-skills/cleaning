@@ -497,7 +497,9 @@ window.addEventListener('load', () => {
 
 // Промокод
 let promoCode = document.querySelector('#promoCode');
+let promoCode2 = document.querySelector('#promoCode2');
 let salePercent = document.querySelector('#salePercent');
+let salePercent2 = document.querySelector('#salePercent2');
 promoCode.onclick = function(){
     let promo = prompt('Введите Промокод');
     if(parseInt(promo, 36) == '47523533'){
@@ -508,5 +510,17 @@ promoCode.onclick = function(){
         salePercent.innerText = ' | Ваша скидка: 15%';
     } else {
         salePercent.innerText = ' | Не верно указан промокод';
+    }
+}
+promoCode2.onclick = function(){
+    let promo2 = prompt('Введите Промокод');
+    if(parseInt(promo2, 36) == '47523533'){
+        salePercent2.innerText = ' | Ваша скидка: 5%';
+    } else if (parseInt(promo2, 36) == '1710847044'){
+        salePercent2.innerText = ' | Ваша скидка: 10%';
+    } else if (parseInt(promo2, 36) == '1710847049'){
+        salePercent2.innerText = ' | Ваша скидка: 15%';
+    } else {
+        salePercent2.innerText = ' | Не верно указан промокод';
     }
 }

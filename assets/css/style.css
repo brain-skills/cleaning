@@ -4830,12 +4830,12 @@ ul {
   justify-content: center;
   align-items: center; */
 }
-#promoCode {
+#promoCode, #promoCode2 {
   font-size: 14px;
   color: #4C85D3;
   cursor: pointer;
 }
-#salePercent {
+#salePercent, #salePercent2 {
   font-size: 14px;
   color: #f00;
 }
