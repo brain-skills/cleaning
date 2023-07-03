@@ -2736,7 +2736,7 @@ ul {
   color: #333;
   font-size: 14px;
   position: relative;
-  padding-left: 24px;
+  padding-left: 20px;
   line-height: 1.1rem;
 }
 .feature__list li:not(:last-child) {
@@ -2744,10 +2744,9 @@ ul {
 }
 .feature__list li::before {
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 0;
-  content: "";
-  font-family: "Font Awesome 5 Pro";
+  content: "-";
   font-weight: 400;
   font-size: 13px;
   color: var(--color-yellow);
@@ -2838,8 +2837,7 @@ ul {
   position: absolute;
   top: 2px;
   left: 0;
-  content: "";
-  font-family: "Font Awesome 5 Pro";
+  content: "-";
   font-weight: 400;
   font-size: 13px;
   color: var(--color-yellow);
