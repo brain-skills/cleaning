@@ -14,7 +14,7 @@
 	<link rel="apple-touch-icon-precomposed" type="image/x-icon" href="assets/img/favicons/64.png" sizes="64x64" />
 	<link rel="icon" type="image/png" href="assets/img/favicons/favicon.png" sizes="32x32">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/video.min.css">
 	<link rel="stylesheet" href="assets/css/slick.css">
 	<link rel="stylesheet" href="assets/css/slick-theme.css">
@@ -212,44 +212,28 @@
 										<div class="tab-content" id="cleanDetails">
 											<div class="tab-pane show active" id="support" role="tabpanel" aria-labelledby="cs1">
 												<h2>Уборка квартиры<br>от <span>1590 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
+												<p>Убрали больше 14 000 квартир !</p>
+												<div class="hero__btn">
+													<a class="btn btn-outline-primary border-1 mr-10" href="#" id="сsIncluded" data-bs-toggle="modal" data-bs-target="#included">Что включено?</a>
+													<a class="btn btn-outline-success border-2" href="#" id="сsPrice" data-bs-toggle="modal" data-bs-target="#price">Узнать цены</a>
+												</div>
 											</div>
 											<div class="tab-pane" id="general" role="tabpanel" aria-labelledby="cg1">
 												<h2>Генеральная уборка<br>от <span>8990 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
+												<p>Убрали больше 14 000 квартир !</p>
+												<div class="hero__btn">
+													<a class="btn btn-outline-primary border-1 mr-10" href="#" id="cgIncluded" data-bs-toggle="modal" data-bs-target="#included">Что включено?</a>
+													<a class="btn btn-outline-success border-2" href="#" id="cgPrice" data-bs-toggle="modal" data-bs-target="#price">Узнать цены</a>
+												</div>
 											</div>
 											<div class="tab-pane" id="afterem" role="tabpanel" aria-labelledby="ca1">
 												<h2>Уборка после ремонта<br>от <span>9990 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
+												<p>Убрали больше 14 000 квартир !</p>
+												<div class="hero__btn">
+													<a class="btn btn-outline-primary border-1 mr-10" href="#" id="caIncluded" data-bs-toggle="modal" data-bs-target="#included">Что включено?</a>
+													<a class="btn btn-outline-success border-2" href="#" id="caPrice" data-bs-toggle="modal" data-bs-target="#price">Узнать цены</a>
+												</div>
 											</div>
-										</div>
-										<p>Убрали больше 14 000 квартир !</p>
-										<div class="hero__btn">
-											<a class="btn btn-outline-primary border-1 mr-10" href="#" data-bs-toggle="modal" data-bs-target="#сCase">Что включено?</a>
-											<a class="btn btn-outline-success border-2" href="#" data-bs-toggle="modal" data-bs-target="#сPrice">Узнать цены</a>
-										</div>
-									</div>
-									<div class="modal fade" id="сCase" tabindex="0" aria-labelledby="exampleModalLabel" aria-hidden="true">
-										<div class="modal-dialog modal-dialog-centered price-width">
-										  <div class="modal-content">
-											<div class="modal-header">
-											  <h5 class="modal-title" id="exampleModalLabel">Что включено и что можно добавить ?!</h5>
-											  <button type="button" class="btn-close" id="awdawd" data-bs-dismiss="modal" aria-label="Close"></button>
-											</div>
-											<div class="modal-body">
-												1
-											</div>
-										  </div>
-										</div>
-									</div>
-									<div class="modal fade" id="сPrice" tabindex="2" aria-labelledby="examplePrice" aria-hidden="true">
-										<div class="modal-dialog modal-dialog-centered price-width">
-										  <div class="modal-content">
-											<div class="modal-header">
-											  <h5 class="modal-title" id="examplePrice">Цены на уборку</h5>
-											  <button type="button" class="btn-close" id="awdawd" data-bs-dismiss="modal" aria-label="Close"></button>
-											</div>
-											<div class="modal-body">
-												2
-											</div>
-										  </div>
 										</div>
 									</div>
 								</div>
@@ -258,21 +242,8 @@
 										<h2>Химчистка мебели<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
 										<p>Почистили более 3000 т. мебели !</p>
 										<div class="hero__btn">
-											<a class="btn btn-outline-primary border-1 mr-10" href="#" data-bs-toggle="modal" data-bs-target="#fCase">Что включено?</a>
-											<a class="btn btn-outline-success border-2" href="#" data-bs-toggle="modal" data-bs-target="#fPrice">Узнать цены</a>
-										</div>
-										<div class="modal fade" id="fPrice" tabindex="2" aria-labelledby="examplePrice" aria-hidden="true">
-											<div class="modal-dialog modal-dialog-centered price-width">
-											  <div class="modal-content">
-												<div class="modal-header">
-												  <h5 class="modal-title" id="examplePrice">Цены на химчистку мебели</h5>
-												  <button type="button" class="btn-close" id="awdawd" data-bs-dismiss="modal" aria-label="Close"></button>
-												</div>
-												<div class="modal-body">
-													1
-												</div>
-											  </div>
-											</div>
+											<a class="btn btn-outline-primary border-1 mr-10" href="#" id="fIncluded" data-bs-toggle="modal" data-bs-target="#included">Что включено?</a>
+											<a class="btn btn-outline-success border-2" href="#" id="fPrice" data-bs-toggle="modal" data-bs-target="#price">Узнать цены</a>
 										</div>
 									</div>
 								</div>
@@ -281,21 +252,8 @@
 										<h2>Мытье окон<br>от <span>1190 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
 										<p>Помыли более 30000 т. окон !</p>
 										<div class="hero__btn">
-											<a class="btn btn-outline-primary border-1 mr-10" href="#" data-bs-toggle="modal" data-bs-target="#wCase">Что включено?</a>
-											<a class="btn btn-outline-success border-2" href="#" data-bs-toggle="modal" data-bs-target="#wPrice">Узнать цены</a>
-										</div>
-										<div class="modal fade" id="wPrice" tabindex="2" aria-labelledby="examplePrice" aria-hidden="true">
-											<div class="modal-dialog modal-dialog-centered price-width">
-											  <div class="modal-content">
-												<div class="modal-header">
-												  <h5 class="modal-title" id="examplePrice">Цены на мытье окон</h5>
-												  <button type="button" class="btn-close" id="awdawd" data-bs-dismiss="modal" aria-label="Close"></button>
-												</div>
-												<div class="modal-body">
-													1
-												</div>
-											  </div>
-											</div>
+											<a class="btn btn-outline-primary border-1 mr-10" href="#" id="wIncluded" data-bs-toggle="modal" data-bs-target="#included">Что включено?</a>
+											<a class="btn btn-outline-success border-2" href="#" id="wPrice" data-bs-toggle="modal" data-bs-target="#price">Узнать цены</a>
 										</div>
 									</div>
 								</div>
@@ -757,9 +715,8 @@
 					</div>
 				</div>
 			</div>
-			<div id="insta-widget">
-				<!-- <div class="embedsocial-hashtag" data-ref="126cd3e122fe292d1c87282117aafc50049cf8b0"> <a class="feed-powered-by-es feed-powered-by-es-feed-new" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Widget by EmbedSocial"> Widget by EmbedSocial<span>→</span> </a> </div> <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script> -->
-				<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script><div class="elfsight-app-c856aed1-8a7f-4a57-b25b-cbaeed1580b9"></div>
+			<div id="insta-widget" loading="lazy">
+				<script src="https://static.elfsight.com/platform/platform.js" loading="lazy" data-use-service-core defer></script><div class="elfsight-app-c856aed1-8a7f-4a57-b25b-cbaeed1580b9" loading="lazy"></div>
 			</div>
 		</main>
 
@@ -846,6 +803,24 @@
 		  </div>
 		</div>
 	</div>
+	<div class="modal fade" id="included" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered price-width">
+		  <div class="modal-content">
+			<div class="modal-body">
+				<div class="row" id="includeList"></div>
+			</div>
+		  </div>
+		</div>
+	</div>
+	<div class="modal fade" id="price" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered price-width">
+		  <div class="modal-content">
+			<div class="modal-body">
+				<div class="row" id="priceList"></div>
+			</div>
+		  </div>
+		</div>
+	</div>
 	<div class="modal fade" id="termsBack" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered w-90">
 		  <div class="modal-content">
@@ -912,7 +887,7 @@
 			<p class="pb-0 mb-0">Мы свяжемся с вами в ближайшее время!</p>
 		</div>
 	</div>
-
+	
 	<!-- For Js Library -->
 	<script src="assets/js/jquery-3.7.0.min.js"></script>
     <script src="assets/js/pathformer.js"></script>

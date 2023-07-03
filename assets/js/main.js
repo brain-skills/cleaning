@@ -471,22 +471,6 @@ windwTab.addEventListener('click', (e)=>{
     e.preventDefault();
 });
 
-// tabs в модальном окне
-// function openCase(evt, cityName) {
-//     var i, tabcontent, tablinks;
-//     tabcontent = document.getElementsByClassName("tabcontent");
-//     for (i = 0; i < tabcontent.length; i++) {
-//       tabcontent[i].style.display = "none";
-//     }
-//     tablinks = document.getElementsByClassName("tablinks");
-//     for (i = 0; i < tablinks.length; i++) {
-//       tablinks[i].className = tablinks[i].className.replace(" active", "");
-//     }
-//     document.getElementById(cityName).style.display = "contents";
-//     evt.currentTarget.className += " active";
-// }
-// document.getElementById("defaultOpen").click();
-
 // Сохранять позицию после refresh
 window.addEventListener('load', () => {
     let scroll = localStorage.getItem("state_scroll");
@@ -525,3 +509,40 @@ promoCode2.onclick = function(){
         salePercent2.innerText = ' | Не верно указан промокод';
     }
 }
+
+let includeList = document.querySelector('#includeList');
+let priceList = document.querySelector('#priceList');
+
+document.querySelector('#сsIncluded').onclick = ()=>{
+    includeList.innerHTML = '<div class="col-12">Что включено в Поддерживающую уборку?</div>';
+}
+document.querySelector('#сsPrice').onclick = ()=>{
+    priceList.innerHTML = '<div class="col-12">Узнать цены на Поддерживающую уборку</div>';
+}
+document.querySelector('#cgIncluded').onclick = ()=>{
+    includeList.innerHTML = '<div class="col-12">Что включено в Генеральную уборку?</div>';
+}
+document.querySelector('#cgPrice').onclick = ()=>{
+    priceList.innerHTML = '<div class="col-12">Узнать цены на Генеральную уборку</div>';
+}
+document.querySelector('#caIncluded').onclick = ()=>{
+    includeList.innerHTML = '<div class="col-12">Что включено в уборку после ремонта?</div>';
+}
+document.querySelector('#caPrice').onclick = ()=>{
+    priceList.innerHTML = '<div class="col-12">Узнать цены на уборку после ремонта</div>';
+}
+document.querySelector('#fIncluded').onclick = ()=>{
+    includeList.innerHTML = '<div class="col-12">Что включено в Химчистку?</div>';
+}
+document.querySelector('#fPrice').onclick = ()=>{
+    priceList.innerHTML = '<div class="col-12">Узнать цены на Химчистку</div>';
+}
+document.querySelector('#wIncluded').onclick = ()=>{
+    includeList.innerHTML = '<div class="col-12">Что включено в Мытье окон?</div>';
+}
+document.querySelector('#wPrice').onclick = ()=>{
+    priceList.innerHTML = '<div class="col-12">Узнать цены на Мытье окон</div>';
+}
+
+// includeList.innerHTML = '<div class="col-12">Что включено в Поддерживающую уборку?</div>';
+// priceList.innerHTML = '<div class="col-12">Узнать цены на Поддерживающую уборку</div>';
