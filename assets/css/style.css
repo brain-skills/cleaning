@@ -2702,7 +2702,7 @@ ul {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  width: 2px;
+  width: 1px;
   height: 80%;
   background-color: var(--color-yellow);
   content: "";
