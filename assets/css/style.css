@@ -2471,11 +2471,11 @@ ul {
   position: relative;
   width: 110%;
 }
-@media (min-width: 1400px) {
-  .cta__two {
-    width: 150%;
-  }
-}
+@media (min-width: 1300px) {.cta__two {width: 115%;}}
+@media (min-width: 1450px) {.cta__two {width: 120%;}}
+@media (min-width: 1500px) {.cta__two {width: 125%;}}
+@media (min-width: 1550px) {.cta__two {width: 150%;}}
+
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
   .cta__two {
       padding-right: 0;
