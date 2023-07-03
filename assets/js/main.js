@@ -509,8 +509,4 @@ promoCode.onclick = function(){
     } else {
         salePercent.innerText = ' | Не верно указан промокод';
     }
-    // var name10 = 'maridagio';
-    // var name30 = parseInt(name10, 36);
-    // console.log(name30);
-    // console.log(name30.toString(36));
 }
