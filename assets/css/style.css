@@ -4831,3 +4831,67 @@ ul {
   font-size: 14px;
   margin: 15px 0 0 0;
 }
+.header__language ul {
+  list-style: none;
+}
+.header__language ul > li {
+  position: relative;
+}
+.header__language ul .lang-btn {
+  display: block;
+  text-align: right;
+  font-size: 16px;
+}
+.header__language ul .lang-btn img {
+  margin-right: 4px;
+}
+.header__language ul .lang-btn i {
+  font-size: 11px;
+  padding-left: 2px;
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
+}
+.header__language ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+.header__language ul li a {
+  color: inherit;
+}
+.header__language .lang_sub_list {
+  background: var(--color-white);
+  border-radius: 5px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  width: 180px;
+  top: 120%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  right: 0;
+  z-index: 9;
+  -webkit-box-shadow: 0 0 2px 2px rgb(76 133 211 / 40%);
+  box-shadow: 0 0 2px 2px rgb(76 133 211 / 40%);
+  padding-left: 0;
+}
+.header__language .lang_sub_list ul > li {
+  border-radius: 4px;
+  overflow: hidden;
+}
+.header__language .lang_sub_list li a {
+  display: block;
+  padding-right: 29px;
+  min-height: 37px;
+  line-height: 37px;
+  padding-left: 18px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.header__language .lang_sub_list li a:hover {
+  background: #f6f6f6;
+}
+.header__language .lang_sub_list li:not(:last-child) {
+  border-bottom: 1px solid #ededed;
+}
