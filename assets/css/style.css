@@ -2520,16 +2520,6 @@ ul {
 .cta__info h3 {
   font-size: 24px;
 }
-@media (max-width: 1199px) {
-  .feature__content-wrap {
-      margin-top: 280px;
-  }
-}
-@media (max-width: 991px) {
-  .feature__content-wrap {
-      margin-top: 220px;
-  }
-}
 @media (max-width: 767px) {
   .feature__content-wrap {
       margin-top: 0;
