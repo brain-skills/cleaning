@@ -2652,21 +2652,16 @@ ul {
   margin-bottom: 20px;
 }
 .feature__info-box-item:not(:last-child) {
-  margin-bottom: 18px;
-  padding-bottom: 18px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #d9d9d9;
 }
 .feature__info-box-item .icon {
-  font-size: 50px;
   color: var(--color-black);
   margin-right: 15px;
 }
 .feature__info-box-item .icon {
   width: 50px;
-  margin-top: -12px;
-}
-.feature__info-box-item .content {
-  width: 84%;
 }
 .feature__info-box-item .content h3 {
   font-size: 16px;
@@ -4841,4 +4836,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.feature-box p {
+  font-size: 14px;
+  margin: 15px 0 0 0;
 }
