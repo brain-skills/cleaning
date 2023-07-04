@@ -350,10 +350,10 @@
 											<input type="hidden" id="promoVal" name="promoVal" value="" />
 										</div>
 										<div class="col-3">
-											<input type="text" class="form-control" name="yourname" id="yourname" placeholder="Имя" required autofocus>
+											<input type="text" class="form-control" name="yourname" id="yourname" oninput="this.value=this.value.replace(/\B/g,'');" minlength="3" maxlength="36" placeholder="Имя" required autofocus>
 										</div>
 										<div class="col-3">
-											<input type="text" class="form-control" name="yourphone" id="yourphone" placeholder="+7(000)000-00-00" required>
+											<input type="text" class="form-control" name="yourphone" id="yourphone" onkeyup="this.value = this.value.replace (/[^0-9]\+/,'')" minlength="10" maxlength="16" placeholder="+7(000)000-00-00" required>
 										</div>
 										<div class="col-3">
 											<select class="form-select" name="cleanservice" id="cleanservice" required>
@@ -752,7 +752,7 @@
 				</div>
 				<div class="footer__bottom ul_li_between pt-15 pb-30">
 					<div class="footer__copyright mt-15">
-						<p class="p-0 m-0"><a href="https://github.com/brain-skills/bakalov-cleaning" id="link2"><span class="f-p-name">Bakalov cleaning</span></a> © <span class="l-year">2023</span> by <a href="vk.com" id="prof1"><span class="p-a-name">Alexei Bakalov</span></a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://brain-skills.github.io/cc-lg/assets/images/svg/cc.svg"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://brain-skills.github.io/cc-lg/assets/images/svg/by.svg"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://brain-skills.github.io/cc-lg/assets/images/svg/nc.svg"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://brain-skills.github.io/cc-lg/assets/images/svg/nd.svg"></a></p>
+						<p class="p-0 m-0"><a href="https://github.com/brain-skills/cleaning" id="link2"><span class="f-p-name">Bakalov cleaning</span></a> © <span class="l-year">2023</span> by <a href="vk.com/" id="prof1"><span class="p-a-name">Alexei Bakalov</span></a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://brain-skills.github.io/cc-lg/assets/images/svg/cc.svg"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://brain-skills.github.io/cc-lg/assets/images/svg/by.svg"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://brain-skills.github.io/cc-lg/assets/images/svg/nc.svg"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://brain-skills.github.io/cc-lg/assets/images/svg/nd.svg"></a></p>
 					</div>
 					<ul class="footer__nav ul_li mt-15">
 						<li><a href="#" data-bs-toggle="modal" data-bs-target="#termsBack">Пользовательское Соглашение</a></li>
@@ -777,13 +777,13 @@
 					<div class="mb-3 row">
 						<div class="col-12">
 							<label>Имя</label>
-							<input type="text" class="form-control" name="yourname" id="yourname" placeholder="Ваше имя" required>
+							<input type="text" class="form-control" name="yourname" id="yourname" oninput="this.value=this.value.replace(/\B/g,'');" minlength="3" maxlength="36" placeholder="Ваше имя" required>
 						</div>
 					</div>
 					<div class="mb-3 row">
 						<div class="col-12">
 							<label>Телефон</label>
-							<input type="text" class="form-control" name="yourphone" id="yourphone" placeholder="+7 (000)000-00-00" required>
+							<input type="text" class="form-control" name="yourphone" id="yourphone" onkeyup="this.value = this.value.replace (/[^0-9]\+/,'')" minlength="10" maxlength="16" placeholder="+7 (000)000-00-00" required>
 						</div>
 					</div>
 					<div class="row">
