@@ -487,24 +487,32 @@ let salePercent = document.querySelector('#salePercent');
 let salePercent2 = document.querySelector('#salePercent2');
 promoCode.onclick = function(){
     let promo = prompt('Введите Промокод');
+    let promoVal = document.querySelector('#promoVal');
     if(parseInt(promo, 36) == '47523533'){
         salePercent.innerText = ' | Ваша скидка: 5%';
+        promoVal.value = '5%';
     } else if (parseInt(promo, 36) == '1710847044'){
         salePercent.innerText = ' | Ваша скидка: 10%';
+        promoVal.value = '10%';
     } else if (parseInt(promo, 36) == '1710847049'){
         salePercent.innerText = ' | Ваша скидка: 15%';
+        promoVal.value = '15%';
     } else {
         salePercent.innerText = ' | Не верно указан промокод';
     }
 }
 promoCode2.onclick = function(){
     let promo2 = prompt('Введите Промокод');
+    let promoVal2 = document.querySelector('#promoVal2');
     if(parseInt(promo2, 36) == '47523533'){
         salePercent2.innerText = ' | Ваша скидка: 5%';
+        promoVal2.value = '5%';
     } else if (parseInt(promo2, 36) == '1710847044'){
         salePercent2.innerText = ' | Ваша скидка: 10%';
+        promoVal2.value = '10%';
     } else if (parseInt(promo2, 36) == '1710847049'){
         salePercent2.innerText = ' | Ваша скидка: 15%';
+        promoVal2.value = '15%';
     } else {
         salePercent2.innerText = ' | Не верно указан промокод';
     }
@@ -543,6 +551,3 @@ document.querySelector('#wIncluded').onclick = ()=>{
 document.querySelector('#wPrice').onclick = ()=>{
     priceList.innerHTML = '<div class="col-12">Узнать цены на Мытье окон</div>';
 }
-
-// includeList.innerHTML = '<div class="col-12">Что включено в Поддерживающую уборку?</div>';
-// priceList.innerHTML = '<div class="col-12">Узнать цены на Поддерживающую уборку</div>';

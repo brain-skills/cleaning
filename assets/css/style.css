@@ -2662,11 +2662,11 @@ ul {
   margin-right: 15px;
 }
 .feature__info-box-item .icon {
-  width: 60px;
+  width: 50px;
   margin-top: -12px;
 }
 .feature__info-box-item .content {
-  width: 80%;
+  width: 84%;
 }
 .feature__info-box-item .content h3 {
   font-size: 16px;
@@ -4836,4 +4836,9 @@ ul {
 #salePercent, #salePercent2 {
   font-size: 14px;
   color: #f00;
+}
+.feature__info-box-item .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
