@@ -525,29 +525,29 @@ document.querySelector('#сsIncluded').onclick = ()=>{
     includeList.innerHTML = '<div class="col-12">Что включено в Поддерживающую уборку?</div>';
 }
 document.querySelector('#сsPrice').onclick = ()=>{
-    priceList.innerHTML = '<div class="col-12">Узнать цены на Поддерживающую уборку</div>';
+    priceList.innerHTML = '<img src="assets/img/price/1.png" class="img-fit" alt="">';
 }
 document.querySelector('#cgIncluded').onclick = ()=>{
     includeList.innerHTML = '<div class="col-12">Что включено в Генеральную уборку?</div>';
 }
 document.querySelector('#cgPrice').onclick = ()=>{
-    priceList.innerHTML = '<div class="col-12">Узнать цены на Генеральную уборку</div>';
+    priceList.innerHTML = '<img src="assets/img/price/1.png" class="img-fit" alt="">';
 }
 document.querySelector('#caIncluded').onclick = ()=>{
     includeList.innerHTML = '<div class="col-12">Что включено в уборку после ремонта?</div>';
 }
 document.querySelector('#caPrice').onclick = ()=>{
-    priceList.innerHTML = '<div class="col-12">Узнать цены на уборку после ремонта</div>';
+    priceList.innerHTML = '<img src="assets/img/price/1.png" class="img-fit" alt="">';
 }
 document.querySelector('#fIncluded').onclick = ()=>{
     includeList.innerHTML = '<div class="col-12">Что включено в Химчистку?</div>';
 }
 document.querySelector('#fPrice').onclick = ()=>{
-    priceList.innerHTML = '<div class="col-12">Узнать цены на Химчистку</div>';
+    priceList.innerHTML = '<img src="assets/img/price/2.png" class="img-fit" alt="">';
 }
 document.querySelector('#wIncluded').onclick = ()=>{
     includeList.innerHTML = '<div class="col-12">Что включено в Мытье окон?</div>';
 }
 document.querySelector('#wPrice').onclick = ()=>{
-    priceList.innerHTML = '<div class="col-12">Узнать цены на Мытье окон</div>';
+    priceList.innerHTML = '<img src="assets/img/price/3.png" class="img-fit" alt="">';
 }
