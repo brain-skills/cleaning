@@ -10,8 +10,9 @@ notifysubmit.addEventListener('click', (e) =>{
     localStorage.setItem('cookies', 'true');
     e.preventDefault();
 });
-// let clearLs = document.querySelector('#clearLs');
-// clearLs.addEventListener('click', (e)=>{
-//     localStorage.clear();
-//     e.preventDefault();
-// });
+window.addEventListener('keypress', (event)=>{
+    if (event.key.toLowerCase() == 'c' && event.shiftKey) {
+        localStorage.clear();
+        e.preventDefault();
+    }
+});
