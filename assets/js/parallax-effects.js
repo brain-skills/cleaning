@@ -14,8 +14,8 @@ function parallax(event) {
 // SVG анимация //
 function svgAnim(arg){new Vivus(arg, {
   type: 'sync',
-  duration: 50,
-  animTimingFunction: Vivus.EASE_IN
+  duration: 80,
+  animTimingFunction: Vivus.EASE_OUT_BOUNCE
 }, function(obj) {
   arg.addEventListener('mouseenter', ()=> {
       obj.reset().play();
