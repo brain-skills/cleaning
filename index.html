@@ -724,7 +724,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="insta-widget" loading="lazy">
+			<div class="insta-widget" loading="lazy">
 				<script src="https://static.elfsight.com/platform/platform.js" loading="lazy" data-use-service-core defer></script><div class="elfsight-app-c856aed1-8a7f-4a57-b25b-cbaeed1580b9" loading="lazy"></div>
 			</div>
 		</main>
@@ -940,5 +940,12 @@
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/cookies-notify.js"></script>
 	<script src="assets/mail/mail.js"></script>
+	<script>
+		document.addEventListener('DOMNodeInserted', ()=>{
+			const instaWidget = document.querySelector('.insta-widget');
+			const instaWidgetLink = instaWidget.querySelector('a');
+			instaWidgetLink.setAttribute('style', 'display: none !important;');
+		});
+	</script>
 </body>
 </html>
