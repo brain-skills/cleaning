@@ -1,10 +1,5 @@
-// let clearLs = document.querySelector('#clearLs');
-// let cookiesNotify = document.querySelector('#cookiesNotify');
-// let notifysubmit = document.querySelector('#notifysubmit');
-// clearLs.addEventListener('click', (e)=>{
-//     localStorage.clear();
-//     e.preventDefault();
-// });
+let cookiesNotify = document.querySelector('#cookiesNotify');
+let notifysubmit = document.querySelector('#notifysubmit');
 setTimeout(() =>{
     if (localStorage.getItem('cookies') == null) {
         cookiesNotify.classList.add('show');
@@ -15,3 +10,8 @@ notifysubmit.addEventListener('click', (e) =>{
     localStorage.setItem('cookies', 'true');
     e.preventDefault();
 });
+// let clearLs = document.querySelector('#clearLs');
+// clearLs.addEventListener('click', (e)=>{
+//     localStorage.clear();
+//     e.preventDefault();
+// });
