@@ -2252,7 +2252,7 @@ ul {
   transform: translateY(-50%);
 }
 .hero__content-two h2 {
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 @media (max-width: 767px) {
