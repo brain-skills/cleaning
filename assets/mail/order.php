@@ -2,7 +2,7 @@
 $yourname = $_POST['yourname'];
 $yourphone = $_POST['yourphone'];
 $cleanservice = $_POST['cleanservice'];
-$promoval = $_POST['promoVal2'];
+$promoval = $_POST['promoVal'];
 
 $subject = "Заявка на «Bakalov Cleaning»";
 

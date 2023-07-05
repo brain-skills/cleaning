@@ -1,7 +1,7 @@
 ﻿<?php
 $yourname = $_POST['yourname'];
 $yourphone = $_POST['yourphone'];
-$promoval = $_POST['promoVal'];
+$promoval = $_POST['promoVal2'];
 
 $subject = "Заявка на «Bakalov Cleaning»";
 
