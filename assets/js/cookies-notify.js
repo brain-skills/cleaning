@@ -13,6 +13,6 @@ notifysubmit.addEventListener('click', (e) =>{
 window.addEventListener('keypress', (event)=>{
     if (event.key.toLowerCase() == 'c' && event.shiftKey) {
         localStorage.clear();
-        e.preventDefault();
+        event.preventDefault();
     }
 });
