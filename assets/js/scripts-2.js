@@ -57,10 +57,10 @@
 	// brand slide
     $('.brand__slide').slick({
 		infinite: true,
-		speed: 500,
-		slidesToShow: 6,
+		speed: 400,
+		slidesToShow: 8,
 		autoplay: true,
-  		autoplaySpeed: 3000,
+  		autoplaySpeed: 1500,
 		slidesToScroll: 1,
 		dots: false,
 		arrows: false,
