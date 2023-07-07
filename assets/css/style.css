@@ -3881,6 +3881,7 @@ ul {
   line-height: 1;
   font-size: 14px;
   content: "\f061";
+  color: var(--color-primary);
   font: normal normal normal 14px/1 FontAwesome;
   position: absolute;
   font-weight: 600;
@@ -3889,6 +3890,7 @@ ul {
 .accordion_box .block.active-block .acc-btn::before {
   content: "\f063";
   transform: rotate(180deg);
+  color: var(--color-white);
 }
 .accordion_box .block .acc_body {
   position: relative;
