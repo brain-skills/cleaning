@@ -1,6 +1,7 @@
 let cleanService = document.querySelector('#cleanservice');
 let cleanTab = document.querySelector('#clean-tab');
 let c1 = document.querySelector('#c-1');
+let c2 = document.querySelector('#c-2');
 let cs1 = document.querySelector('#cs1');
 let cs2 = document.querySelector('#cs2');
 let cs3 = document.querySelector('#cs3');
@@ -14,10 +15,12 @@ let furchemTab = document.querySelector('#furchem-tab');
 let f1 = document.querySelector('#f-1');
 let f2 = document.querySelector('#f-2');
 let f3 = document.querySelector('#f-3');
+let f4 = document.querySelector('#f-4');
 let windwTab = document.querySelector('#windw-tab');
 let w1 = document.querySelector('#w-1');
 let w2 = document.querySelector('#w-2');
 let w3 = document.querySelector('#w-3');
+let w4 = document.querySelector('#w-4');
 let support1 = document.querySelector('#support');
 let general1 = document.querySelector('#general');
 let afterem1 = document.querySelector('#afterem');
@@ -29,6 +32,7 @@ cleanService.addEventListener('change', function(e){
         furchemTab.classList.remove('active');
         windwTab.classList.remove('active');
         c1.classList.add('show', 'active');
+        c2.classList.add('show', 'active');
         cs1.classList.add('show', 'active');
         cs2.classList.add('show', 'active');
         cs3.classList.add('show', 'active');
@@ -57,6 +61,7 @@ cleanService.addEventListener('change', function(e){
         furchemTab.classList.add('active');
         windwTab.classList.remove('active');
         c1.classList.remove('show', 'active');
+        c2.classList.remove('show', 'active');
         cs1.classList.remove('show', 'active');
         cs2.classList.remove('show', 'active');
         cs3.classList.remove('show', 'active');
@@ -81,6 +86,7 @@ cleanService.addEventListener('change', function(e){
         furchemTab.classList.remove('active');
         windwTab.classList.add('active');
         c1.classList.remove('show', 'active');
+        c2.classList.remove('show', 'active');
         cs1.classList.remove('show', 'active');
         cs2.classList.remove('show', 'active');
         cs3.classList.remove('show', 'active');
@@ -218,6 +224,7 @@ if(document.location.hash == ''){
     cleanService[1].removeAttribute('selected','selected');
     cleanService[2].removeAttribute('selected','selected');
     c1.classList.add('show', 'active');
+    c2.classList.add('show', 'active');
 
     cs1.classList.add('show', 'active');
     cs2.classList.add('show', 'active');
@@ -232,9 +239,11 @@ if(document.location.hash == ''){
     f1.classList.remove('show', 'active');
     f2.classList.remove('show', 'active');
     f3.classList.remove('show', 'active');
+    f4.classList.remove('show', 'active');
     w1.classList.remove('show', 'active');
     w2.classList.remove('show', 'active');
     w3.classList.remove('show', 'active');
+    w4.classList.remove('show', 'active');
 } else if (document.location.hash == '#clean-g') {
     cleanTab.classList.add('active');
     furchemTab.classList.remove('active');
@@ -246,6 +255,7 @@ if(document.location.hash == ''){
     cleanService[1].removeAttribute('selected','selected');
     cleanService[2].removeAttribute('selected','selected');
     c1.classList.add('show', 'active');
+    c2.classList.add('show', 'active');
 
     cs1.classList.remove('show', 'active');
     cs2.classList.remove('show', 'active');
@@ -260,9 +270,11 @@ if(document.location.hash == ''){
     f1.classList.remove('show', 'active');
     f2.classList.remove('show', 'active');
     f3.classList.remove('show', 'active');
+    f4.classList.remove('show', 'active');
     w1.classList.remove('show', 'active');
     w2.classList.remove('show', 'active');
     w3.classList.remove('show', 'active');
+    w4.classList.remove('show', 'active');
     support1.classList.remove('show', 'active');
     general1.classList.add('show', 'active');
     afterem1.classList.remove('show', 'active');
@@ -277,6 +289,7 @@ if(document.location.hash == ''){
     cleanService[1].removeAttribute('selected','selected');
     cleanService[2].removeAttribute('selected','selected');
     c1.classList.add('show', 'active');
+    c2.classList.add('show', 'active');
 
     cs1.classList.remove('show', 'active');
     cs2.classList.remove('show', 'active');
@@ -291,9 +304,11 @@ if(document.location.hash == ''){
     f1.classList.remove('show', 'active');
     f2.classList.remove('show', 'active');
     f3.classList.remove('show', 'active');
+    f4.classList.remove('show', 'active');
     w1.classList.remove('show', 'active');
     w2.classList.remove('show', 'active');
     w3.classList.remove('show', 'active');
+    w4.classList.remove('show', 'active');
     support1.classList.remove('show', 'active');
     general1.classList.remove('show', 'active');
     afterem1.classList.add('show', 'active');
@@ -307,6 +322,7 @@ if(document.location.hash == ''){
     cleanService[1].setAttribute('selected','selected');
     cleanService[2].removeAttribute('selected','selected');
     c1.classList.remove('show', 'active');
+    c2.classList.remove('show', 'active');
     cs2.classList.remove('show', 'active');
     cs3.classList.remove('show', 'active');
     cg2.classList.remove('show', 'active');
@@ -316,9 +332,11 @@ if(document.location.hash == ''){
     f1.classList.add('show', 'active');
     f2.classList.add('show', 'active');
     f3.classList.add('show', 'active');
+    f4.classList.add('show', 'active');
     w1.classList.remove('show', 'active');
     w2.classList.remove('show', 'active');
     w3.classList.remove('show', 'active');
+    w4.classList.remove('show', 'active');
 } else if (document.location.hash == '#wash-s') {
     cleanTab.classList.remove('active');
     furchemTab.classList.remove('active');
@@ -329,6 +347,7 @@ if(document.location.hash == ''){
     cleanService[1].removeAttribute('selected','selected');
     cleanService[2].setAttribute('selected','selected');
     c1.classList.remove('show', 'active');
+    c2.classList.remove('show', 'active');
     cs2.classList.remove('show', 'active');
     cs3.classList.remove('show', 'active');
     cg2.classList.remove('show', 'active');
@@ -338,9 +357,11 @@ if(document.location.hash == ''){
     f1.classList.remove('show', 'active');
     f2.classList.remove('show', 'active');
     f3.classList.remove('show', 'active');
+    f4.classList.remove('show', 'active');
     w1.classList.add('show', 'active');
     w2.classList.add('show', 'active');
     w3.classList.add('show', 'active');
+    w4.classList.add('show', 'active');
 }
 
 // задаём аргумент selected
@@ -361,6 +382,7 @@ cleanService.addEventListener('change', function(e){
 // несколько тел для табов
 cleanTab.addEventListener('click', (e)=>{
     c1.classList.add('show', 'active');
+    c2.classList.add('show', 'active');
     cs1.classList.add('show', 'active');
     cs2.classList.add('show', 'active');
     cs3.classList.add('show', 'active');
@@ -373,14 +395,17 @@ cleanTab.addEventListener('click', (e)=>{
     f1.classList.remove('show', 'active');
     f2.classList.remove('show', 'active');
     f3.classList.remove('show', 'active');
+    f4.classList.remove('show', 'active');
     w1.classList.remove('show', 'active');
     w2.classList.remove('show', 'active');
     w3.classList.remove('show', 'active');
+    w4.classList.remove('show', 'active');
     history.pushState(null, null, `#clean-s`);
     e.preventDefault();
 });
 cs1.addEventListener('click', (e)=>{
     c1.classList.add('show', 'active');
+    c2.classList.add('show', 'active');
     cs1.classList.add('show', 'active');
     cs2.classList.add('show', 'active');
     cs3.classList.add('show', 'active');
@@ -394,13 +419,17 @@ cs1.addEventListener('click', (e)=>{
     f1.classList.remove('show', 'active');
     f2.classList.remove('show', 'active');
     f3.classList.remove('show', 'active');
+    f4.classList.remove('show', 'active');
     w1.classList.remove('show', 'active');
     w2.classList.remove('show', 'active');
     w3.classList.remove('show', 'active');
+    w4.classList.remove('show', 'active');
     history.pushState(null, null, `#clean-s`);
     e.preventDefault();
 });
 cg1.addEventListener('click', (e)=>{
+    c1.classList.add('show', 'active');
+    c2.classList.add('show', 'active');
     cs1.classList.remove('show', 'active');
     cs2.classList.remove('show', 'active');
     cs3.classList.remove('show', 'active');
@@ -414,13 +443,17 @@ cg1.addEventListener('click', (e)=>{
     f1.classList.remove('show', 'active');
     f2.classList.remove('show', 'active');
     f3.classList.remove('show', 'active');
+    f4.classList.remove('show', 'active');
     w1.classList.remove('show', 'active');
     w2.classList.remove('show', 'active');
     w3.classList.remove('show', 'active');
+    w4.classList.remove('show', 'active');
     history.pushState(null, null, `#clean-g`);
     e.preventDefault();
 });
 ca1.addEventListener('click', (e)=>{
+    c1.classList.add('show', 'active');
+    c2.classList.add('show', 'active');
     cs1.classList.remove('show', 'active');
     cs2.classList.remove('show', 'active');
     cs3.classList.remove('show', 'active');
@@ -434,14 +467,17 @@ ca1.addEventListener('click', (e)=>{
     f1.classList.remove('show', 'active');
     f2.classList.remove('show', 'active');
     f3.classList.remove('show', 'active');
+    f4.classList.remove('show', 'active');
     w1.classList.remove('show', 'active');
     w2.classList.remove('show', 'active');
     w3.classList.remove('show', 'active');
+    w4.classList.remove('show', 'active');
     history.pushState(null, null, `#clean-r`);
     e.preventDefault();
 });
 furchemTab.addEventListener('click', (e)=>{
     c1.classList.remove('show', 'active');
+    c2.classList.remove('show', 'active');
     cs2.classList.remove('show', 'active');
     cg2.classList.remove('show', 'active');
     ca2.classList.remove('show', 'active');
@@ -449,14 +485,17 @@ furchemTab.addEventListener('click', (e)=>{
     f1.classList.add('show', 'active');
     f2.classList.add('show', 'active');
     f3.classList.add('show', 'active');
+    f4.classList.add('show', 'active');
     w1.classList.remove('show', 'active');
     w2.classList.remove('show', 'active');
     w3.classList.remove('show', 'active');
+    w4.classList.remove('show', 'active');
     history.pushState(null, null, `#dry-s`);
     e.preventDefault();
 });
 windwTab.addEventListener('click', (e)=>{
     c1.classList.remove('show', 'active');
+    c2.classList.remove('show', 'active');
     cs2.classList.remove('show', 'active');
     cg2.classList.remove('show', 'active');
     ca2.classList.remove('show', 'active');
@@ -464,9 +503,11 @@ windwTab.addEventListener('click', (e)=>{
     f1.classList.remove('show', 'active');
     f2.classList.remove('show', 'active');
     f3.classList.remove('show', 'active');
+    f4.classList.remove('show', 'active');
     w1.classList.add('show', 'active');
     w2.classList.add('show', 'active');
     w3.classList.add('show', 'active');
+    w4.classList.add('show', 'active');
     history.pushState(null, null, `#wash-s`);
     e.preventDefault();
 });

@@ -1530,7 +1530,7 @@ h6 {
 .clinox-service-feature-items .clinox-service-feature-text li::before {
   top: 0;
   left: 0;
-  content: "";
+  content: "ï˜";
   font-weight: 900;
   color: #02aaf9;
   position: absolute;
@@ -1639,14 +1639,14 @@ h6 {
   height: auto;
   width: auto;
   font-size: 15px;
-  content: "";
+  content: "ï¸";
   font-weight: 900;
   position: absolute;
   background-image: none;
   font-family: "Font Awesome 5 Pro";
 }
 .clinox-faq-accordion .accordion-button:not(.collapsed)::after {
-  content: "";
+  content: "ï¨";
 }
 .clinox-faq-accordion .accordion-collapse.show {
   background-color: var(--black-color);
@@ -1680,7 +1680,7 @@ h6 {
 .clinox-contact-form .service-select::after {
   top: 20px;
   right: 15px;
-  content: "";
+  content: "ï¸";
   font-weight: 900;
   position: absolute;
   font-family: "Font Awesome 5 Pro";
@@ -1760,7 +1760,7 @@ h6 {
 }
 .progress-wrap::after {
   position: absolute;
-  content: "⊼";
+  content: "âŠ¼";
   font-weight: 600;
   text-align: center;
   line-height: 35px;
@@ -2395,8 +2395,8 @@ ul {
 }
 .hero__text-box {
   position: absolute;
-  top: 40%;
-  left: 48%;
+  top: 30%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 @media (max-width: 767px) {
@@ -2417,7 +2417,7 @@ ul {
   position: absolute;
 }
 .hero__shape-icons .icon--0 {
-  right: 33%;
+  right: 30%;
   top: 10%;
 }
 .hero__shape-icons .icon--1 {
@@ -3885,7 +3885,7 @@ ul {
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 .accordion_box .block.active-block .acc-btn::before {
-  content: "⊼";
+  content: "âŠ¼";
   transform: rotate(180deg);
 }
 .accordion_box .block .acc_body {
@@ -4339,14 +4339,14 @@ ul {
   height: auto;
   width: auto;
   font-size: 15px;
-  content: "";
+  content: "ï¸";
   font-weight: 900;
   position: absolute;
   background-image: none;
   font-family: "Font Awesome 5 Pro";
 }
 .clinox-faq-accordion-3 .accordion-button:not(.collapsed)::after {
-  content: "";
+  content: "ï¨";
 }
 .clinox-faq-accordion-3 .accordion-collapse.show {
   background-color: var(--black-color);
