@@ -3591,6 +3591,7 @@ ul {
 }
 .footer__copyright {
   color: #fff;
+  font-size: 14px;
 }
 .footer__copyright a {
   color: var(--color-primary);
