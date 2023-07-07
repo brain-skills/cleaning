@@ -1760,7 +1760,8 @@ h6 {
 }
 .progress-wrap::after {
   position: absolute;
-  content: "âŠ¼";
+  content: "\f062";
+  font: normal normal normal 14px/1 FontAwesome;
   font-weight: 600;
   text-align: center;
   line-height: 35px;
@@ -3879,13 +3880,14 @@ ul {
   right: 20px;
   line-height: 1;
   font-size: 14px;
-  content: ">";
+  content: "\f061";
+  font: normal normal normal 14px/1 FontAwesome;
   position: absolute;
   font-weight: 600;
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
 }
 .accordion_box .block.active-block .acc-btn::before {
-  content: "âŠ¼";
+  content: "\f063";
   transform: rotate(180deg);
 }
 .accordion_box .block .acc_body {
