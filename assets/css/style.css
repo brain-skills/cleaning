@@ -1813,7 +1813,7 @@ ul {
       margin-top: 0;
   }
 }
-.feature__info-box > span {
+.feature__info-box span {
   position: absolute;
   top: -1px;
   left: -1px;
