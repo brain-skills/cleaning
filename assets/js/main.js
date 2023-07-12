@@ -29,7 +29,7 @@ let w5 = document.querySelector('#w-5');
 let support1 = document.querySelector('#support');
 let general1 = document.querySelector('#general');
 let afterem1 = document.querySelector('#afterem');
-let prefix = "";
+let promoMovie = document.querySelector('#promoMovie');
 
 function cleanOff (){
     c1.classList.remove('show', 'active');
@@ -55,7 +55,7 @@ cleanService.addEventListener('change', function(e){
         windwTab.classList.remove('active');
         c1.classList.add('show', 'active');
         c2.classList.add('show', 'active');
-        
+        promoMovie.href = 'assets/1.mp4';
         cs1.classList.add('show', 'active');
         cs2.classList.add('show', 'active');
         cs3.classList.add('show', 'active');
@@ -91,6 +91,7 @@ cleanService.addEventListener('change', function(e){
         furchemTab.classList.add('active');
         windwTab.classList.remove('active');
         cleanOff();
+        promoMovie.href = 'assets/2.mp4';
         f1.classList.add('show', 'active');
         f2.classList.add('show', 'active');
         f3.classList.add('show', 'active');
@@ -110,6 +111,7 @@ cleanService.addEventListener('change', function(e){
         furchemTab.classList.remove('active');
         windwTab.classList.add('active');
         cleanOff();
+        promoMovie.href = 'assets/3.mp4';
         f1.classList.remove('show', 'active');
         f2.classList.remove('show', 'active');
         f3.classList.remove('show', 'active');
@@ -141,6 +143,7 @@ cleanTab.addEventListener('click', function(event){
     cleanService[1].removeAttribute('selected','selected');
     cleanService[2].removeAttribute('selected','selected');
     event.preventDefault();
+    promoMovie.href = 'assets/1.mp4';
 });
 cs1.addEventListener('click', function(event){
     cleanService.options.selectedIndex = 0;
@@ -154,6 +157,7 @@ cs1.addEventListener('click', function(event){
     cleanService[1].removeAttribute('selected','selected');
     cleanService[2].removeAttribute('selected','selected');
     event.preventDefault();
+    promoMovie.href = 'assets/1.mp4';
 });
 cg1.addEventListener('click', function(event){
     cleanService.options.selectedIndex = 0;
@@ -167,6 +171,7 @@ cg1.addEventListener('click', function(event){
     cleanService[1].removeAttribute('selected','selected');
     cleanService[2].removeAttribute('selected','selected');
     event.preventDefault();
+    promoMovie.href = 'assets/1.mp4';
 });
 ca1.addEventListener('click', function(event){
     cleanService.options.selectedIndex = 0;
@@ -180,6 +185,7 @@ ca1.addEventListener('click', function(event){
     cleanService[1].removeAttribute('selected','selected');
     cleanService[2].removeAttribute('selected','selected');
     event.preventDefault();
+    promoMovie.href = 'assets/1.mp4';
 });
 furchemTab.addEventListener('click', function(event){
     support1.classList.remove('show', 'active');
@@ -191,6 +197,7 @@ furchemTab.addEventListener('click', function(event){
     cleanService[1].setAttribute('selected','selected');
     cleanService[2].removeAttribute('selected','selected');
     event.preventDefault();
+    promoMovie.href = 'assets/2.mp4';
 });
 windwTab.addEventListener('click', function(event){
     support1.classList.remove('show', 'active');
@@ -202,6 +209,7 @@ windwTab.addEventListener('click', function(event){
     cleanService[1].removeAttribute('selected','selected');
     cleanService[2].setAttribute('selected','selected');
     event.preventDefault();
+    promoMovie.href = 'assets/3.mp4';
 });
 
 // сохраняем значения с помощью якорных ссылок у табов
@@ -219,11 +227,13 @@ if(document.location.hash == ''){
     ca2.classList.remove('show', 'active');
     ca3.classList.remove('show', 'active');
     ca4.classList.remove('show', 'active');
+    promoMovie.href = 'assets/1.mp4';
     history.pushState(null, null, ``);
 } else if(document.location.hash == '#clean-s'){
     cleanTab.classList.add('active');
     furchemTab.classList.remove('active');
     windwTab.classList.remove('active');
+    promoMovie.href = 'assets/1.mp4';
     history.pushState(null, null, `#clean-s`);
 
     cleanService.options.selectedIndex = 0;
@@ -260,6 +270,7 @@ if(document.location.hash == ''){
     cleanTab.classList.add('active');
     furchemTab.classList.remove('active');
     windwTab.classList.remove('active');
+    promoMovie.href = 'assets/1.mp4';
     history.pushState(null, null, `#clean-g`);
     
     cleanService.options.selectedIndex = 0;
@@ -299,6 +310,7 @@ if(document.location.hash == ''){
     cleanTab.classList.add('active');
     furchemTab.classList.remove('active');
     windwTab.classList.remove('active');
+    promoMovie.href = 'assets/1.mp4';
     history.pushState(null, null, `#clean-r`);
 
     cleanService.options.selectedIndex = 0;
@@ -338,6 +350,7 @@ if(document.location.hash == ''){
     cleanTab.classList.remove('active');
     furchemTab.classList.add('active');
     windwTab.classList.remove('active');
+    promoMovie.href = 'assets/2.mp4';
     history.pushState(null, null, `#dry-s`);
     cleanService.options.selectedIndex = 1;
     cleanService[0].removeAttribute('selected','selected');
@@ -358,6 +371,7 @@ if(document.location.hash == ''){
     cleanTab.classList.remove('active');
     furchemTab.classList.remove('active');
     windwTab.classList.add('active');
+    promoMovie.href = 'assets/3.mp4';
     history.pushState(null, null, `#wash-s`);
     cleanService.options.selectedIndex = 2;
     cleanService[0].removeAttribute('selected','selected');
