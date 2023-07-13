@@ -615,34 +615,35 @@ promoCode2.onclick = function(){
 
 let includeList = document.querySelector('#includeList');
 let priceList = document.querySelector('#priceList');
+let priceInfoW = '<p class="pt-2 m-0 fs-6">*Стоимость услуг может отличаться от заявленных в прайсе.<br>Точную стоимость уточняйте у оператора!</p>';
 
 document.querySelector('#сsIncluded').onclick = ()=>{
     includeList.innerHTML = '<img src="assets/img/price/1-1.png" class="img-fit" loading="lazy" alt="">'; // Что включено в Поддерживающую уборку?
 }
 document.querySelector('#сsPrice').onclick = ()=>{
-    priceList.innerHTML = '<img src="assets/img/price/1.png" class="img-fit" loading="lazy" alt="">';
+    priceList.innerHTML = '<img src="assets/img/price/1.png" class="img-fit" loading="lazy" alt=""><br>'+priceInfoW;
 }
 document.querySelector('#cgIncluded').onclick = ()=>{
     includeList.innerHTML = '<img src="assets/img/price/1-2.png" class="img-fit" loading="lazy" alt="">'; // Что включено в Генеральную уборку?
 }
 document.querySelector('#cgPrice').onclick = ()=>{
-    priceList.innerHTML = '<img src="assets/img/price/1.png" class="img-fit" loading="lazy" alt="">';
+    priceList.innerHTML = '<img src="assets/img/price/1.png" class="img-fit" loading="lazy" alt=""><br>'+priceInfoW;
 }
 document.querySelector('#caIncluded').onclick = ()=>{
     includeList.innerHTML = '<img src="assets/img/price/1-3.png" class="img-fit" loading="lazy" alt="">'; // Что включено в уборку после ремонта?
 }
 document.querySelector('#caPrice').onclick = ()=>{
-    priceList.innerHTML = '<img src="assets/img/price/1.png" class="img-fit" loading="lazy" alt="">';
+    priceList.innerHTML = '<img src="assets/img/price/1.png" class="img-fit" loading="lazy" alt=""><br>'+priceInfoW;
 }
 document.querySelector('#fIncluded').onclick = ()=>{
     includeList.innerHTML = '<img src="assets/img/price/0.png" class="img-fit" loading="lazy" alt="">'; // Что включено в Химчистку?
 }
 document.querySelector('#fPrice').onclick = ()=>{
-    priceList.innerHTML = '<img src="assets/img/price/2.png" class="img-fit" loading="lazy" alt="">';
+    priceList.innerHTML = '<img src="assets/img/price/2.png" class="img-fit" loading="lazy" alt=""><br>'+priceInfoW;
 }
 document.querySelector('#wIncluded').onclick = ()=>{
     includeList.innerHTML = '<img src="assets/img/price/0.png" class="img-fit" loading="lazy" alt="">'; // Что включено в Мытье окон?
 }
 document.querySelector('#wPrice').onclick = ()=>{
-    priceList.innerHTML = '<img src="assets/img/price/3.png" class="img-fit" loading="lazy" alt="">';
+    priceList.innerHTML = '<img src="assets/img/price/3.png" class="img-fit" loading="lazy" alt=""><br>'+priceInfoW;
 }

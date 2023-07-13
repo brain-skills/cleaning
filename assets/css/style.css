@@ -1215,18 +1215,12 @@ ul {
 }
 @media (max-width: 1199px) {
   .header__btn {
-      margin-left: 0;
+      margin-right: 50px;
   }
 }
 @media (max-width: 767px) {
   .header__btn {
       display: none;
-  }
-}
-@media (max-width: 767px) {
-  .header__logo {
-      position: absolute;
-      right: 15px;
   }
 }
 .header__logo {
@@ -1270,11 +1264,6 @@ ul {
   position: relative;
   z-index: 1;
   padding: 5px 0;
-}
-@media (max-width: 767px) {
-  .header__main-wrap {
-      padding: 25px 0;
-  }
 }
 .header__main-wrap.uk-active {
   background-color: var(--color-white);
@@ -1352,7 +1341,7 @@ ul {
 }
 @media (max-width: 991px) {
   .hero__two {
-      padding: 100px 0;
+      padding: 80px 0 50px 0;
   }
 }
 .hero__wrap {
@@ -1679,7 +1668,8 @@ ul {
 }
 @media (max-width: 991px) {
   .cta__two {
-      left: 0;
+      padding-right: 25px;
+      padding-left: 25px;
   }
 }
 @media (max-width: 767px) {
@@ -1708,11 +1698,6 @@ ul {
 }
 .cta__info h3 {
   font-size: 24px;
-}
-@media (max-width: 767px) {
-  .feature__content-wrap {
-      margin-top: 0;
-  }
 }
 .feature__item {
   position: relative;
@@ -4086,4 +4071,62 @@ ul {
 }
 .header__language .lang_sub_list li:not(:last-child) {
   border-bottom: 1px solid #ededed;
+}
+@media (max-width: 991px) {
+  .md-none{
+    display: none;
+  }
+  .hero__text-box, .hero__shape-icons{
+    display: none;
+  }
+  .hero__two{
+    min-height: auto !important;
+  }
+  .feature__img img{
+    width: 100%;
+  }
+  .clemfox__bg .service {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .answerandq {
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+  .side-mobile-menu .nav-link{
+    display: block;
+  }
+  .nav-tabs li a::before{
+    width: 0 !important;
+  }
+  .header__logo {
+    position: absolute;
+    left: 5px;
+  }
+  .hamburger_menu{
+    position: absolute;
+    right: 15px;
+  }
+  .header__main-wrap {
+      padding: 25px 0;
+  }
+  .feature__content-wrap {
+      margin-top: 15px;
+  }
+  .m-ptb-20 {
+    padding: 20px 0;
+  }
+  .nav-tabs li a{
+    padding-left: 0 !important;
+  }
+  .container {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.8);
+  }
+  .counter__wrapper{
+    padding: 10px;
+  }
+  .fs-6 {
+    font-size: 0.9rem !important;
+  }
 }
