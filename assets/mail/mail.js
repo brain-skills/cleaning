@@ -1,3 +1,4 @@
+let fullScreenBox = document.querySelector('#fullScreenBox');
 let alertNotify = document.querySelector('#alertNotify');
 
 $(document).ready(function () {
@@ -10,8 +11,10 @@ $(document).ready(function () {
             data: formNm.serialize(),
             success: function (data) {
                 // Вывод текста результата отправки в текущей форме
+                fullScreenBox.classList.add('show');
                 alertNotify.classList.add('show');
                 setTimeout(() =>{
+                    fullScreenBox.classList.remove('show');
                     alertNotify.classList.remove('show');
                 },7000);
             }
@@ -30,12 +33,21 @@ $(document).ready(function () {
             data: formNm.serialize(),
             success: function (data) {
                 // Вывод текста результата отправки в текущей форме
+                fullScreenBox.classList.add('show');
                 alertNotify.classList.add('show');
                 setTimeout(() =>{
+                    fullScreenBox.classList.remove('show');
                     alertNotify.classList.remove('show');
                 },7000);
             }
         });
         return false;
     }); 
+});
+
+document.addEventListener( 'click', (e) => {
+	if ( !alertNotify.onclick ) {
+		fullScreenBox.classList.remove('show');
+		alertNotify.classList.remove('show');
+	}
 });

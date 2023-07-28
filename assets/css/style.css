@@ -1652,8 +1652,8 @@ ul {
   border-radius: 150px 0 0;
 }
 .hero__experince-box {
-  width: 140px;
-  height: 80px;
+  width: 100%;
+  height: 40px;
   background-color: #4286d6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1669,9 +1669,9 @@ ul {
   -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
-  bottom: -30px;
-  left: 0px;
-  border-radius: 0px 20px;
+  bottom: -24px;
+  left: -40px;
+  border-radius: 0;
 }
 .hero__experince-box h2 {
   font-size: 36px;
@@ -1688,7 +1688,7 @@ ul {
 .hero__line-shape {
   position: absolute;
   bottom: -18px;
-  right: 60px;
+  right: 70px;
   z-index: -1;
   width: 440px;
 }
@@ -4224,11 +4224,26 @@ ul {
   scrollbar-color: #ccc #fff;
   scrollbar-width: thin;
 }
+.fullscreen-box {
+  position: fixed;
+  z-index: 999999;
+  background: rgb(0 0 0 / 50%) !important;
+  width: 100%;
+  height: 100%;
+  top:0px;
+  left:0px;
+}
+.fullscreen-box:not(.show){
+  display: none;
+}
+.fullscreen-box .show{
+  display: block;
+}
 .alertnotify{
   position: fixed;
   z-index: 99999;
-  bottom: 10px;
-  right: 10px;
+  top: calc(50% - 46px);
+  left: calc(50% - 180px);
 }
 .alertnotify:not(.show){
   display: none;
