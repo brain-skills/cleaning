@@ -9,3 +9,6 @@ erase/
 google*.html
 yandex*.html
 mail*.html
+docs
+docs/
+/docs
