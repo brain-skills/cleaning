@@ -1652,29 +1652,29 @@ ul {
   border-radius: 150px 0 0;
 }
 .hero__experince-box {
-  width: 170px;
-  height: 170px;
+  width: 140px;
+  height: 80px;
   background-color: #4286d6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
   position: absolute;
-  bottom: 0px;
-  left: 44px;
-  border-radius: 0px 50px;
+  bottom: -30px;
+  left: 0px;
+  border-radius: 0px 20px;
 }
 .hero__experince-box h2 {
-  font-size: 75px;
+  font-size: 36px;
   color: var(--color-white);
   font-weight: 700;
 }
@@ -1687,8 +1687,8 @@ ul {
 }
 .hero__line-shape {
   position: absolute;
-  top: 244px;
-  right: -20px;
+  bottom: -18px;
+  right: 60px;
   z-index: -1;
   width: 440px;
 }

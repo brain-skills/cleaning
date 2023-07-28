@@ -6,10 +6,10 @@ $promoval = $_POST['promoVal'];
 
 $subject = "Заявка на «Bakalov Cleaning»";
 
-$to = "bakalovcleaning@yandex.ru";
+$to = "online@bakalovcleaning.ru";
 $namefrom = "Bakalov Cleaning";
 
-$headers = "From: $namefrom <online@bakalovcleaning.ru>" . PHP_EOL;
+$headers = "From: $namefrom <order@bakalovcleaning.ru>" . PHP_EOL;
 $headers .= "Reply-To: $to" . PHP_EOL;
 
 $headers .= "MIME-Version: 1.0" . PHP_EOL;
