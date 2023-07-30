@@ -6,7 +6,7 @@ $promoval = $_POST['promoVal'];
 
 $subject = "Заявка на «Bakalov Cleaning»";
 
-$to = "online@bakalovcleaning.ru";
+$to = "bakalovcleaning@gmail.com";
 $namefrom = "Bakalov Cleaning";
 
 $headers = "From: $namefrom <order@bakalovcleaning.ru>" . PHP_EOL;
