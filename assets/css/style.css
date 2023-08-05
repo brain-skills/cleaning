@@ -1652,7 +1652,7 @@ ul {
   border-radius: 150px 0 0;
 }
 .hero__experince-box {
-  width: 100%;
+  width: 86%;
   height: 40px;
   background-color: #4286d6;
   display: -webkit-box;
@@ -1669,8 +1669,8 @@ ul {
   -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
-  bottom: -24px;
-  left: -40px;
+  bottom: -15px;
+  left: 4%;
   border-radius: 0;
 }
 .hero__experince-box h2 {
@@ -1687,7 +1687,7 @@ ul {
 }
 .hero__line-shape {
   position: absolute;
-  bottom: -18px;
+  bottom: -35px;
   right: 70px;
   z-index: -1;
   width: 440px;
