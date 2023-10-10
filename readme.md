@@ -1,6 +1,6 @@
 # Техническое описание Проекта
 
-Licence: [MIT](./license.md "Лицензия")
+Licence: [CС License](./license.md "Лицензия")
 
 ## ✨ Bacalov Cleaning ✨ https://bakalovcleaning.ru
 
