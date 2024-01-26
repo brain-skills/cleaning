@@ -575,50 +575,6 @@ window.addEventListener('load', () => {
     })
 })
 
-// Промокод
-let promoCode = document.querySelector('#promoCode');
-let promoCode2 = document.querySelector('#promoCode2');
-let salePercent = document.querySelector('#salePercent');
-let salePercent2 = document.querySelector('#salePercent2');
-promoCode.onclick = function(){
-    let promo = prompt('Введите Промокод');
-    let promoVal = document.querySelector('#promoVal');
-    if(parseInt(promo, 36) == '761533025'){
-        salePercent.innerText = ' | Ваша скидка: 5%';
-        promoVal.value = '5%';
-    } else if (parseInt(promo, 36) == '1953042228'){
-        salePercent.innerText = ' | Ваша скидка: 10%';
-        promoVal.value = '10%';
-    } else if (parseInt(promo, 36) == '77303744074841'){
-        salePercent.innerText = ' | Ваша скидка: 15%';
-        promoVal.value = '15%';
-    } else if (parseInt(promo, 36) == '1795919339212776'){
-        salePercent.innerText = ' | Ваша скидка: 20%';
-        promoVal.value = '20%';
-    } else {
-        salePercent.innerText = ' | Не верно указан промокод';
-    }
-}
-promoCode2.onclick = function(){
-    let promo2 = prompt('Введите Промокод');
-    let promoVal2 = document.querySelector('#promoVal2');
-    if(parseInt(promo2, 36) == '761533025'){
-        salePercent2.innerText = ' | Ваша скидка: 5%';
-        promoVal2.value = '5%';
-    } else if (parseInt(promo2, 36) == '1953042228'){
-        salePercent2.innerText = ' | Ваша скидка: 10%';
-        promoVal2.value = '10%';
-    } else if (parseInt(promo2, 36) == '77303744074841'){
-        salePercent2.innerText = ' | Ваша скидка: 15%';
-        promoVal2.value = '15%';
-    } else if (parseInt(promo2, 36) == '1795919339212776'){
-        salePercent2.innerText = ' | Ваша скидка: 20%';
-        promoVal2.value = '20%';
-    } else {
-        salePercent2.innerText = ' | Не верно указан промокод';
-    }
-}
-
 let includeList = document.querySelector('#includeList');
 let priceList = document.querySelector('#priceList');
 let priceInfoW = '<p class="pt-2 m-0 fs-6">*Стоимость услуг может отличаться от заявленных в прайсе.<br>Точную стоимость уточняйте у оператора!</p>';
@@ -642,13 +598,13 @@ document.querySelector('#caPrice').onclick = ()=>{
     priceList.innerHTML = '<img src="assets/img/price/1.png" class="img-fit" loading="lazy" alt=""><br>'+priceInfoW;
 }
 document.querySelector('#fIncluded').onclick = ()=>{
-    includeList.innerHTML = '<img src="assets/img/price/0.png" class="img-fit" loading="lazy" alt="">'; // Что включено в Химчистку?
+    includeList.innerHTML = ''; // Что включено в Химчистку?
 }
 document.querySelector('#fPrice').onclick = ()=>{
     priceList.innerHTML = '<img src="assets/img/price/2.png" class="img-fit" loading="lazy" alt=""><br>'+priceInfoW;
 }
 document.querySelector('#wIncluded').onclick = ()=>{
-    includeList.innerHTML = '<img src="assets/img/price/0.png" class="img-fit" loading="lazy" alt="">'; // Что включено в Мытье окон?
+    includeList.innerHTML = ''; // Что включено в Мытье окон?
 }
 document.querySelector('#wPrice').onclick = ()=>{
     priceList.innerHTML = '<img src="assets/img/price/3.png" class="img-fit" loading="lazy" alt=""><br>'+priceInfoW;

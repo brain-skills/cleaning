@@ -16,7 +16,7 @@ $(document).ready(function () {
                 setTimeout(() =>{
                     fullScreenBox.classList.remove('show');
                     alertNotify.classList.remove('show');
-                },7000);
+                },20000);
             }
         });
         return false;
@@ -38,7 +38,7 @@ $(document).ready(function () {
                 setTimeout(() =>{
                     fullScreenBox.classList.remove('show');
                     alertNotify.classList.remove('show');
-                },7000);
+                },20000);
             }
         });
         return false;
