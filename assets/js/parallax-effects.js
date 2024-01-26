@@ -39,26 +39,14 @@ phoneEvents.addEventListener('mouseenter', ()=>{
 })
 // Конец SVG анимации при наведении на Телефон в шапке //
 
-// SVG анимация иконки для 1 пункта при наведении на текст //
-const svgPerm1 = document.querySelector('#svgPerm1');
-const perm1 = document.querySelector('#perm1');
-perm1.addEventListener('mouseenter', ()=>{
-  svgAnim(svgPerm1);
-})
-// Конец SVG анимации иконки для 1 пункта при наведении на текст //
-
-// SVG анимация иконки для 1 пункта при наведении на текст //
-const svgPerm2 = document.querySelector('#svgPerm2');
-const perm2 = document.querySelector('#perm2');
-perm2.addEventListener('mouseenter', ()=>{
-  svgAnim(svgPerm2);
-})
-// Конец SVG анимации иконки для 1 пункта при наведении на текст //
-
-// SVG анимация иконки для 1 пункта при наведении на текст //
-const svgPerm3 = document.querySelector('#svgPerm3');
-const perm3 = document.querySelector('#perm3');
-perm3.addEventListener('mouseenter', ()=>{
-  svgAnim(svgPerm3);
-})
+// SVG анимация иконки при наведении на текст //
+permc1.addEventListener('mouseenter', ()=>{svgAnim(svgc1);});
+permc2.addEventListener('mouseenter', ()=>{svgAnim(svgc2);});
+permc3.addEventListener('mouseenter', ()=>{svgAnim(svgc3);});
+permf1.addEventListener('mouseenter', ()=>{svgAnim(svgf1);});
+permf2.addEventListener('mouseenter', ()=>{svgAnim(svgf2);});
+permf3.addEventListener('mouseenter', ()=>{svgAnim(svgf3);});
+permw1.addEventListener('mouseenter', ()=>{svgAnim(svgw1);});
+permw2.addEventListener('mouseenter', ()=>{svgAnim(svgw2);});
+permw3.addEventListener('mouseenter', ()=>{svgAnim(svgw3);});
 // Конец SVG анимации иконки для 1 пункта при наведении на текст //
