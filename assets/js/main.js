@@ -134,8 +134,17 @@ cleanTab.addEventListener('click', function(event){
     c1.classList.add('show', 'active');
     c2.classList.add('show', 'active');
     cs1.classList.add('show', 'active');
+    cs2.classList.add('show', 'active');
+    cs3.classList.add('show', 'active');
+    cs4.classList.add('show', 'active');
     cg1.classList.remove('show', 'active');
+    cg2.classList.remove('show', 'active');
+    cg3.classList.remove('show', 'active');
+    cg4.classList.remove('show', 'active');
     ca1.classList.remove('show', 'active');
+    ca2.classList.remove('show', 'active');
+    ca3.classList.remove('show', 'active');
+    ca4.classList.remove('show', 'active');
     support1.classList.add('show', 'active');
     general1.classList.remove('show', 'active');
     afterem1.classList.remove('show', 'active');
@@ -148,8 +157,17 @@ cleanTab.addEventListener('click', function(event){
 cs1.addEventListener('click', function(event){
     cleanService.options.selectedIndex = 0;
     cs1.classList.add('show', 'active');
+    cs2.classList.add('show', 'active');
+    cs3.classList.add('show', 'active');
+    cs4.classList.add('show', 'active');
     cg1.classList.remove('show', 'active');
+    cg2.classList.remove('show', 'active');
+    cg3.classList.remove('show', 'active');
+    cg4.classList.remove('show', 'active');
     ca1.classList.remove('show', 'active');
+    ca2.classList.remove('show', 'active');
+    ca3.classList.remove('show', 'active');
+    ca4.classList.remove('show', 'active');
     support1.classList.add('show', 'active');
     general1.classList.remove('show', 'active');
     afterem1.classList.remove('show', 'active');
@@ -162,8 +180,17 @@ cs1.addEventListener('click', function(event){
 cg1.addEventListener('click', function(event){
     cleanService.options.selectedIndex = 0;
     cs1.classList.remove('show', 'active');
+    cs2.classList.remove('show', 'active');
+    cs3.classList.remove('show', 'active');
+    cs4.classList.remove('show', 'active');
     cg1.classList.add('show', 'active');
+    cg2.classList.add('show', 'active');
+    cg3.classList.add('show', 'active');
+    cg4.classList.add('show', 'active');
     ca1.classList.remove('show', 'active');
+    ca2.classList.remove('show', 'active');
+    ca3.classList.remove('show', 'active');
+    ca4.classList.remove('show', 'active');
     support1.classList.remove('show', 'active');
     general1.classList.add('show', 'active');
     afterem1.classList.remove('show', 'active');
@@ -176,8 +203,17 @@ cg1.addEventListener('click', function(event){
 ca1.addEventListener('click', function(event){
     cleanService.options.selectedIndex = 0;
     cs1.classList.remove('show', 'active');
+    cs2.classList.remove('show', 'active');
+    cs3.classList.remove('show', 'active');
+    cs4.classList.remove('show', 'active');
     cg1.classList.remove('show', 'active');
+    cg2.classList.remove('show', 'active');
+    cg3.classList.remove('show', 'active');
+    cg4.classList.remove('show', 'active');
     ca1.classList.add('show', 'active');
+    ca2.classList.add('show', 'active');
+    ca3.classList.add('show', 'active');
+    ca4.classList.add('show', 'active');
     support1.classList.remove('show', 'active');
     general1.classList.remove('show', 'active');
     afterem1.classList.add('show', 'active');
