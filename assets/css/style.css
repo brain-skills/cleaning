@@ -1459,7 +1459,7 @@ ul {
 }
 @media (max-width: 991px) {
   .hero__two {
-      padding: 80px 0 50px 0;
+      padding: 60px 0 50px 0;
   }
 }
 .hero__wrap {
@@ -4470,7 +4470,7 @@ ul {
     right: 15px;
   }
   .header__main-wrap {
-      padding: 25px 0;
+      padding: 20px 0 50px 0;
   }
   .feature__content-wrap {
       margin-top: 15px;
@@ -4499,7 +4499,7 @@ ul {
   .main-menu__nav{
     display: inline-block;
     position: relative;
-    top: 74px;
+    top: 50px;
     text-align: center;
     padding: 0 15px;
   }
