@@ -4501,7 +4501,13 @@ ul {
     position: relative;
     top: 50px;
     text-align: center;
-    padding: 0 15px;
+    padding: 0;
+  }
+  #phoneEvents i, #logoText{
+    display: none;
+  }
+  .main-menu__nav ul li:not(:last-child) {
+      margin-right: 10px;
   }
 }
 
@@ -4538,4 +4544,7 @@ ul {
   max-height: 100vh;
   width: 100%;
   height: auto;
+}
+#phoneEvents, .header__main-left{
+  z-index: 9999 !important;
 }
