@@ -54,7 +54,7 @@ h6 {
   border-color: #5984d6 !important;
 }
 .hero__content {
-  margin-top: -40px;
+  margin-top: -20px;
 }
 @-webkit-keyframes btn_shine {
   100% {
@@ -249,15 +249,19 @@ h6 {
   padding: 0 5px;
 }
 
-@media (max-width: 767px) {.price-width{max-width: 98% !important;}}
-@media (min-width: 767px) {.price-width{max-width: 98% !important;}}
-@media (min-width: 991px) {.price-width{max-width: 98% !important;}}
-@media (min-width: 1024px) {.price-width{max-width: 98% !important;}}
-@media (min-width: 1200px) {.price-width{max-width: 93% !important;}}
-@media (min-width: 1300px) {.price-width{max-width: 88% !important;}}
-@media (min-width: 1400px) {.price-width{max-width: 80% !important;}}
-@media (min-width: 1500px) {.price-width{max-width: 70% !important;}}
-@media (min-width: 1600px) {.price-width{max-width: 60% !important;}}
+@media (max-width: 600px) {.price-width{max-width: 98% !important;width: 80%;}}
+@media (min-width: 600px) {.price-width{max-width: 98% !important;width: 70%;}}
+@media (min-width: 720px) {.price-width{max-width: 98% !important;width: 60%;}}
+@media (min-width: 850px) {.price-width{max-width: 98% !important;width: 50%;}}
+@media (min-width: 1100px) {.price-width{max-width: 93% !important;width: 40%;}}
+@media (min-width: 1300px) {.price-width{max-width: 80% !important;width: 35%;}}
+@media (min-width: 1500px) {.price-width{max-width: 70% !important;width: 30%;}}
+@media (min-width: 1600px) {.price-width{max-width: 60% !important;width: 25%;}}
+
+.modal-dialog-centered {
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .tab {
   overflow: hidden;
@@ -992,7 +996,7 @@ h6 {
 .progress-wrap {
   position: fixed;
   right: 25px;
-  bottom: 25px;
+  bottom: 120px;
   height: 35px;
   width: 35px;
   cursor: pointer;
@@ -1313,11 +1317,12 @@ ul {
 }
 @media (max-width: 1199px) {
   .header__main-right {
-      margin-left: 30px;
-  }
+    margin-left: 30px;
+    float: right;
+}
 }
 @media (max-width: 1199px) {
-  .header__cta {
+  .feedForm {
       display: none;
   }
 }
@@ -1549,7 +1554,7 @@ ul {
           transform: translateY(-50%);
 }
 .hero__content-two h2 {
-  font-size: 40px;
+  font-size: 36px;
   margin-bottom: 20px;
 }
 @media (max-width: 767px) {
@@ -4243,7 +4248,7 @@ ul {
   position: fixed;
   z-index: 99999;
   top: calc(40%);
-  left: calc(37%);
+  left: calc(35%);
   min-width: auto;
   max-width: 500px;
 }
@@ -4486,6 +4491,18 @@ ul {
   .fs-6 {
     font-size: 0.9rem !important;
   }
+  .main-menu {
+    margin-left: auto;
+    display: block;
+    position: absolute;
+  }
+  .main-menu__nav{
+    display: inline-block;
+    position: relative;
+    top: 74px;
+    text-align: center;
+    padding: 0 15px;
+  }
 }
 
 #orderForm {
@@ -4513,4 +4530,12 @@ ul {
 
 .svg-icon{
   width: 50px !important;
+}
+.img-fit{
+  display: block;
+  min-width: 140px;
+  min-height: 140px;
+  max-height: 100vh;
+  width: 100%;
+  height: auto;
 }
