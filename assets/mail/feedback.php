@@ -1,7 +1,6 @@
 ﻿<?php
 $yourname = $_POST['yourname'];
 $yourphone = $_POST['yourphone'];
-$promoval = $_POST['promoVal2'];
 
 $subject = "Заявка на «Bakalov Cleaning»";
 
@@ -16,8 +15,12 @@ $headers .= "Content-type: text/html; charset=utf-8" . PHP_EOL;
 $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
 $message = "<p><strong>Имя:</strong> $yourname</p>
-\n<p><strong>Телефон:</strong> $yourphone</p>
-\n<p><strong>Промокод:</strong> $promoval</p>";
+\n<p><strong>Телефон:</strong> $yourphone</p>";
 
-mail($to, $subject, $message, $headers);
-?>
+if (mail($to, $subject, $message, $headers)) {
+    echo "Письмо успешно отправлено!";
+} else {
+    echo "Ошибка при отправке письма.";
+    // Здесь можно добавить дополнительные действия, такие как запись в лог или отправка сообщения об ошибке администратору.
+    error_log("Ошибка при отправке письма на адрес: $to", 0);
+}
