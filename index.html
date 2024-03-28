@@ -203,7 +203,7 @@
 												<h2>Поддерживающая уборка<br>от <span>2490 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
 												<p>Приезжаем в срок. Заключаем договор. Работаем по чек-листу</p>
 												<div class="hero__btn">
-													<a class="btn btn-outline-primary border-1 mr-10" href="#" id="сsIncluded" data-bs-toggle="modal" data-bs-target="#included">Что входит?</a>
+													<a class="btn btn-outline-primary border-1 mr-10" data-bs-toggle="modal" href="#myModal">Что входит?</a>
 													<a class="btn btn-outline-success border-2" href="#" id="сsPrice" data-bs-toggle="modal" data-bs-target="#price">Узнать цены</a>
 												</div>
 											</div>
@@ -211,7 +211,7 @@
 												<h2>Генеральная уборка<br>от <span>7600 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
 												<p>Приезжаем в срок. Заключаем договор. Работаем по чек-листу</p>
 												<div class="hero__btn">
-													<a class="btn btn-outline-primary border-1 mr-10" href="#" id="cgIncluded" data-bs-toggle="modal" data-bs-target="#included">Что входит?</a>
+													<a class="btn btn-outline-primary border-1 mr-10" data-bs-toggle="modal" href="#myModal">Что входит?</a>
 													<a class="btn btn-outline-success border-2" href="#" id="cgPrice" data-bs-toggle="modal" data-bs-target="#price">Узнать цены</a>
 												</div>
 											</div>
@@ -219,7 +219,7 @@
 												<h2>Уборка после ремонта<br>от <span>8200 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
 												<p>Приезжаем в срок. Заключаем договор. Работаем по чек-листу</p>
 												<div class="hero__btn">
-													<a class="btn btn-outline-primary border-1 mr-10" href="#" id="caIncluded" data-bs-toggle="modal" data-bs-target="#included">Что входит?</a>
+													<a class="btn btn-outline-primary border-1 mr-10" data-bs-toggle="modal" href="#myModal">Что входит?</a>
 													<a class="btn btn-outline-success border-2" href="#" id="caPrice" data-bs-toggle="modal" data-bs-target="#price">Узнать цены</a>
 												</div>
 											</div>
@@ -941,6 +941,43 @@
 			</div> -->
 		</main>
 
+		<!-- <a data-bs-toggle="modal" href="#myModal" class="btn btn-primary">Основное модальное окно</a> -->
+
+		<div class="modal" id="myModal" style="display: none;" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+			  <div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Основное модальное окно</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-6 mb-4">
+							<div class="d-grid gap-2">
+								<button type="button" class="btn btn-lg btn-outline-primary" onclick="openMyModal1()">Комнаты</button>
+							</div>
+						</div>
+						<div class="col-6 mb-4">
+							<div class="d-grid gap-2">
+								<button type="button" class="btn btn-lg btn-outline-primary" onclick="openMyModal2()">Кухня</button>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="d-grid gap-2">
+								<button type="button" class="btn btn-lg btn-outline-primary" onclick="openMyModal3()">Ванная комната</button>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="d-grid gap-2">
+								<button type="button" class="btn btn-lg btn-outline-primary" onclick="openMyModal4()">Дополнительно</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			  </div>
+			</div>
+		</div>
+
 		<footer class="footer" data-background="assets/img/bg/footer-noise.png" loading="lazy">
 			<ul class="footer__social">
 				<li><a href="https://t.me/bakalovcleaning" target="_blank"><i class="fa fa-telegram"></i>Telegram</a></li>
@@ -1116,49 +1153,58 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- Модальное окно 1 -->
-	<div class="modal fade" id="buttonGroup1">
-		<div class="modal-dialog modal-dialog-centered">
-		  <div class="modal-content">
-			<div class="modal-body">
-				<img src="assets/img/what-included/1.png" class="img-fit" loading="lazy" alt="">
-		  	</div>
-		</div>
-	  </div>
-	</div>
 	
-	<!-- Модальное окно 2 -->
-	<div class="modal fade" id="buttonGroup2">
+	<div class="modal bg-dark bg-opacity-50" id="buttonGroup1" data-bs-backdrop="static" style="display: none;" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
-		  <div class="modal-content">
-			<div class="modal-body">
-				<img src="assets/img/what-included/2.png" class="img-fit" loading="lazy" alt="">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Комнаты</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+				</div>
+				<div class="modal-body">
+					<img src="assets/img/what-included/1.png" class="img-fit" loading="lazy" alt="">
+				</div>
 			</div>
 		</div>
-	  </div>
 	</div>
-	
-	<!-- Модальное окно 3 -->
-	<div class="modal fade" id="buttonGroup3">
+	<div class="modal bg-dark bg-opacity-50" id="buttonGroup2" data-bs-backdrop="static" style="display: none;" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
-		  <div class="modal-content">
-			<div class="modal-body">
-				<img src="assets/img/what-included/3.png" class="img-fit" loading="lazy" alt="">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Кухня</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+				</div>
+				<div class="modal-body">
+					<img src="assets/img/what-included/2.png" class="img-fit" loading="lazy" alt="">
+				</div>
 			</div>
 		</div>
-	  </div>
 	</div>
-	
-	<!-- Модальное окно 4 -->
-	<div class="modal fade" id="buttonGroup4">
+	<div class="modal bg-dark bg-opacity-50" id="buttonGroup3" data-bs-backdrop="static" style="display: none;" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
-		  <div class="modal-content">
-			<div class="modal-body">
-				<img src="assets/img/what-included/4.png" class="img-fit" loading="lazy" alt="">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Ванная комната</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+				</div>
+				<div class="modal-body">
+					<img src="assets/img/what-included/3.png" class="img-fit" loading="lazy" alt="">
+				</div>
 			</div>
 		</div>
-	  </div>
+	</div>
+	<div class="modal bg-dark bg-opacity-50" id="buttonGroup4" data-bs-backdrop="static" style="display: none;" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Дополнительно</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+				</div>
+				<div class="modal-body">
+					<img src="assets/img/what-included/4.png" class="img-fit" loading="lazy" alt="">
+				</div>
+			</div>
+		</div>
 	</div>
 	
 	<!-- For Js Library -->

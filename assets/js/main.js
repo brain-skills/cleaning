@@ -615,23 +615,11 @@ let includeList = document.querySelector('#includeList');
 let priceList = document.querySelector('#priceList');
 let priceInfoW = '<p class="pt-2 m-0 fs-6">*Стоимость услуг может отличаться от заявленных в прайсе.<br>Точную стоимость уточняйте у оператора!</p>';
 
-document.querySelector('#сsIncluded').onclick = ()=>{
-    // Что включено в Поддерживающую уборку?
-    // includeList.innerHTML = '<img src="assets/img/price/1-1.png" class="img-fit" loading="lazy" alt="">';
-    includeList.innerHTML = '<div class="row"><div class="col-6 mb-4"><div class="d-grid gap-2"><button type="button" class="btn btn-lg btn-outline-primary" data-bs-toggle="modal" data-bs-target="#buttonGroup1">Комнаты</button></div></div><div class="col-6 mb-4"><div class="d-grid gap-2"><button type="button" class="btn btn-lg btn-outline-primary" data-bs-toggle="modal" data-bs-target="#buttonGroup2">Кухня</button></div></div><div class="col-6"><div class="d-grid gap-2"><button type="button" class="btn btn-lg btn-outline-primary" data-bs-toggle="modal" data-bs-target="#buttonGroup3">Ванная комната</button></div></div><div class="col-6"><div class="d-grid gap-2"><button type="button" class="btn btn-lg btn-outline-primary" data-bs-toggle="modal" data-bs-target="#buttonGroup4">Дополнительно</button></div></div></div>';
-}
-
 document.querySelector('#сsPrice').onclick = ()=>{
     priceList.innerHTML = '<img src="assets/img/price/1.png" class="img-fit" loading="lazy" alt=""><br>'+priceInfoW;
 }
-document.querySelector('#cgIncluded').onclick = ()=>{
-    includeList.innerHTML = '<img src="assets/img/price/1-2.png" class="img-fit" loading="lazy" alt="">'; // Что включено в Генеральную уборку?
-}
 document.querySelector('#cgPrice').onclick = ()=>{
     priceList.innerHTML = '<img src="assets/img/price/1.png" class="img-fit" loading="lazy" alt=""><br>'+priceInfoW;
-}
-document.querySelector('#caIncluded').onclick = ()=>{
-    includeList.innerHTML = '<img src="assets/img/price/1-3.png" class="img-fit" loading="lazy" alt="">'; // Что включено в уборку после ремонта?
 }
 document.querySelector('#caPrice').onclick = ()=>{
     priceList.innerHTML = '<img src="assets/img/price/1.png" class="img-fit" loading="lazy" alt=""><br>'+priceInfoW;
@@ -649,19 +637,19 @@ document.querySelector('#wPrice').onclick = ()=>{
     priceList.innerHTML = '<img src="assets/img/price/3.png" class="img-fit" loading="lazy" alt=""><br>'+priceInfoW;
 }
 
-$(document).mouseup(function(e) {
-    // Получаем модальные окна по их id
-    var modalIds = ['#buttonGroup1', '#buttonGroup2', '#buttonGroup3', '#buttonGroup4'];
-    // Проверяем, был ли клик за пределами указанных модальных окон
-    for (var i = 0; i < modalIds.length; i++) {
-        var modal = $(modalIds[i]);
-        if (modal.hasClass('show')) {
-            var modalContent = modal.find('.modal-content');
-            // Проверяем, был ли клик за пределами текущего модального окна
-            if (!modalContent.is(e.target) && modalContent.has(e.target).length === 0) {
-                // Обновляем страницу
-                location.reload();
-            }
-        }
-    }
-});
+function openMyModal1() {
+    let myModal = new bootstrap.Modal(document.getElementById('buttonGroup1'), {});
+    myModal.show();
+}
+function openMyModal2() {
+    let myModal = new bootstrap.Modal(document.getElementById('buttonGroup2'), {});
+    myModal.show();
+}
+function openMyModal3() {
+    let myModal = new bootstrap.Modal(document.getElementById('buttonGroup3'), {});
+    myModal.show();
+}
+function openMyModal4() {
+    let myModal = new bootstrap.Modal(document.getElementById('buttonGroup4'), {});
+    myModal.show();
+}
