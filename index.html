@@ -52,17 +52,16 @@
 						</div>
 						<ul class="header__info ul_li mt-15">
 							<li><a href="#!" data-bs-toggle="modal" data-bs-target="#yandexMap"><i class="fa fa-map-marker"></i> Проспект 50 лет Октября, д.7</a></li>
-							<li><a href="mailto:bakalovcleaning@gmail.com" target="_blank"><i class="fa fa-envelope"></i>bakalovcleaning@gmail.com</a></li>
+							<li><a href="mailto:bakalovcleaning@yandex.ru" target="_blank"><i class="fa fa-envelope"></i>bakalovcleaning@yandex.ru</a></li>
 							<li>
 								<div class="header__language">
 									<ul>
-										<li><a class="lang-btn"><i class="fa fa-map"></i> Саратов</a></li>
-										<!-- <li><a href="#!" class="lang-btn"><i class="fa fa-map"></i> Саратов <i class="fa fa-chevron-down"></i></a>
+										<li class="lang-dropdown">
+											<a href="/" class="lang-btn"><i class="fa fa-map"></i> <span id="currentCity">Саратов</span> <i class="fa fa-chevron-down"></i></a>
 											<ul class="lang_sub_list">
-												<li><a href="#">Москва</a></li>
-												<li><a href="#">Санкт-Петербург</a></li>
+												<li><a href="moscow" data-city="Москва">Москва</a></li>
 											</ul>
-										</li> -->
+										</li>
 									</ul>
 								</div>
 							</li>
@@ -96,13 +95,16 @@
 							<nav class="main-menu__nav navbar-collapse">
 								<ul class="nav nav-tabs" id="mainservice" role="tablist">
 									<li class="nav-item" role="presentation">
-									<a href="#clean-s" class="nav-link active" id="clean-tab" data-bs-target="#c-1" data-bs-toggle="tab">Уборка</a>
+										<a href="#comerc-s" class="nav-link active" id="comerc-tab" data-bs-target="#b-1" data-bs-toggle="tab">Коммерческий<br>клининг</a>
 									</li>
 									<li class="nav-item" role="presentation">
-									<a href="#dry-s" class="nav-link" id="furchem-tab" data-bs-target="#f-1" data-bs-toggle="tab">Химчистка мебели</a>
+										<a href="#clean-s" class="nav-link" id="clean-tab" data-bs-target="#c-1" data-bs-toggle="tab">Уборка</a>
 									</li>
 									<li class="nav-item" role="presentation">
-									<a href="#wash-s" class="nav-link" id="windw-tab" data-bs-target="#w-1" data-bs-toggle="tab">Мытье окон</a>
+										<a href="#dry-s" class="nav-link" id="furchem-tab" data-bs-target="#f-1" data-bs-toggle="tab">Химчистка мебели</a>
+									</li>
+									<li class="nav-item" role="presentation">
+										<a href="#wash-s" class="nav-link" id="windw-tab" data-bs-target="#w-1" data-bs-toggle="tab">Мытье окон</a>
 									</li>
 								</ul>
                             </nav>
@@ -171,7 +173,7 @@
                         </li>
                         <li>
                             <span><i class="fa fa-envelope"></i></span>
-                            <p><a href="mailto:bakalovcleaning@gmail.com" target="_blank">bakalovcleaning@gmail.com</a></p>
+                            <p><a href="mailto:bakalovcleaning@yandex.ru" target="_blank">bakalovcleaning@yandex.ru</a></p>
                         </li>
                     </ul>
                 </div>
@@ -191,6 +193,50 @@
 					<div class="row align-items-center dnone">
 						<div class="col-lg-6">
 							<div class="tab-content" id="headerTab">
+								<div class="tab-pane show active" id="b-1" role="tabpanel" aria-labelledby="comerc-tab">
+									<div class="hero__content hero__content-two">
+										<ul class="nav nav-tabs pb-20 pl-15" id="optionservice-b" role="tablist">
+											<li class="nav-item" role="presentation">
+												<a href="#comerc-gen" class="nav-link active" id="bgen1" data-bs-toggle="tab" data-bs-target="#bgen">Генеральная уборка</a>
+											</li>
+											<li class="nav-item" role="presentation">
+												<a href="#comerc-day" class="nav-link" id="bday1" data-bs-toggle="tab" data-bs-target="#bday">Ежедневная уборка</a>
+											</li>
+											<li class="nav-item" role="presentation">
+												<a href="#comerc-ext" class="nav-link" id="bext1" data-bs-toggle="tab" data-bs-target="#bext">Дополнительные услуги</a>
+											</li>
+										</ul>
+
+										<div class="tab-content" id="comercDetails">
+											<div class="tab-pane show active" id="bgen" role="tabpanel" aria-labelledby="bgen1">
+												<h2>Генеральная уборка<br>от <span>7900 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
+												<p>Приезжаем в срок. Заключаем договор. Работаем по чек-листу</p>
+												<div class="hero__btn">
+													<a class="btn btn-outline-primary border-1 mr-10" data-bs-toggle="modal" href="#myModal">Что входит?</a>
+													<a class="btn btn-outline-success border-2" href="#" id="bgenPrice" data-bs-toggle="modal" data-bs-target="#price">Узнать цены</a>
+												</div>
+											</div>
+
+											<div class="tab-pane" id="bday" role="tabpanel" aria-labelledby="bday1">
+												<h2>Ежедневная уборка<br>от <span>4900 ₽ <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
+												<p>Приезжаем в срок. Заключаем договор. Работаем по чек-листу</p>
+												<div class="hero__btn">
+													<a class="btn btn-outline-primary border-1 mr-10" data-bs-toggle="modal" href="#myModal">Что входит?</a>
+													<a class="btn btn-outline-success border-2" href="#" id="bdayPrice" data-bs-toggle="modal" data-bs-target="#price">Узнать цены</a>
+												</div>
+											</div>
+
+											<div class="tab-pane" id="bext" role="tabpanel" aria-labelledby="bext1">
+												<h2>Дополнительные услуги<br>от <span>по запросу <img src="assets/img/shape/text_shape.png" alt=""></span></h2>
+												<p>Дополнительные работы — химчистка, мойка витрин, фасадов и пр.</p>
+												<div class="hero__btn">
+													<a class="btn btn-outline-primary border-1 mr-10" data-bs-toggle="modal" href="#myModal">Что входит?</a>
+													<a class="btn btn-outline-success border-2" href="#" id="bextPrice" data-bs-toggle="modal" data-bs-target="#price">Узнать цены</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 								<div class="tab-pane show active" id="c-1" role="tabpanel" aria-labelledby="clean-tab">
 									<div class="hero__content hero__content-two">
 										<ul class="nav nav-tabs pb-20 pl-15" id="optionservice" role="tablist">
@@ -441,7 +487,7 @@
 									<div class="row">
 										<div class="col-12">
 											<h4 class="pb-10">Оставьте заявку:</h4>
-											<!-- <input type="hidden" id="promoVal" name="promoVal" value="не указан" /> -->
+											<input type="hidden" id="promoVal" name="promoVal" value="не указан" />
 										</div>
 										<div class="col-12 mb-10 col-sm-3">
 											<input type="text" class="form-control" name="yourname" id="yourname" oninput="this.value=this.value.replace(/\B/g,'');" minlength="3" maxlength="36" placeholder="Имя" required autofocus>
@@ -1040,7 +1086,7 @@
 			</div>
 			<div class="modal-body">
 				<form id="feedbackForm">
-					<!-- <input type="hidden" id="promoVal2" name="promoVal2" value="не указан" /> -->
+					<input type="hidden" id="promoVal2" name="promoVal2" value="не указан" />
 					<div class="mb-3 row">
 						<div class="col-12">
 							<label>Имя</label>

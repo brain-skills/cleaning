@@ -1,11 +1,11 @@
-﻿<?php
+<?php
 $yourname = $_POST['yourname'];
 $yourphone = $_POST['yourphone'];
 $cleanservice = $_POST['cleanservice'];
 
 $subject = "Заявка на «Bakalov Cleaning»";
 
-$to = "bakalovcleaning@gmail.com";
+$to = "bakalovcleaning@yandex.ru";
 $namefrom = "Bakalov Cleaning";
 
 $headers = "From: $namefrom <order@bakalovcleaning.ru>" . PHP_EOL;

@@ -1413,9 +1413,11 @@ ul {
 }
 .main-menu__nav ul li {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .main-menu__nav ul li:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 @media (max-width: 1199px) {
   .main-menu__nav ul li:not(:last-child) {
@@ -4183,6 +4185,9 @@ ul {
   cursor: pointer !important;
   background: 0 0 !important;
   display: inline-block;
+}
+.main-menu__nav {
+  height: 46px;
 }
 .main-menu .nav-link.active {
   border: none !important;
