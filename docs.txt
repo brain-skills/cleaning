@@ -1,0 +1,18 @@
+<!-- Родительские блоки -->
+<div class="block parent-block block1"><h4>Коммерческий клининг</h4></div>
+<div class="block parent-block block2"><h4>Уборка</h4></div>
+<div class="block parent-block block3"><h4>Химчистка мебели</h4></div>
+<div class="block parent-block block4"><h4>Мытье окон</h4></div>
+
+<!-- Вторые дочерние блоки -->
+<div class="block child-block 1-1">Блок 1-1</div>
+<div class="block child-block 1-2">Блок 1-2</div>
+<div class="block child-block 1-3">Блок 1-3</div>
+
+<!-- Вторые дочерние блоки -->
+<div class="block child-block 2-1">Блок 2-1</div>
+<div class="block child-block 2-2">Блок 2-2</div>
+<div class="block child-block 2-3">Блок 2-3</div>
+
+<div class="block parent-block block3">Блок химчистки</div>
+<div class="block parent-block block4">Блок мытье окон</div>

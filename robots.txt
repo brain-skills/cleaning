@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
+Disallow: /docs.txt
 Host: bakalovcleaning.ru
 Sitemap: http://bakalovcleaning.ru/sitemap.xml
