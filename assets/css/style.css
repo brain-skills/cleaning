@@ -4553,3 +4553,23 @@ ul {
 #phoneEvents, .header__main-left{
   z-index: 9999 !important;
 }
+
+.list-wrapper {
+  display: inline-block;
+  text-align: left;
+}
+
+.list-group-bordered {
+  width: auto;
+  display: inline-block;
+}
+
+.list-group-bordered .list-group-item {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.list-group-bordered .list-group-item:last-child {
+  border-bottom: none;
+}
